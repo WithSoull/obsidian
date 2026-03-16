@@ -8,6 +8,39 @@ This repository is a personal Obsidian vault and knowledge base. Its purpose is 
 
 Top-level folders are organized by intent: `00 - Inbox` for quick capture, `10 - Work` for job-related material, `20 - Mentorship` for teaching and coaching notes, `30 - Learning` for study topics, `40 - Projects` for active initiatives, `90 - Archive` for inactive material, and `99 - Meta` for templates and vault management. Obsidian configuration, snippets, plugins, and scripts live in `.obsidian/`.
 
+## Retrieval Strategy
+
+Treat this vault as a graph, not as a flat directory tree.
+
+- `30 - Learning` is the main knowledge area and the default starting point for technical topics.
+- `10 - Work` contains job-specific context and should be searched only when the user asks about work tasks, company context, or operational notes.
+- `20 - Mentorship` contains person-specific teaching materials and should be searched by mentee name or mentorship topic, not as general technical reference.
+- `99 - Meta` contains vault-maintenance notes, helper scripts, and Codex workflow files. Search here when the task is about vault structure, automation, naming, templates, or agent behavior.
+
+When searching for context, prefer this order:
+
+1. Start from the most relevant folder named by the user.
+2. Open the nearest `_MOC - ...` note in that branch if it exists.
+3. Follow direct wikilinks from that MOC and, if needed, go one level deeper.
+4. Only then use targeted `rg` searches inside that branch.
+5. Search the whole vault only if bounded search fails or the task is explicitly cross-cutting.
+
+For `30 - Learning`, assume the author often uses multi-level MOC navigation. Do not treat an incomplete MOC as a broken structure by default; it often means the topic has not been studied yet.
+
+Default bounded-search behavior:
+
+- Prefer searching the current thematic branch and its direct links before scanning unrelated folders.
+- If the user provides a specific note path, treat it as the primary entry point.
+- If a task is about reviewing or expanding an existing note, inspect that note first, then its direct links, then the nearest MOC.
+- If a task is about generating a new note from source material, first identify the target branch, then find sibling notes and the nearest MOC to match local style and link structure.
+
+Stop broad renaming or cleanup work when retrieval is already good enough:
+
+- the note meaning is clear from its name,
+- the local MOC structure is navigable,
+- there are no broken links introduced by the current task,
+- and the assistant can reach relevant context without scanning most of the vault.
+
 ## Writing Principles
 
 Write notes in Russian and communicate with the author in Russian. Use Markdown and keep notes concise, structured, and reusable. Prefer clear headings, short paragraphs, bullet lists, and examples from backend engineering. Default to explanations that are useful for Go, backend services, networking, storage, concurrency, and distributed systems. Notes should help the author quickly restore context after a break.
