@@ -232,6 +232,7 @@
   },
   "active": "5c3409979668e6b7",
   "lastOpenFiles": [
+    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/Replication Notes vs DDIA Chapter 6.md",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/_MOC - Data-Intensive Applications.md",
     "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graph Data Structure.md",
     "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/Why Distribute Data Across Machines.md",
@@ -259,7 +260,6 @@
     "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/_MOC - Concurrency.md",
     "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Semaphore.md",
     "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/9 - Chapter 9/Consensus.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/9 - Chapter 9/Linearizability and Quorums.md",
     "99 - Meta/03 - Codex/note_renames.learning.json",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/note_renames.clean_test.json",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph",
