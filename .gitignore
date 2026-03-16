@@ -8,3 +8,6 @@
 .obsidian/*sync-conflict-*.json
 .obsidian/* (*).json
 .obsidian/
+
+# Local Codex script artifacts.
+99 - Meta/03 - Codex/__pycache__/
