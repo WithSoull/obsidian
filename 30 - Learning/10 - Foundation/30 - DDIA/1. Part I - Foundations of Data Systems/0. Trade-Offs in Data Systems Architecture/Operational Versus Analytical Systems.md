@@ -10,7 +10,7 @@
 
 Ключевой вывод: в жизненном цикле данных почти всегда есть **разделение на два типа систем**, и важно понимать обе стороны.
 
-## 2)  [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/OLTP vs OLAP|OLTP vs OLAP]]
+## 2)  [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/OLTP vs OLAP|OLTP vs OLAP]]
 **Операционные системы (OLTP)** — место, где данные **создаются** и **изменяются** приложением:
 - Типичный паттерн чтения: **point query** (получить несколько записей по ключу).
 - Записи часто **вставляются/обновляются/удаляются** по пользовательскому вводу.
@@ -23,7 +23,7 @@
 
 Отдельно выделяется **product / real-time analytics** (например, Pinot, Druid, ClickHouse): аналитические запросы, но **встроенные в продукт** и с **низкой латентностью**, часто с ingestion в реальном времени (в отличие от традиционных batch-OLAP).
 
-## 3) Почему появился [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/Data Warehousing|DWH]]
+## 3) Почему появился [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/Data Warehousing|DWH]]
 Раньше пытались делать и транзакции, и аналитику в одной БД, но затем стали выносить аналитику в **отдельную систему — data warehouse (DWH)**. Причины:
 - Данные распределены по множеству OLTP-систем → **data silos**, сложно объединять.
 - OLTP-схемы плохо подходят для аналитики.

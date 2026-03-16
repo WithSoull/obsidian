@@ -2,10 +2,10 @@
 Граф - это набор связей, есть узлы и ребра.
 # Алгоритмы с графами
 
-- [[30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Breadth-First Search (BFS)]]
+- [[30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Breadth-First Search (BFS)]]
   Работает с *невзвешенными ациклическими графами*
 
-- [[30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Dijkstra's Algorithm]]
+- [[30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Dijkstra's Algorithm]]
   Работает с направленными взвешенными ациклическими графами (DAG - Direct Acyclic Graph)
   
 # Реализация

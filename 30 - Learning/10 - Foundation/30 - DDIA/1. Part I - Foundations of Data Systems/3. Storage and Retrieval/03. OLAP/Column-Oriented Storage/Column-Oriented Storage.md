@@ -1,5 +1,5 @@
 ### *Проблема* Relational model, которую решает Column-Oriented model
-Если у вас трилионы записей и ПБ данных в вашей *fact* таблице в [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/Data Warehousing|DWH]], то эфеективные запросы становяться проблемой.
+Если у вас трилионы записей и ПБ данных в вашей *fact* таблице в [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/Data Warehousing|DWH]], то эфеективные запросы становяться проблемой.
 Несмотря на то, что в *fact* таблице как правило более 100 колонок, в запросах мы используем от силы колонок 5. Вот пример запроса, который анализирует: *В какой день недели люди чаще покупают свежие фрукты или конфеты?*
 
 ``` sql
@@ -24,7 +24,7 @@ GROUP BY
 ![[99 - Meta/02 - Медиа/Pasted image 20251030104241.png]]
 
 ### Самый сок - Compession
-Помимо того, что мы таким расположением данных решаем проблему эффективности запросов, у нас теперь тут есть огромный [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/Column-Oriented storage/Column Compresion. Сжатие в колоночных БД|простор для сжатия]], ведь это тоже немаловажный факт.
+Помимо того, что мы таким расположением данных решаем проблему эффективности запросов, у нас теперь тут есть огромный [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/Column-Oriented Storage/Column Compresion. Сжатие в колоночных БД|простор для сжатия]], ведь это тоже немаловажный факт.
 
 ### Путаница с relational column families
 - Cassandra и HBase поддерживают column families (семейства столбцов), но это не значит, что они хранят данные по столбцам ("column-oriented storage").

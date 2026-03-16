@@ -10,7 +10,7 @@
 До MySQL 5.1 там использовался как раз такой лог, но в более новых версиях используется *row-based replication log* если в выражении есть какая-то недетерминированость. VoltDB использует *statement-base replication log*, из-за чего требуется от транзакций быть детереминироваными.
 
 ### Write-ahead log (WAL) shipping
-В заметках по движки баз (в частности про индексы) - [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02.Data structers that power your database/LSM-tree/LSM-tree|LSM-tree]]/[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02.Data structers that power your database/B-tree/B-tree|B-tree]] мы уже обсуждали WAL. Почему бы мастеру просто не отправлять такой лог репликам. 
+В заметках по движки баз (в частности про индексы) - [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database/LSM-Tree/LSM-tree|LSM-tree]]/[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database/B-Tree/B-tree|B-tree]] мы уже обсуждали WAL. Почему бы мастеру просто не отправлять такой лог репликам. 
 
 >[!info] А что вообще из себя представляет WAL?
 >Это append-only последовательность байт, которая содержит все записи. Но на очень низком уровне. Он содержит детали о том как изменились байты на диске: Какой байт нужно заменить на какой байт на дисковом блоке.

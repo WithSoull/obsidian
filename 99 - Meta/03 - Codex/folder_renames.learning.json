@@ -1,0 +1,67 @@
+[
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval",
+    "old": "01.Simple db implementation",
+    "new": "01. Simple DB Implementation"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval",
+    "old": "02.Data structers that power your database",
+    "new": "02. Data Structures That Power Your Database"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database",
+    "old": "B-tree",
+    "new": "B-Tree"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database",
+    "old": "LSM-tree",
+    "new": "LSM-Tree"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval",
+    "old": "03.OLAP",
+    "new": "03. OLAP"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP",
+    "old": "Column-Oriented storage",
+    "new": "Column-Oriented Storage"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo",
+    "old": "111  - Сортировки",
+    "new": "111 - Sorting"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo",
+    "old": "112 - Графы & Деревья",
+    "new": "112 - Graphs & Trees"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees",
+    "old": "Сбалансированные деревья",
+    "new": "Balanced Trees"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo",
+    "old": "113 - Структуры данных",
+    "new": "113 - Data Structures"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode",
+    "old": "Sliding window",
+    "new": "Sliding Window"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode",
+    "old": "Two pointers",
+    "new": "Two Pointers"
+  },
+  {
+    "parent": "30 - Learning/20 - Tech Stack/Golang/2. Concurrency",
+    "old": "Synchronization primitives",
+    "new": "Synchronization Primitives"
+  }
+]

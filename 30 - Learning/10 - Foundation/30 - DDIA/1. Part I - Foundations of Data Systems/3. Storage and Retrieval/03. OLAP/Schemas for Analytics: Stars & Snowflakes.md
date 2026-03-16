@@ -1,4 +1,4 @@
-Для *OLAP [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/Data Warehousing|DWH]]*, куда меньше схем, нежели для OLTP. Многие DWH используют шаблонный стиль, названный *star schema*(иногда ее называют *dimesinal modeling*)
+Для *OLAP [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/Data Warehousing|DWH]]*, куда меньше схем, нежели для OLTP. Многие DWH используют шаблонный стиль, названный *star schema*(иногда ее называют *dimesinal modeling*)
 
 ### Star schema
 ![[99 - Meta/02 - Медиа/Pasted image 20251030093853.png]]

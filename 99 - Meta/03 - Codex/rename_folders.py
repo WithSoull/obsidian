@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import uuid
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -63,12 +65,13 @@ def validate_specs(root: Path, specs: list[RenameSpec]) -> None:
     for spec in specs:
         old_path = root / spec.old_path
         new_path = root / spec.new_path
+        same_path = new_path.exists() and os.path.samefile(old_path, new_path)
 
         if not old_path.exists():
             raise FileNotFoundError(f"Source folder does not exist: {spec.old_path}")
         if not old_path.is_dir():
             raise NotADirectoryError(f"Source path is not a directory: {spec.old_path}")
-        if new_path.exists():
+        if new_path.exists() and not same_path:
             raise FileExistsError(f"Target folder already exists: {spec.new_path}")
         if new_path in seen_targets:
             raise FileExistsError(f"Duplicate target folder in mapping: {spec.new_path}")
@@ -116,7 +119,12 @@ def rename_folders(root: Path, specs: list[RenameSpec], dry_run: bool) -> None:
         target = root / spec.new_path
         print(f"{spec.old_path.as_posix()} -> {spec.new_path.as_posix()}")
         if not dry_run:
-            source.rename(target)
+            if target.exists() and os.path.samefile(source, target):
+                temp = source.with_name(f".__rename_tmp__{uuid.uuid4().hex}")
+                source.rename(temp)
+                temp.rename(target)
+            else:
+                source.rename(target)
 
 
 def build_parser() -> argparse.ArgumentParser:

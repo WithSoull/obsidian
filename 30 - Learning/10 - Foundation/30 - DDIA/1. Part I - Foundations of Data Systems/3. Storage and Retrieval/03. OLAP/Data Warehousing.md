@@ -8,7 +8,7 @@
 ![[99 - Meta/02 - Медиа/Pasted image 20251030084619.png]]
 Вот как это можно представить графически
 ### Производительность
-Индексы, которые хорошо подходят для OLTP нагрузок, могут плохо подходить под OLAP нагрузку. Так как у аналитиков уже есть свое хранилище, они могут спокойно использовать другие индексы и [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/Schemas for Analytics: Stars & Snowflakes|Schemas for Analytics: Stars & Snowflakes]], которые будут хорошо подходить для OLAP нагрузки.
+Индексы, которые хорошо подходят для OLTP нагрузок, могут плохо подходить под OLAP нагрузку. Так как у аналитиков уже есть свое хранилище, они могут спокойно использовать другие индексы и [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03. OLAP/Schemas for Analytics: Stars & Snowflakes|Schemas for Analytics: Stars & Snowflakes]], которые будут хорошо подходить для OLAP нагрузки.
 
 ### OLTP vs Data Warehouse
 - OLTP-базы данных и хранилища данных (DWH) имеют похожий SQL-интерфейс, но сильно различаются внутренней реализацией.

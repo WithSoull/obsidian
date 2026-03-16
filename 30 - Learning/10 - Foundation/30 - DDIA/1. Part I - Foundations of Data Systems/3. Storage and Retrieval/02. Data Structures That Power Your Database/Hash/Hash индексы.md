@@ -1,4 +1,4 @@
-[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02.Data structers that power your database/Индексы в базах данных|А что такое индекс?]]
+[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database/Индексы в базах данных|А что такое индекс?]]
 
 ---
 ## Свойства

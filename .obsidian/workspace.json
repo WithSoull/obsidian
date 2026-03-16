@@ -25,14 +25,10 @@
             "id": "7b176c6208b62364",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Binary Search Tree.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Binary Search Tree"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           },
           {
@@ -41,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Inbox/Без названия.md",
+                "file": "99 - Meta/03 - Codex/Folder Rename Script.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "Folder Rename Script"
             }
           }
         ],
@@ -123,7 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 534.4
+    "width": 385
   },
   "right": {
     "id": "72512d0180df0a7b",
@@ -225,12 +221,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Inbox/Без названия.md",
+                "file": "99 - Meta/03 - Codex/Folder Rename Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Без названия"
+              "title": "Исходящие ссылки из Folder Rename Script"
             }
           }
         ],
@@ -261,42 +257,42 @@
   },
   "active": "5e55842f05db0a09",
   "lastOpenFiles": [
-    "99 - Meta/03 - Codex/Folder Rename Script.md",
-    "99 - Meta/03 - Codex/folder_renames.example.json",
-    "99 - Meta/03 - Codex/rename_folders.py",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/Red-Black Tree.md",
-    "00 - Inbox/Без названия.md",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/AVL Tree.md",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Breadth-First Search (BFS).md",
-    "99 - Meta/03 - Codex/01 - Vault Formatting Backlog.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Binary Search Tree.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Disk Seek vs Disk Bandwidth.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Data Locality.md",
-    "AGENTS.md",
-    "30 - Learning/10 - Foundation/40 - Algo/111  - Сортировки/Quick Sort.md",
-    "30 - Learning/10 - Foundation/40 - Algo/111  - Сортировки/Selection Sort.md",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Dijkstra's Algorithm.md",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Binary Search.md",
-    "00 - Inbox/Таска.md",
-    "99 - Meta/03 - Codex",
-    "30 - Learning/10 - Foundation/40 - Algo/Recursion.md",
-    "30 - Learning/10 - Foundation/40 - Algo/Divide and Conquer.md",
-    "30 - Learning/10 - Foundation/40 - Algo/Big O Notation.md",
-    "30 - Learning/10 - Foundation/10 - CPU Arch/Threads and Processes.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Graphs.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Hash Tables.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Stack.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Queue.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Arrays and Linked Lists.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/0MOC. Replication.md",
-    "20 - Mentorship/Алеся/Задачи 1.1 c ответами.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/2.0 DDIA-original.pdf",
-    "20 - Work/23 -  LeetCode/Arrays & Hashmaps",
-    "20 - Work/23 -  LeetCode",
-    "20 - Work",
-    "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/1. Types of Replication",
-    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Mutex",
-    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Channels",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Stack.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Queue.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Hash Tables.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Binary Search Tree.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Arrays and Linked Lists.md",
+    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Balanced Trees/Red-Black Tree.md",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Balanced Trees/AVL Tree.md",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Breadth-First Search (BFS).md",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Dijkstra's Algorithm.md",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Binary Search.md",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Balanced Trees",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees",
+    "30 - Learning/10 - Foundation/40 - Algo/111 - Sorting/Selection Sort.md",
+    "30 - Learning/10 - Foundation/40 - Algo/111 - Sorting/Quick Sort.md",
+    "30 - Learning/10 - Foundation/40 - Algo/111 - Sorting",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Mutex/Mutex.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Mutex/Mutex Implementation.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Why do we need nil channels?.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Unidirectional Channel.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Simple patterns with channels.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Synchronous channels.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Select statement.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Channel internals.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels/Asynchronous buffered channels.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/WaitGroup.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Semaphor.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/RWMutex.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Pool.md",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Mutex",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives/Channels",
+    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization Primitives",
+    "30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode/Two Pointers/water.xopp",
+    "30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode/Two Pointers/Untitled.base",
+    "30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode/Two Pointers/2024-05-07-Заметка-11-17.xopp",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/00. Overview/Data Model Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/Data Model Scheme.canvas",

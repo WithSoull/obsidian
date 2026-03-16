@@ -1,10 +1,10 @@
 # Общие сведения
 
-- Работает с DAG - Direct Acyclic [[30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Graphs|Graph]], причем его ребра должны быть неотрицательными
+- Работает с DAG - Direct Acyclic [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs|Graph]], причем его ребра должны быть неотрицательными
 - Отвечает на вопрос:
   Какой кратчайший путь в взвешенном графе
-- В своей основе использует две структуры - очевидно [[30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Graphs|граф]] и [[30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Hash Tables|мапу]]
-- Похож на [[30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Breadth-First Search (BFS)|BFS]] тем, что ищет кратчайший путь в взвешенном графы
+- В своей основе использует две структуры - очевидно [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs|граф]] и [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Hash Tables|мапу]]
+- Похож на [[30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Breadth-First Search (BFS)|BFS]] тем, что ищет кратчайший путь в взвешенном графы
 - Алгоритмическая сложность: 
 	
 # Описание алгоритма
