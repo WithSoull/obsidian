@@ -27,4 +27,4 @@ func main() {
 Илья Гришин
 ```
 
-Для пользовательских типов можно создать свой метод - [[30 - Learning/20 - Tech Stack/Golang/1. Foundation/Методы пользовательских типов]]
+Для пользовательских типов можно создать свой метод - [[30 - Learning/20 - Tech Stack/Golang/1. Foundation/Methods on User-Defined Types]]

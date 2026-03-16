@@ -1,5 +1,5 @@
 ### Разделы
-- [[30 - Learning/20 - Tech Stack/Docker/Команды Docker]]
+- [[30 - Learning/20 - Tech Stack/Docker/Docker Commands]]
 - [[30 - Learning/20 - Tech Stack/Docker/Port Mapping]]
 
 Главная проблема которую решает докер - конфликты между библиотеками и зависимостями

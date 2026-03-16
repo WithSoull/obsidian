@@ -6,8 +6,8 @@
 
 ###### Какие ресурсы есть у процесса?
 1) Память - под каждый процесс выделен свой _изолированный_ кусочек памяти
-2) [[30 - Learning/10 - Foundation/10 - CPU Arch/Дескрипторы ресурсов|Дескрипторы ресурсов]]
-3) [[30 - Learning/10 - Foundation/10 - CPU Arch/Атрибуты безопастности|Атрибуты безопастности]]
+2) [[30 - Learning/10 - Foundation/10 - CPU Arch/Resource Descriptors|Resource Descriptors]]
+3) [[30 - Learning/10 - Foundation/10 - CPU Arch/Security Attributes|Security Attributes]]
 
 
 ###### Process memory layout

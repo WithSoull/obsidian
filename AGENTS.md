@@ -40,6 +40,10 @@ Git is used in this vault for local history and rollback points before larger ch
 - The assistant may run `git add` to stage files relevant to the task and may create commits without opening a PR.
 - Work happens in a single branch. Do not create feature branches or use PR-based workflows unless the user explicitly asks for them.
 - Commit messages must be plain English descriptions of the change.
+- At the end of each completed user request, the assistant should create a commit automatically.
+- For simplicity, the assistant should stage all current changes with `git add -A` before committing.
+- The assistant does not need to inspect the full diff before committing when working under this rule; the commit message should be inferred from the task context when possible.
+- The assistant does not need to ask for confirmation before making such commits.
 - The assistant may create commits, but must not rewrite history and must not undo or revert existing commits.
 - The assistant must never use destructive history-editing commands such as `git reset`, `git rebase --interactive`, `git commit --amend`, or `git revert` unless the user explicitly requests it.
 - Only 1 author of commits: withsoull
