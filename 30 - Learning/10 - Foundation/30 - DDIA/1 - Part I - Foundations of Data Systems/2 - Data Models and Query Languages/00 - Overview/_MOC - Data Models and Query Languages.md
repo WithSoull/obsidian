@@ -46,8 +46,8 @@
 - Гибкая схема данных, без жёстких ограничений SQL
 
 ### Какие бывают NoSQL модели?
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/02 - Document/Document Model|Document model]] - хорошо подходят для *One-To-One*, и несложных *Many-To-One* отношений c большими компромиссами. Некоторые СУБД поддерживают [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/02 - Document/MapReduce|MapReduce]].
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Graph Model|Graph model]] - очень хорошо подходит для сложных *Many-To-Many* отношений.
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/02 - Document/Document Data Model|Document model]] - хорошо подходят для *One-To-One*, и несложных *Many-To-One* отношений c большими компромиссами. Некоторые СУБД поддерживают [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/02 - Document/MapReduce|MapReduce]].
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Graph Data Model|Graph model]] - очень хорошо подходит для сложных *Many-To-Many* отношений.
 - Key-Value - всем известный redis и memcache
 - Wide-Column - которые хорошо подходят под OLAP нагрузку 
 

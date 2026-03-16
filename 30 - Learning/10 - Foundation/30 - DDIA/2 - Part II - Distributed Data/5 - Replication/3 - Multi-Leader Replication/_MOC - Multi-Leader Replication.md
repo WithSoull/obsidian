@@ -1,5 +1,5 @@
 ## Обзор
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Multi-Leader Replication|Multi-Leader Replication]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Overview of Multi-Leader Replication|Multi-Leader Replication]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Single-Leader vs Multi-Leader Replication|Single VS Multi leader replication]]
 ## Обнаружение и обработка конфликтов
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Detecting Concurrent Writes|Detecting Concurrent Writes]]

@@ -33,7 +33,7 @@
 			voted[name] = 1
 			print("У вас успешно получилось проголосовать")
 	```
-- Моделирование отношений (Например в [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs|графах]])
+- Моделирование отношений (Например в [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graph Data Structure|графах]])
 
 ---
 # Коллизии

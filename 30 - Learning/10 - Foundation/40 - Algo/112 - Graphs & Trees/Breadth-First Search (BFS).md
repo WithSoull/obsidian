@@ -2,11 +2,11 @@
 
 # Общие сведения
 
-- Работает с невзвешенными *направленными* [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs|графами]]
+- Работает с невзвешенными *направленными* [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graph Data Structure|графами]]
 - Решает следующие задачи:
 	1) существует ли путь из А в Б?
 	2) как выглядит кратчайший путь из А в Б? (т. е. ищет длину кратчайшего пути)
-- В своей основе использует две структуры - очевидно [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graphs|граф]] и [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Queue|очередь]]
+- В своей основе использует две структуры - очевидно [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graph Data Structure|граф]] и [[30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Queue|очередь]]
 - Алгоритмическая сложность: $O(E+V)$
 
 # Описание алгоритма
