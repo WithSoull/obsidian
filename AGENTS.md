@@ -31,6 +31,19 @@ Additional retrieval rules:
 - For review or expansion tasks: inspect the target note first, then direct links, then the nearest MOC.
 - For new notes: find the target branch, inspect sibling notes, then the nearest MOC to match local style and linking.
 
+## DDIA PDF Workflow
+
+- The canonical DDIA source is `30 - Learning/10 - Foundation/30 - DDIA/0 - Book PDFs/2.0 DDIA-original.pdf`.
+- When the user asks about DDIA and the answer may benefit from the source text, prefer checking the PDF before relying on memory.
+- Use `pdfinfo` to inspect the file and `pdftotext` to search or extract text from the PDF.
+- For focused DDIA tasks, prefer this order:
+  1. identify the relevant chapter or pages,
+  2. extract only the needed page range,
+  3. compare it with the target note and nearest `_MOC - ...` note,
+  4. then write or revise the note.
+- Do not extract the whole book unless full-book search is actually needed.
+- For note generation from DDIA, keep the note in Russian, but preserve canonical English technical terms in titles when appropriate.
+
 ## Note Quality
 
 - Good notes should be concrete, technically correct, and reusable.
