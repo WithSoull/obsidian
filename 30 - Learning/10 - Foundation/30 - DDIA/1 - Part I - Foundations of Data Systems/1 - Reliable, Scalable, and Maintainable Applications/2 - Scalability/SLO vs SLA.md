@@ -1,0 +1,5 @@
+
+| Название                                                                                                                                                                    | Определение                          | Для кого                | Пример                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ----------------------- | ------------------------------------- |
+| [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/SLO - Service Level Objective\|SLO]] | внутренняя цель качества сервиса     | DevOps / SRE / инженеры | 99.95% uptime, 95% запросов < 200мс   |
+| [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/SLA - Service Level Agreement\|SLA]] | внешнее обязательство перед клиентом | бизнес/юристы/клиенты   | 99.9% uptime, иначе 10% возврат денег |

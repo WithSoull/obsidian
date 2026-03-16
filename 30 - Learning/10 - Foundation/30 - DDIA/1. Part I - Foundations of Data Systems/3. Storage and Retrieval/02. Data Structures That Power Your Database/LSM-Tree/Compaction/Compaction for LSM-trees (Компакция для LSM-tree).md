@@ -1,9 +1,0 @@
->[!info] Что вообще из себя представляет компакция?
->Это процесс слияния(уплотнения) файлов/сегментов и т.д, чтобы уменьшить избыточность, убрать стырые данные или удаленные данные. Это позволяет освободить дисковое пространство (disk space)
-
-## Существует два основных вида компакции
-
-| Тип компакции                                                                                                                              | Read Amplification | Write Amplification | Потребление диска                             | Когда использовать?                                               | Примеры                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------------------- | --------------------------------------------- | ----------------------------------------------------------------- | --------------------------- |
-| [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database/LSM-Tree/Compaction/Size-Tiered Compaction для LSM-Tree\|STC]] | Высокая            | Низкая              | Высокое, много мусора и пересекающихся ключей | Для write-heavy нагрузок, но места на диске будет занимать много. | HBase, Cassandra            |
-| [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02. Data Structures That Power Your Database/LSM-Tree/Compaction/Leveled Compaction для LSM-Tree\|LC]]      | Низкая             | Высокая             | Низкая, нет повторяющихся ключей              | Для read-heavy нагрузок                                           | LevelDB, RocksDB, Cassandra |

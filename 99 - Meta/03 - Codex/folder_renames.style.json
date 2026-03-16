@@ -1,0 +1,187 @@
+[
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA",
+    "old": "0. Book PDFs",
+    "new": "0 - Book PDFs"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA",
+    "old": "1. Part I - Foundations of Data Systems",
+    "new": "1 - Part I - Foundations of Data Systems"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems",
+    "old": "0. Trade-Offs in Data Systems Architecture",
+    "new": "0 - Trade-Offs in Data Systems Architecture"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems",
+    "old": "1. Reliable, Scalable, and Maintainable Applications",
+    "new": "1 - Reliable, Scalable, and Maintainable Applications"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications",
+    "old": "1. Reliability",
+    "new": "1 - Reliability"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications",
+    "old": "2. Scalability",
+    "new": "2 - Scalability"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications",
+    "old": "3. Maintainability",
+    "new": "3 - Maintainability"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems",
+    "old": "2. Data Models and Query Languages",
+    "new": "2 - Data Models and Query Languages"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages",
+    "old": "00. Overview",
+    "new": "00 - Overview"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages",
+    "old": "01. Data Models",
+    "new": "01 - Data Models"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models",
+    "old": "01. Relational",
+    "new": "01 - Relational"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models",
+    "old": "02. Document",
+    "new": "02 - Document"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models",
+    "old": "03. Graph",
+    "new": "03 - Graph"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages",
+    "old": "02. Query Languages",
+    "new": "02 - Query Languages"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages",
+    "old": "03. Concepts and Performance",
+    "new": "03 - Concepts and Performance"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems",
+    "old": "3. Storage and Retrieval",
+    "new": "3 - Storage and Retrieval"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval",
+    "old": "01. Simple DB Implementation",
+    "new": "01 - Simple DB Implementation"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval",
+    "old": "02. Data Structures That Power Your Database",
+    "new": "02 - Data Structures That Power Your Database"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval",
+    "old": "03. OLAP",
+    "new": "03 - OLAP"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems",
+    "old": "4. Encoding and Evolution",
+    "new": "4 - Encoding and Evolution"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution",
+    "old": "1. Formats",
+    "new": "1 - Formats"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution",
+    "old": "2. Dataflow",
+    "new": "2 - Dataflow"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA",
+    "old": "2. Part II - Distributed Data",
+    "new": "2 - Part II - Distributed Data"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data",
+    "old": "5. Replication",
+    "new": "5 - Replication"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication",
+    "old": "0. Single-leader",
+    "new": "0 - Single-leader"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication",
+    "old": "1. Types of Replication",
+    "new": "1 - Types of Replication"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication",
+    "old": "2. Replication Lag",
+    "new": "2 - Replication Lag"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication",
+    "old": "3. Multi-Leader Replication",
+    "new": "3 - Multi-Leader Replication"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication",
+    "old": "4. Leaderless Replication",
+    "new": "4 - Leaderless Replication"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data",
+    "old": "6. Partitioning",
+    "new": "6 - Partitioning"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data",
+    "old": "7. Transactions",
+    "new": "7 - Transactions"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data",
+    "old": "8. The Trouble with Distributed Systems",
+    "new": "8 - The Trouble with Distributed Systems"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA",
+    "old": "3. Part III - Derived Data",
+    "new": "3 - Part III - Derived Data"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data",
+    "old": "11. Chapter 11",
+    "new": "11 - Chapter 11"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data",
+    "old": "9. Chapter 9",
+    "new": "9 - Chapter 9"
+  },
+  {
+    "parent": "30 - Learning/20 - Tech Stack/Golang",
+    "old": "1. Foundation",
+    "new": "1 - Foundation"
+  },
+  {
+    "parent": "30 - Learning/20 - Tech Stack/Golang",
+    "old": "2. Concurrency",
+    "new": "2 - Concurrency"
+  }
+]

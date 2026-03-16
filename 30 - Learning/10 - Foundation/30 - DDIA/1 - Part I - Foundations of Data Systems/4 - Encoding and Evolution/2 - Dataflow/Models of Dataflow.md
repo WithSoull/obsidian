@@ -1,0 +1,4 @@
+Всякий раз когда мы хотим перенести данные от одного процесса к другому, нам надо закодировать эти данные в последовательность байт, и каким-то способом их передать. Тут все завист от контекста: *между кем будут передаваться данные?* И вот самые популярные **dataflow**:
+1) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Dataflow via databases]]
+2) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Dataflow via service calls]]
+3) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Dataflow via asynchronous message passing]]
