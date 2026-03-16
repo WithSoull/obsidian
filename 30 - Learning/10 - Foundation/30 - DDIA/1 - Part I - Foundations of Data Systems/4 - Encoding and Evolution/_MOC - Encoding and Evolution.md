@@ -17,7 +17,7 @@
 2) *Forward compatibility* - старый код должен уметь читать данные, созданные новым кодом. Тут сложнее, надо чтобы старый код умел игнорировать нововведения сделаные новой версией кода. Как будто надо в будущее заглянуть :)
 
 # Как представлять информацию?
-Информацию можно представлять в разных форматах, начиная от JSON заканчивая Avro. У них есть свои плюсы/минусы/нюансы. Это обширная тема, которой посвещен [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Formats of encoded data|отдельный пласт заметок]].
+Информацию можно представлять в разных форматах, начиная от JSON заканчивая Avro. У них есть свои плюсы/минусы/нюансы. Это обширная тема, которой посвещен [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Formats of Encoded Data|отдельный пласт заметок]].
 # Как передавать информацию?
 Ну вот узнали мы, какие есть форматы данных, за совместимость шарим, осталось отвтетить на финальный вопрос по этой теме. [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Models of Dataflow|Как передавать эту информацию?. Все про Dataflow.]]
 

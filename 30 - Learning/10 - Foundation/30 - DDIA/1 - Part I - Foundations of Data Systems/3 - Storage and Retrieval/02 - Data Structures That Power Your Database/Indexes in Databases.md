@@ -55,4 +55,4 @@ WHERE latitude  > 51.4946 AND latitude  < 51.5079
 
 ---
 ## Радикальное решение проблемы
-Индексы мы используем чтобы ускоритить чтение с диска, и интересным варинтом решения этой проблемы является: [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Keeping everything in memory|... барабанная дробь... выкинуть диск... и взять дешевую RAM]].
+Индексы мы используем чтобы ускоритить чтение с диска, и интересным варинтом решения этой проблемы является: [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Keeping Everything in Memory|... барабанная дробь... выкинуть диск... и взять дешевую RAM]].

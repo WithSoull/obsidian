@@ -1,5 +1,5 @@
 ---
-evolution: "[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Field tags & schema evolution|Field tags & schema evolution]]"
+evolution: "[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Field Tags and Schema Evolution|Field tags & schema evolution]]"
 ---
 
 Это специальный самодостаточный бинарный формат файлов, разработанный *Facebook* в 2007-2008. Рассмотрим на практике.

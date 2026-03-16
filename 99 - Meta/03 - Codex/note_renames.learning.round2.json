@@ -1,0 +1,50 @@
+[
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database",
+    "old": "Keeping everything in memory.md",
+    "new": "Keeping Everything in Memory.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats",
+    "old": "Formats of encoded data.md",
+    "new": "Formats of Encoded Data.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats",
+    "old": "Field tags & schema evolution.md",
+    "new": "Field Tags and Schema Evolution.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication",
+    "old": "Multi-datacenter operations in leaderless replication.md",
+    "new": "Multi-Datacenter Operations in Leaderless Replication.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication",
+    "old": "What Is Quorum and How Does It Work?.md",
+    "new": "How Quorum Works.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability",
+    "old": "SLO - Service Level Objective.md",
+    "new": "Service Level Objective.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability",
+    "old": "SLA - Service Level Agreement.md",
+    "new": "Service Level Agreement.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01 - Simple DB Implementation",
+    "old": "Simple Database Implementation.md",
+    "new": "Building a Simple Database.md",
+    "kind": "note"
+  }
+]

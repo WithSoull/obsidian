@@ -20,8 +20,8 @@
 - Response time (время между отправкой запроса и его получением пользователем)
 - Latency (это время на чистую обработку запроса, без всяких сетевых задержек или очередей)
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Percentile|Percentile]] (Ну тут важно понимать, что метрики такие метрики нельзя усреднять, важно знать о самых плохих случаях. От сюда пошло измерение в percentiles)
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/SLO - Service Level Objective|SLO]] - внутренняя цель производительности сервиса
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/SLA - Service Level Agreement|SLA]] - внешняя цель производительности сервиса перед клиентом
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Service Level Objective|SLO]] - внутренняя цель производительности сервиса
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Service Level Agreement|SLA]] - внешняя цель производительности сервиса перед клиентом
 ### Подводные камни
 Проблемы, который могут нам помешать:
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Head-of-Line Blocking|HOL]] - head of line blocking

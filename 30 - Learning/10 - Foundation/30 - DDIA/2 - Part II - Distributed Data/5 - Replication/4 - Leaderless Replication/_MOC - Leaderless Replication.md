@@ -6,9 +6,9 @@
 
 ### Содержание
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Writing to the Database When a Node Is Down|Writing to the Database When a Node Is Down]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/What Is Quorum and How Does It Work?|What is quorum and how does it work?]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/How Quorum Works|What is quorum and how does it work?]]
 	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Limitations of Quorum Consistency|Limitations of Quorum Consistency]]
 	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Sloppy Quorums and Hinted Handoff|Sloppy Quorums and Hinted Handoff]]
 	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Monitoring Staleness|Monitoring Staleness]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Multi-datacenter operations in leaderless replication|Multi-datacenter operations in leaderless replication]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Multi-Datacenter Operations in Leaderless Replication|Multi-datacenter operations in leaderless replication]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Detecting Concurrent Writes|Detecting Concurrent Writes]]
