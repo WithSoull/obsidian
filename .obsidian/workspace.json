@@ -105,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299,
-    "collapsed": true
+    "width": 299
   },
   "right": {
     "id": "72512d0180df0a7b",
@@ -241,8 +240,11 @@
       "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "7b176c6208b62364",
+  "active": "5e55842f05db0a09",
   "lastOpenFiles": [
+    "30 - Learning/10 - Foundation/40 - Algo/Recursion.md",
+    "30 - Learning/10 - Foundation/40 - Algo/Divide and Conquer.md",
+    "30 - Learning/10 - Foundation/40 - Algo/Big O Notation.md",
     "30 - Learning/10 - Foundation/10 - CPU Arch/Threads and Processes.md",
     "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Graphs.md",
     "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Hash Tables.md",
@@ -270,9 +272,6 @@
     "20 - Work/23 -  LeetCode",
     "20 - Work",
     "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/2. Replication Lag/Implementation of Replication Logs.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/01.Simple db implementation/Почему append-only операция выгодный подход?.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/3. Multi-Leader Replication/0MOC. Multi-Leader Replication.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/3. Multi-Leader Replication/Custom conflict resolution logic.md",
     "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/1. Types of Replication",
     "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Mutex",
     "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Channels",
