@@ -27,11 +27,13 @@ The assistant should support the vault in these ways:
 
 Good notes are concrete and technically correct. They should include definitions, why the idea matters, where it is used, common mistakes, and at least one practical example when relevant. When reviewing or expanding a note, prefer adding operational insight over generic theory.
 
-Links between notes should be meaningful, not mechanical. If one note mentions a concept that already has its own note, add an Obsidian wikilink when it improves retrieval or shows a real conceptual dependency. Example: a note about the Go scheduler may link to `[[Горутины]]` if goroutines are part of the explanation.
+Links between notes should be meaningful, not mechanical. If one note mentions a concept that already has its own note, add an Obsidian wikilink when it improves retrieval or shows a real conceptual dependency. Example: a note about the Go scheduler may link to `[[Goroutines]]` if goroutines are part of the explanation.
 
 ## Editing Guidance
 
 Preserve the existing folder naming style with numeric prefixes. Put new notes in the most specific relevant folder instead of the inbox unless the user asks otherwise. Avoid editing vendored plugin files under `.obsidian/plugins/`. Focus changes on notes, templates, snippets, and local scripts only when needed.
+
+- After renaming, moving, or deleting notes, the assistant must run a broken-link check for Obsidian wikilinks and fix any breakages introduced by the current task before finishing.
 
 ## Git Workflow
 
