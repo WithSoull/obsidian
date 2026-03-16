@@ -8,35 +8,35 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications\"  ",
+      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications\"  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages\"  ",
+      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages\"  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval\"  ",
+      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval\"  ",
       "color": {
         "a": 1,
         "rgb": 11657298
       }
     },
     {
-      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/4. Encoding and Evolution\"  ",
+      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution\"  ",
       "color": {
         "a": 1,
         "rgb": 5431378
       }
     },
     {
-      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication\"  ",
+      "query": "path:\"30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication\"  ",
       "color": {
         "a": 1,
         "rgb": 5431473
@@ -95,6 +95,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.8578472438678667,
+  "scale": 0.06691176030562772,
   "close": true
 }

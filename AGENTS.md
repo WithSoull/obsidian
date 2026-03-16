@@ -35,17 +35,34 @@ Preserve the existing folder naming style with numeric prefixes. Put new notes i
 
 - After renaming, moving, or deleting notes, the assistant must run a broken-link check for Obsidian wikilinks and fix any breakages introduced by the current task before finishing.
 
+## Naming Standard
+
+- Folder names with ordering must use the format `NN - Title`.
+- Do not mix `NN. Title` and `NN - Title` in the real vault. Use `NN - Title` consistently.
+- Technical note names should be in English when the meaning is unambiguous.
+- Regular note names should use concise `Title Case`.
+- MOC notes must use the format `_MOC - Topic` so they stay near the top of folder listings without using numeric prefixes.
+- Comparison notes should use the format `A vs B`.
+- Chapter or book-structure notes may use `Chapter N - Title` or `Part N - Title` only when the note is actually about that chapter or part.
+- Avoid placeholder names such as `Untitled` or `Без названия`.
+- Avoid service prefixes such as `0MOC.` in note names. Use `_MOC - Topic` instead.
+- Avoid mixed-language note names unless there is a strong reason to preserve a well-known original term.
+- Avoid extra punctuation and duplicated whitespace in note and folder names.
+- Prefer canonical engineering terms over literal translation when renaming technical notes.
+
 ## Git Workflow
 
 Git is used in this vault for local history and rollback points before larger changes.
 
 - The assistant must use `.codex/bin/safe-commit "<message>"` for normal commits.
 - The `safe-commit` script is the default and preferred path for staging and committing changes in this repository.
+- The assistant must not run `git add` before `safe-commit`. For normal commits, call `safe-commit` directly.
 - The assistant may fall back to direct `git add` / `git commit` only if the script is missing or broken.
 - Work happens in a single branch. Do not create feature branches or use PR-based workflows unless the user explicitly asks for them.
 - Commit messages must be plain English descriptions of the change.
 - At the end of each completed user request, the assistant should create a commit automatically.
 - For simplicity, the assistant should rely on `safe-commit`, which stages all current changes with `git add -A` before committing.
+- If unrelated or unwanted changes are present in the working tree, the assistant must not try to work around that by manually staging files before `safe-commit`. In that case, the assistant should tell the user that the tree must be cleaned first or that those changes will be included.
 - The assistant does not need to inspect the full diff before committing when working under this rule; the commit message should be inferred from the task context when possible.
 - The assistant does not need to ask for confirmation before making such commits.
 - The assistant may create commits, but must not rewrite history and must not undo or revert existing commits.
