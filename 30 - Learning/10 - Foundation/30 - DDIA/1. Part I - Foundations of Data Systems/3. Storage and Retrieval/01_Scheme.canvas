@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"f62378a037d1b0f6","type":"text","text":"Aggregation: Data Cubes and Materialized Views","x":105,"y":-401,"width":305,"height":86,"color":"4"},
+		{"id":"5175f8ba2ebe2df4","type":"text","text":"Sort Order in Column Storage","x":260,"y":-518,"width":250,"height":85,"color":"4"},
+		{"id":"55a4fc06d136bc3d","type":"text","text":"**Storage and Retrieval**","x":-77,"y":-259,"width":265,"height":50,"color":"1"},
+		{"id":"eb51c211a1df6d24","type":"text","text":"Transaction Processing or Analytics?","x":20,"y":-148,"width":265,"height":80,"color":"6"},
+		{"id":"8ae77aaee033abfe","type":"text","text":"Column - Oriented Storage","x":460,"y":-333,"width":250,"height":80,"color":"4"},
+		{"id":"40f0e34748b0cbcb","type":"text","text":"Writing to Column-Oriented Storage","x":320,"y":-234,"width":225,"height":86,"color":"4"},
+		{"id":"eee48673e125f4b4","type":"text","text":"Data Warehousing","x":-325,"y":-128,"width":250,"height":60,"color":"6"},
+		{"id":"79ce90339d42f8f2","type":"text","text":"Stars and snowflakes:\nSchemas for Analytics","x":385,"y":-119,"width":250,"height":102,"color":"6"},
+		{"id":"5e3629c21e811cf2","type":"text","text":"Column Compresion","x":320,"y":-635,"width":191,"height":84,"color":"4"},
+		{"id":"bcc2cbbaae279ddf","type":"text","text":"*Indexes* - \nData structers That Power Your database","x":-297,"y":-419,"width":250,"height":123,"color":"5"},
+		{"id":"9e6ad85402769331","type":"text","text":"Covered Index","x":-700,"y":-518,"width":260,"height":50,"color":"5"},
+		{"id":"6303bb6b479ac18f","type":"text","text":"Clustered Index","x":-700,"y":-458,"width":260,"height":50,"color":"5"},
+		{"id":"f08de0a3dcbfec96","type":"text","text":"NoClustered Index","x":-700,"y":-401,"width":260,"height":50,"color":"5"},
+		{"id":"94487b12fbee0324","type":"text","text":"Multi-Column Index","x":-700,"y":-340,"width":260,"height":50,"color":"5"},
+		{"id":"0e282bfa26f56a7f","type":"text","text":"Fuzzy Index","x":-700,"y":-278,"width":260,"height":50,"color":"5"},
+		{"id":"c2568ef23bcfd7ce","x":-69,"y":-576,"width":189,"height":50,"color":"2","type":"text","text":"In-memory DB"},
+		{"id":"65a4960f7a8e288d","type":"text","text":"SSTables and LSM-Trees","x":-540,"y":-685,"width":275,"height":50,"color":"5"},
+		{"id":"760c0bb5bb1f9a8d","type":"text","text":"Hash Indexes","x":-450,"y":-618,"width":185,"height":50,"color":"5"},
+		{"id":"573bf69961549242","type":"text","text":"B-Trees","x":-385,"y":-551,"width":120,"height":50,"color":"5"}
+	],
+	"edges":[
+		{"id":"5b3a132017220a55","fromNode":"55a4fc06d136bc3d","fromSide":"top","toNode":"bcc2cbbaae279ddf","toSide":"right","color":"1"},
+		{"id":"e34c5ab212e17905","fromNode":"bcc2cbbaae279ddf","fromSide":"top","toNode":"760c0bb5bb1f9a8d","toSide":"right","color":"5"},
+		{"id":"9f857a2b183ad316","fromNode":"bcc2cbbaae279ddf","fromSide":"top","toNode":"65a4960f7a8e288d","toSide":"right","color":"5"},
+		{"id":"f73c433309730c8f","fromNode":"eb51c211a1df6d24","fromSide":"right","toNode":"79ce90339d42f8f2","toSide":"left","color":"6"},
+		{"id":"cbc6698048163468","fromNode":"55a4fc06d136bc3d","fromSide":"bottom","toNode":"eb51c211a1df6d24","toSide":"top","color":"1"},
+		{"id":"6f9664ea8d1eab42","fromNode":"8ae77aaee033abfe","fromSide":"top","toNode":"f62378a037d1b0f6","toSide":"right","color":"4"},
+		{"id":"68099df661cce49f","fromNode":"8ae77aaee033abfe","fromSide":"bottom","toNode":"40f0e34748b0cbcb","toSide":"right","color":"4"},
+		{"id":"c0c319e607e44e11","fromNode":"8ae77aaee033abfe","fromSide":"top","toNode":"5175f8ba2ebe2df4","toSide":"right","color":"4"},
+		{"id":"a73093a029d04410","fromNode":"8ae77aaee033abfe","fromSide":"top","toNode":"5e3629c21e811cf2","toSide":"right","color":"4"},
+		{"id":"54700bc40c5705cb","fromNode":"bcc2cbbaae279ddf","fromSide":"top","toNode":"573bf69961549242","toSide":"right","color":"5"},
+		{"id":"99d8716e7850c503","fromNode":"eb51c211a1df6d24","fromSide":"left","toNode":"eee48673e125f4b4","toSide":"right","color":"6"},
+		{"id":"b8323a41f2b622b4","fromNode":"55a4fc06d136bc3d","fromSide":"right","toNode":"8ae77aaee033abfe","toSide":"left","color":"1"},
+		{"id":"930156f3344d2a71","fromNode":"bcc2cbbaae279ddf","fromSide":"left","toNode":"6303bb6b479ac18f","toSide":"right","color":"5"},
+		{"id":"576d9319b418768a","fromNode":"bcc2cbbaae279ddf","fromSide":"left","toNode":"f08de0a3dcbfec96","toSide":"right","color":"5"},
+		{"id":"78195ff25bc4457b","fromNode":"bcc2cbbaae279ddf","fromSide":"left","toNode":"9e6ad85402769331","toSide":"right","color":"5"},
+		{"id":"80657f8451199940","fromNode":"bcc2cbbaae279ddf","fromSide":"left","toNode":"94487b12fbee0324","toSide":"right","color":"5"},
+		{"id":"ebef087c0dc01c65","fromNode":"bcc2cbbaae279ddf","fromSide":"left","toNode":"0e282bfa26f56a7f","toSide":"right","color":"5"},
+		{"id":"aee2e7c31556be9a","fromNode":"bcc2cbbaae279ddf","fromSide":"top","toNode":"c2568ef23bcfd7ce","toSide":"bottom","color":"2"}
+	]
+}

@@ -1,0 +1,9 @@
+.DS_Store
+.trash/
+.stfolder/
+.stfolder.removed-20240716-030456/
+
+# Ignore vendored Obsidian plugins and transient local state.
+.obsidian/plugins/
+.obsidian/*sync-conflict-*.json
+.obsidian/* (*).json
