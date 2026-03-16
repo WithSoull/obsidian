@@ -1,5 +1,5 @@
 ### Предисловие
-Это еще один бинарный формат кодирования данных, изначльно был проектом **Hadoop**, так как *thrift* не особо подходил под их требования. Механизм с [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/4. Encoding and Evolution/1. Formats/Avro/Writers & Readers в Avro|writers & readers]] и [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/4. Encoding and Evolution/1. Formats/Avro/Dynamically generated schemas in Avro. Динамически-сгенерированные схемы.|динамически-сгенерированные схемы]] это то, что отличает Avro от остальных форматов.
+Это еще один бинарный формат кодирования данных, изначльно был проектом **Hadoop**, так как *thrift* не особо подходил под их требования. Механизм с [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/4. Encoding and Evolution/1. Formats/Avro/Writers & Readers в Avro|writers & readers]] и [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/4. Encoding and Evolution/1. Formats/Avro/Dynamically Generated Schemas in Avro|динамически-сгенерированные схемы]] это то, что отличает Avro от остальных форматов.
 
 ### Schemas
 У Avro есть две схемы,  одна (Avro IDL) для людей, и JSON для машинок:

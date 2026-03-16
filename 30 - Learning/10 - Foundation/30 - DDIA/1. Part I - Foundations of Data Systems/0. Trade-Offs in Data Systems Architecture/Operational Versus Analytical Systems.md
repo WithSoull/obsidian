@@ -10,7 +10,7 @@
 
 Ключевой вывод: в жизненном цикле данных почти всегда есть **разделение на два типа систем**, и важно понимать обе стороны.
 
-## 2)  [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/OLTP vs OLAP. И что это вообще такое?|OLTP vs OLAP. И что это вообще такое?]]
+## 2)  [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/03.OLAP/OLTP vs OLAP|OLTP vs OLAP]]
 **Операционные системы (OLTP)** — место, где данные **создаются** и **изменяются** приложением:
 - Типичный паттерн чтения: **point query** (получить несколько записей по ключу).
 - Записи часто **вставляются/обновляются/удаляются** по пользовательскому вводу.

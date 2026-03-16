@@ -1,7 +1,7 @@
 >[!info] Большая часть данных заметок конспектируют DDIA от Мартина Клепмана (кабанчик)
 
 ## 1. (page 3) Reliable, Scalable, and Maintainable Applications
-[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications/0MOC. Data-Intensive Applications. Problems. Structureа. Propeties.|Data-Intensive приложения. Проблемы. Структура. Свойства.]]
+[[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications/0MOC. Data-Intensive Applications. Problems. Structure. Properties|Data-Intensive приложения. Проблемы. Структура. Свойства.]]
 
 ## 2. (page 27) Data Models and Query Languages
 [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/00_MOC_Data Models and Query Languages||Data Models and Query Languages]]

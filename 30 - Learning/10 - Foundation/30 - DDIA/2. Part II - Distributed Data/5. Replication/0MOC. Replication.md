@@ -11,5 +11,5 @@
 	1. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/0. Single-leader/0MOC. Single-leader replication|single-leader (MOC)]]
 	2. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/3. Multi-Leader Replication/0MOC. Multi-Leader Replication|multi-leade (MOC)]]
 	3. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/4. Leaderless Replication/0MOC Leaderless Replication|leaderless (MOC)]]
-2. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/1. Type's of Replication/0MOC. Type's of replication|Type's of replication (MOC)]]
+2. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/1. Types of Replication/0MOC. Types of Replication|Types of Replication (MOC)]]
 3. [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/2. Replication Lag/0MOC. Replication Lag|Replication Lag (MOC)]]

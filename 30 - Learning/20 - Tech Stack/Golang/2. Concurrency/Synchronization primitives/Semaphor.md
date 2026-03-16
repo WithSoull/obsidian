@@ -7,7 +7,7 @@
 
 К сожалению в Go, нет реализации семафора, но мы можем ее написать самостоятельно.
 
-### Пример реализации семафора на [[30 - Learning/20 - Tech Stack/Golang/2. Concurrancy/Synchronization primitives/Cond|Cond Variable]]
+### Пример реализации семафора на [[30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Cond|Cond Variable]]
 ``` go
 package main
 
