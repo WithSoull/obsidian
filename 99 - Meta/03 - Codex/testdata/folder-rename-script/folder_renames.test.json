@@ -1,0 +1,17 @@
+[
+  {
+    "parent": "30 - Learning/DDIA",
+    "old": "00_Overview",
+    "new": "00. Overview"
+  },
+  {
+    "parent": "30 - Learning/DDIA",
+    "old": "01_Query Stuff",
+    "new": "01. Query Stuff"
+  },
+  {
+    "parent": "30 - Learning/DDIA/01_Query Stuff",
+    "old": "01_Graph",
+    "new": "01. Graph"
+  }
+]
