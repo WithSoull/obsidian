@@ -1,6 +1,6 @@
-Вот тут мы уже представляли графовую модель в виде SQL - [[Property-graph model#^1a4bda|SQL запрос на создание]]
+Вот тут мы уже представляли графовую модель в виде SQL - [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/03. Graph/Property-graph model#^1a4bda|SQL запрос на создание]]
 
-Графовые обходы с переменной длиной рёбер удобно выражаются в специализированных языках вроде [[Cypher|Cypher]], а в SQL их приходится моделировать через рекурсивные CTE (*recursive common table expressions (* **WITH RECURSIVE** *))*, что работает, но громоздко и требует осторожности с производительностью и циклами.
+Графовые обходы с переменной длиной рёбер удобно выражаются в специализированных языках вроде [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/02. Query Languages/Cypher|Cypher]], а в SQL их приходится моделировать через рекурсивные CTE (*recursive common table expressions (* **WITH RECURSIVE** *))*, что работает, но громоздко и требует осторожности с производительностью и циклами.
 
 Вот пример такого запроса
 ```postgresql
@@ -51,4 +51,4 @@ JOIN born_in_usa ON vertices.vertex_id = born_in_usa.vertex_id
 JOIN lives_in_europe ON vertices.vertex_id = lives_in_europe.vertex_id;
 ```
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=64&selection=126,0,126,20 | DDIA-original, page 53 - Graph Queries in SQL ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=64&selection=126,0,126,20| DDIA-original, page 53 - Graph Queries in SQL ]]

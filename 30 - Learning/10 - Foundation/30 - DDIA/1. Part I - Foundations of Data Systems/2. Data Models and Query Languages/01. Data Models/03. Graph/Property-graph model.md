@@ -45,4 +45,4 @@ CREATE INDEX edges_heads ON edges (head_vertex);
 - Возможность легко добавлять новые типы связей без изменения общей структуры
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=61&selection=33,0,33,15 | DDIA-original, page 50 - Property Graphs ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=61&selection=33,0,33,15| DDIA-original, page 50 - Property Graphs ]]

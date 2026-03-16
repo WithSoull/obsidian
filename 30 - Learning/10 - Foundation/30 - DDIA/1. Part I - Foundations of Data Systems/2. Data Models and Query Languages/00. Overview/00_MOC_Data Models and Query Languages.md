@@ -29,7 +29,7 @@
 ![[99 - Meta/02 - Медиа/Pasted image 20251009184250.png]]
 [[Data Model Scheme]]
 ## Relational - SQL
-Самой популярной из них является реляционная [[SQL|(SQL)]] модель, появившаяся в 1970х годах. Другие альтернативы в то время (SQL все равно доминировал над ними):
+Самой популярной из них является реляционная [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/01. Relational/SQL|(SQL)]] модель, появившаяся в 1970х годах. Другие альтернативы в то время (SQL все равно доминировал над ними):
 - network model
 - hierarchical model
 - object databases
@@ -46,8 +46,8 @@
 - Гибкая схема данных, без жёстких ограничений SQL
 
 ### Какие бывают NoSQL модели?
-- [[Document model|Document model]] - хорошо подходят для *One-To-One*, и несложных *Many-To-One* отношений c большими компромиссами. Некоторые СУБД поддерживают [[MapReduce|MapReduce]].
-- [[Graph model|Graph model]] - очень хорошо подходит для сложных *Many-To-Many* отношений.
+- [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/02. Document/Document model|Document model]] - хорошо подходят для *One-To-One*, и несложных *Many-To-One* отношений c большими компромиссами. Некоторые СУБД поддерживают [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/02. Document/MapReduce|MapReduce]].
+- [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/03. Graph/Graph model|Graph model]] - очень хорошо подходит для сложных *Many-To-Many* отношений.
 - Key-Value - всем известный redis и memcache
 - Wide-Column - которые хорошо подходят под OLAP нагрузку 
 
@@ -85,7 +85,7 @@
 - Изменение access path → необходимость переписывать весь код работы с БД.
 - Трудно менять модель данных приложения.
 ### Плюсы (для 1970-х)
-- Максимально эффективно использовала слабое железо (ленточные накопители, медленные [[Disk Seek vs Disk Bandwidth|disk seek]]).
+- Максимально эффективно использовала слабое железо (ленточные накопители, медленные [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Disk Seek vs Disk Bandwidth|disk seek]]).
 ---
 ## Document DB VS Relational DB
 
@@ -113,7 +113,7 @@
 - Документ загружается и сохраняется целиком
 - Мало связей many-to-one и many-to-many
 - Нужна гибкость схемы (evolving schema)
-- Важна [[Data Locality|локальность данных]] для производительности
+- Важна [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Data Locality|локальность данных]] для производительности
 ###### Relational DB предпочтительнее когда:
 - Множество связей many-to-one и many-to-many
 - Часто требуются JOIN операции

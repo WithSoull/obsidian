@@ -1,4 +1,4 @@
-- Старше чем [[SPARQL|SPARQL]] и [[Cypher|Cypher]]
+- Старше чем [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/02. Query Languages/SPARQL|SPARQL]] и [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/02. Query Languages/Cypher|Cypher]]
 - Разработан в 1980х
 - Фундамент для языков запросов
 - Используется в Datomic
@@ -30,4 +30,4 @@ born_in(lucy, idaho).
 Этот язык стал основой для других, потому что использует мощный подход, потому что правила можно комбинировать и переиспользовать в других запросах.
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=71&selection=28,0,28,23 | DDIA-original, page 60 - The Foundation: Datalog ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=71&selection=28,0,28,23| DDIA-original, page 60 - The Foundation: Datalog ]]

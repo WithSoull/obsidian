@@ -15,4 +15,4 @@
 
 
 ---
-[[30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=82&selection=0,0,0,12|DDIA page 72 - Hash Indexes]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=82&selection=0,0,0,12|DDIA page 72 - Hash Indexes]]

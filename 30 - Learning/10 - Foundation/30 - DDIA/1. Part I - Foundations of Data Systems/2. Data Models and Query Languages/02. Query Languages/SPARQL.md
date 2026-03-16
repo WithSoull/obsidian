@@ -1,5 +1,5 @@
-**SPARQL** — язык запросов для [[Triple-store model|triple-store]] с [[Semantic web & RDF|RDF]] моделью данных. Расшифровывается как **SPARQL Protocol and RDF Query Language**.
-## Связь с [[Cypher|Cypher]]
+**SPARQL** — язык запросов для [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/03. Graph/Triple-store model|triple-store]] с [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/03. Graph/Semantic web & RDF|RDF]] моделью данных. Расшифровывается как **SPARQL Protocol and RDF Query Language**.
+## Связь с [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/02. Query Languages/Cypher|Cypher]]
 
 SPARQL появился **раньше Cypher**, и Cypher заимствовал pattern matching из SPARQL. Поэтому синтаксис очень похож:
 
@@ -37,4 +37,4 @@ SPARQL — **мощный инструмент для внутренних пр�
 **Вывод**: SPARQL полезен независимо от судьбы Semantic Web как эффективный язык запросов для графовых данных в RDF формате.
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=70&selection=0,0,0,25 | DDIA-original, page 59 - The SPARQL query language ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=70&selection=0,0,0,25| DDIA-original, page 59 - The SPARQL query language ]]

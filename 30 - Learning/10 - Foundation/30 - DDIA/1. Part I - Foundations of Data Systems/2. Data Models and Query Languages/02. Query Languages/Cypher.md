@@ -1,4 +1,4 @@
->[!info] Это *декларативный* язык для [[Property-graph model|property-graph модели]]
+>[!info] Это *декларативный* язык для [[30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/01. Data Models/03. Graph/Property-graph model|property-graph модели]]
 >Был создан для Neo4j graph db
 >
 
@@ -36,4 +36,4 @@ RETURN person.name
 - Декларативность скрывает план: разработка фокусируется на описании соответствия шаблону, а не на порядке соединений и направлений обхода.
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=63&selection=12,0,12,25 | DDIA-original, page 52 - The Cypher Query Language ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=63&selection=12,0,12,25| DDIA-original, page 52 - The Cypher Query Language ]]

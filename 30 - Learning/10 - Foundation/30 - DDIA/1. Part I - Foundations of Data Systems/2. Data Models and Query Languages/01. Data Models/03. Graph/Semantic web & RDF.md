@@ -62,5 +62,5 @@
 - Избежание конфликтов значений при объединении данных
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=68&selection=25,0,25,16 | DDIA-original, page 57 - The semantic web ]]
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=68&selection=60,0,60,18 | DDIA-original, page 57 - The RDF data model ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=68&selection=25,0,25,16| DDIA-original, page 57 - The semantic web ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/DDIA-original.pdf#page=68&selection=60,0,60,18| DDIA-original, page 57 - The RDF data model ]]

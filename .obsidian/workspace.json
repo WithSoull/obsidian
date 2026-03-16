@@ -14,7 +14,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/2.0 DDIA-original.pdf"
+                "file": "30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/2.0 DDIA-original.pdf"
               },
               "pinned": true,
               "icon": "lucide-file-text",
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/Red-Black Tree.md",
+                "file": "00 - Inbox/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Red-Black Tree"
+              "title": "Без названия"
             }
           }
         ],
@@ -123,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299
+    "width": 534.4
   },
   "right": {
     "id": "72512d0180df0a7b",
@@ -225,12 +225,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/Red-Black Tree.md",
+                "file": "00 - Inbox/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Red-Black Tree"
+              "title": "Исходящие ссылки из Без названия"
             }
           }
         ],
@@ -259,16 +259,20 @@
       "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "df4922fd59ebc3c4",
+  "active": "5e55842f05db0a09",
   "lastOpenFiles": [
+    "99 - Meta/03 - Codex/Folder Rename Script.md",
+    "99 - Meta/03 - Codex/folder_renames.example.json",
+    "99 - Meta/03 - Codex/rename_folders.py",
+    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/Red-Black Tree.md",
+    "00 - Inbox/Без названия.md",
     "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/AVL Tree.md",
     "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Breadth-First Search (BFS).md",
     "99 - Meta/03 - Codex/01 - Vault Formatting Backlog.md",
     "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Binary Search Tree.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03_Concepts and Performance/Disk Seek vs Disk Bandwidth.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03_Concepts and Performance/Data Locality.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Disk Seek vs Disk Bandwidth.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03. Concepts and Performance/Data Locality.md",
     "AGENTS.md",
-    "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья/Red-Black Tree.md",
     "30 - Learning/10 - Foundation/40 - Algo/111  - Сортировки/Quick Sort.md",
     "30 - Learning/10 - Foundation/40 - Algo/111  - Сортировки/Selection Sort.md",
     "30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Dijkstra's Algorithm.md",
@@ -286,18 +290,14 @@
     "30 - Learning/10 - Foundation/40 - Algo/113 - Структуры данных/Arrays and Linked Lists.md",
     "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/0MOC. Replication.md",
     "20 - Mentorship/Алеся/Задачи 1.1 c ответами.md",
-    "20 - Mentorship/Алеся/Домашние задание 01.md",
-    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Channel Patterns.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/2.0 DDIA-original.pdf",
+    "30 - Learning/10 - Foundation/30 - DDIA/0. Book PDFs/2.0 DDIA-original.pdf",
     "20 - Work/23 -  LeetCode/Arrays & Hashmaps",
     "20 - Work/23 -  LeetCode",
     "20 - Work",
     "30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/5. Replication/1. Types of Replication",
     "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Mutex",
     "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives/Channels",
-    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency/Synchronization primitives",
-    "30 - Learning/20 - Tech Stack/Golang/2. Concurrency",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/00_Overview/Data Model Scheme.canvas",
+    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/00. Overview/Data Model Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/Data Model Scheme.canvas",
     "99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5330306254498370295-y.jpg",
