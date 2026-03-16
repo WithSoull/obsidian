@@ -25,5 +25,5 @@
 - [[Partitioning & Replication]]
 - [[Partitioning of key-value data]]
 - [[Partitioning & Secondary Indexes]]
-- [[Rabalancing partitions]]
+- [[Rebalancing Partitions]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/2. Part II - Distributed Data/6. Partitioning/Request Routing|Request Routing]]

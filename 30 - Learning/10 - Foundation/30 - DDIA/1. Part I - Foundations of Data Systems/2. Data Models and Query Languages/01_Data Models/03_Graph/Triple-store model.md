@@ -1,4 +1,4 @@
-Это одна из вариаций графовой модели данных, похожа на [[ 01_Data Models/03_Graph/Property-graph model | Property-graph model ]], но тем не менее имеет некоторые отличия.
+Это одна из вариаций графовой модели данных, похожа на [[Property-graph model|Property-graph model]], но тем не менее имеет некоторые отличия.
 ### Структура
 1) subject
 2) predicate
@@ -43,8 +43,8 @@ _:namerica a :Location ;
 Здесь вершина графа выражена как `_:someName`
 
 ### Semantic Web | RDF
-Легко перемутать это все вместе, подробно описано [[ 01_Data Models/03_Graph/Semantic web & RDF | тут ]].
-Если кратко, Semantic Web это попытка принудить сайты публиковать данные в машиночитаемом формате, але база знаний всего. А RDF это *Resourse Description Framework*. Все это дело не прижилось. Но в популярном языке запросов [[ 02_Query Languages/SPARQL | SPARQL ]] в основе лежит этот RDF.
+Легко перемутать это все вместе, подробно описано [[Semantic web & RDF|тут]].
+Если кратко, Semantic Web это попытка принудить сайты публиковать данные в машиночитаемом формате, але база знаний всего. А RDF это *Resourse Description Framework*. Все это дело не прижилось. Но в популярном языке запросов [[SPARQL|SPARQL]] в основе лежит этот RDF.
 
 ## Triple Stores и производительность
 

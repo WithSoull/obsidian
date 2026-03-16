@@ -1,4 +1,4 @@
-- Старше чем [[ 02_Query Languages/SPARQL | SPARQL ]] и [[ 02_Query Languages/Cypher | Cypher ]]
+- Старше чем [[SPARQL|SPARQL]] и [[Cypher|Cypher]]
 - Разработан в 1980х
 - Фундамент для языков запросов
 - Используется в Datomic

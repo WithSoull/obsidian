@@ -13,15 +13,15 @@
 ![[99 - Meta/02 - Медиа/Pasted image 20251008192025.png]]
 
 Есть разные способы структурировать данные и строить запросы в графах, как минимум потомучто есть разные виды графов:
-- [[ 01_Data Models/03_Graph/Property-graph model | Property model ]] (реализованная Neo4j, Titan и InfiniteGraph)
-- [[ 01_Data Models/03_Graph/Triple-store model | Triple-store model ]] (реализованная Datomic, AllegroGraph и другие)
+- [[Property-graph model|Property model]] (реализованная Neo4j, Titan и InfiniteGraph)
+- [[Triple-store model|Triple-store model]] (реализованная Datomic, AllegroGraph и другие)
 
 Есть разные языки запросов:
 - декларативные:
-	- [[ 02_Query Languages/Cypher | Cypher ]] - язык для [[ 01_Data Models/03_Graph/Property-graph model | property-graph model ]], а конкретно Neo4j
-	- [[ 02_Query Languages/SPARQL | SPARQL ]] - язык запросов для [[ 01_Data Models/03_Graph/Triple-store model | triple-store model ]] которые используют [[ 01_Data Models/03_Graph/Semantic web & RDF#^840081 | RDF ]]. 
-	- [[ 02_Query Languages/Datalog | Datalog ]] - язык запросов для Datomic
-	- [[ 02_Query Languages/Grahp queries in SQL | SQL ]] - с болью, но можно
+	- [[Cypher|Cypher]] - язык для [[Property-graph model|property-graph model]], а конкретно Neo4j
+	- [[SPARQL|SPARQL]] - язык запросов для [[Triple-store model|triple-store model]], которые используют [[Semantic web & RDF#^840081|RDF]]. 
+	- [[Datalog|Datalog]] - язык запросов для Datomic
+	- [[Grahp queries in SQL|SQL]] - с болью, но можно
 - имеративные:
 	- Gremlin
 - фреймворки:
@@ -45,4 +45,4 @@
 | **Сложность разработки** | Высокая — сложные запросы, хрупкость к изменениям                                 | Низкая — декларативные запросы, устойчивость к изменениям                                     |
 
 ---
-[[ 30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA M Klepman (after ipad)_250910_214423.pdf#page=61&selection=0,0,0,22 | DDIA M Klepman (after ipad)_250910_214423, page 49 - Graph-like Models ]]
+[[30 - Learning/10 - Foundation/30 - DDIA/0. PDFs of the book/DDIA-original.pdf#page=61&selection=0,0,0,22|DDIA-original, page 49 - Graph-like Models]]

@@ -1,4 +1,4 @@
->[!info] Это *декларативный* язык для [[ 01_Data Models/03_Graph/Property-graph model | property-graph модели ]]
+>[!info] Это *декларативный* язык для [[Property-graph model|property-graph модели]]
 >Был создан для Neo4j graph db
 >
 
