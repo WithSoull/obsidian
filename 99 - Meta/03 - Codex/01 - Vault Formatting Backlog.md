@@ -13,14 +13,14 @@
 - `30 - Learning/10 - Foundation/40 - Algo`
 - `30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья`
 - `30 - Learning/10 - Foundation/40 - Algo/111  - Сортировки`
+- `30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья`
 
 ## Next
 
-- `30 - Learning/10 - Foundation/40 - Algo/112 - Графы & Деревья/Сбалансированные деревья`
+- `30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03_Concepts and Performance`
 
 ## Queue
 
-- `30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/03_Concepts and Performance`
 - `30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/01.Simple db implementation`
 - `30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02.Data structers that power your database/Hash`
 - `30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/02.Data structers that power your database`
