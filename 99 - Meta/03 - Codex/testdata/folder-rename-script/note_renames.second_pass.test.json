@@ -1,0 +1,14 @@
+[
+  {
+    "parent": "30 - Learning/DDIA/00. Overview",
+    "old": "Introduction.md",
+    "new": "Intro Note.md",
+    "kind": "note"
+  },
+  {
+    "parent": "30 - Learning/DDIA/01. Query Stuff/01. Graph",
+    "old": "Property Graph Model.md",
+    "new": "Graph Data Model.md",
+    "kind": "note"
+  }
+]

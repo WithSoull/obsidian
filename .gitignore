@@ -7,3 +7,4 @@
 .obsidian/plugins/
 .obsidian/*sync-conflict-*.json
 .obsidian/* (*).json
+.obsidian/

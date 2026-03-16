@@ -1,6 +1,6 @@
-# Folder Rename Script
+# Rename Script
 
-Скрипт для пакетного переименования папок и обновления path-based ссылок по vault.
+Скрипт для пакетного переименования папок и заметок с обновлением ссылок по vault.
 
 ## Файлы
 
@@ -14,7 +14,8 @@
   {
     "parent": "30 - Learning/10 - Foundation/40 - Algo",
     "old": "112 - Графы & Деревья",
-    "new": "112 - Graphs & Trees"
+    "new": "112 - Graphs & Trees",
+    "kind": "dir"
   }
 ]
 ```
@@ -39,8 +40,9 @@ python3 '99 - Meta/03 - Codex/rename_folders.py' --root . --map '99 - Meta/03 - 
 
 ## Что делает
 
-- переименовывает папки по списку
+- переименовывает папки и заметки по списку
 - обновляет текстовые path-based ссылки в `.md`, `.canvas`, `.json`, `.yaml`, `.yml`, `.txt`
+- обновляет простые wikilinks при переименовании заметок, например `[[Intro]] -> [[Introduction]]`
 - не трогает `.git`
 
 ## Что не делает
