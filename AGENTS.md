@@ -39,11 +39,13 @@ Preserve the existing folder naming style with numeric prefixes. Put new notes i
 
 Git is used in this vault for local history and rollback points before larger changes.
 
-- The assistant may run `git add` to stage files relevant to the task and may create commits without opening a PR.
+- The assistant must use `.codex/bin/safe-commit "<message>"` for normal commits.
+- The `safe-commit` script is the default and preferred path for staging and committing changes in this repository.
+- The assistant may fall back to direct `git add` / `git commit` only if the script is missing or broken.
 - Work happens in a single branch. Do not create feature branches or use PR-based workflows unless the user explicitly asks for them.
 - Commit messages must be plain English descriptions of the change.
 - At the end of each completed user request, the assistant should create a commit automatically.
-- For simplicity, the assistant should stage all current changes with `git add -A` before committing.
+- For simplicity, the assistant should rely on `safe-commit`, which stages all current changes with `git add -A` before committing.
 - The assistant does not need to inspect the full diff before committing when working under this rule; the commit message should be inferred from the task context when possible.
 - The assistant does not need to ask for confirmation before making such commits.
 - The assistant may create commits, but must not rewrite history and must not undo or revert existing commits.
