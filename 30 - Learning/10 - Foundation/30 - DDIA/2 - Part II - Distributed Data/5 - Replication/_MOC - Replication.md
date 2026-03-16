@@ -8,8 +8,8 @@
 
 ## MAP OF CONTENT
 1. **Общая топология реплицирования.** Вся сложность репликации заключается в обработке изменений данных, которые реплицируются. Существует 3 основных стратегии реплицирования
-	1. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/0 - Single-leader/0MOC. Single-leader replication|single-leader (MOC)]]
-	2. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/0MOC. Multi-Leader Replication|multi-leade (MOC)]]
-	3. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/0MOC Leaderless Replication|leaderless (MOC)]]
-2. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/1 - Types of Replication/0MOC. Types of Replication|Types of Replication (MOC)]]
-3. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/0MOC. Replication Lag|Replication Lag (MOC)]]
+	1. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/0 - Single-leader/_MOC - Single-Leader Replication|single-leader (MOC)]]
+	2. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/_MOC - Multi-Leader Replication|multi-leade (MOC)]]
+	3. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/_MOC - Leaderless Replication|leaderless (MOC)]]
+2. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/1 - Types of Replication/_MOC - Types of Replication|Types of Replication (MOC)]]
+3. [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/_MOC - Replication Lag|Replication Lag (MOC)]]

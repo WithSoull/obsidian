@@ -1,5 +1,5 @@
 ---
-Сравнение Binary Schemas VS Human-readable: "[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Binary Schemas VS (JSON & XML)|Binary Schemas VS (JSON & XML)]]"
+Сравнение Binary Schemas VS Human-readable: "[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Binary Schemas vs JSON & XML|Binary Schemas VS (JSON & XML)]]"
 ---
 # Какие у нас есть самодостаточные форматы представления данных?
 

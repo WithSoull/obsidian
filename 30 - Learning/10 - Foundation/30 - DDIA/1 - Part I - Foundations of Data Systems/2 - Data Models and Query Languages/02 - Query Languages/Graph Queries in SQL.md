@@ -1,4 +1,4 @@
-Вот тут мы уже представляли графовую модель в виде SQL - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property-graph model#^1a4bda|SQL запрос на создание]]
+Вот тут мы уже представляли графовую модель в виде SQL - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property Graph Model#^1a4bda|SQL запрос на создание]]
 
 Графовые обходы с переменной длиной рёбер удобно выражаются в специализированных языках вроде [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Cypher|Cypher]], а в SQL их приходится моделировать через рекурсивные CTE (*recursive common table expressions (* **WITH RECURSIVE** *))*, что работает, но громоздко и требует осторожности с производительностью и циклами.
 

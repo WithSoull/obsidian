@@ -1,4 +1,4 @@
-Это одна из вариаций графовой модели данных, похожа на [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property-graph model|Property-graph model]], но тем не менее имеет некоторые отличия.
+Это одна из вариаций графовой модели данных, похожа на [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property Graph Model|Property-graph model]], но тем не менее имеет некоторые отличия.
 ### Структура
 1) subject
 2) predicate
@@ -43,7 +43,7 @@ _:namerica a :Location ;
 Здесь вершина графа выражена как `_:someName`
 
 ### Semantic Web | RDF
-Легко перемутать это все вместе, подробно описано [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Semantic web & RDF|тут]].
+Легко перемутать это все вместе, подробно описано [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Semantic Web & RDF|тут]].
 Если кратко, Semantic Web это попытка принудить сайты публиковать данные в машиночитаемом формате, але база знаний всего. А RDF это *Resourse Description Framework*. Все это дело не прижилось. Но в популярном языке запросов [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/SPARQL|SPARQL]] в основе лежит этот RDF.
 
 ## Triple Stores и производительность

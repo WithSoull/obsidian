@@ -1,4 +1,4 @@
-В [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Сегментация логов для движка базы данных|заметке про сегментацию логов для движка базы данных]] мы получили log-structured storage модель, в которой каждый сегмент это последовательность key-value пар. Пары появляются в том порядке в котором они были записаны.
+В [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Log Segmentation for Storage Engines|заметке про сегментацию логов для движка базы данных]] мы получили log-structured storage модель, в которой каждый сегмент это последовательность key-value пар. Пары появляются в том порядке в котором они были записаны.
 
 Изменим в этой модели одну деталь: *пусть key-value пары будут осортированы по ключу*. И на первый взгляд это ломает нашу последовательную запись.
 

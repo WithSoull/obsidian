@@ -7,7 +7,7 @@
 
 Эти определения не просто значат "работает корректно", они означают что *приложение работает корректно даже, если что-то пошло не так*.
 
-Что-то идущее не так, как запланировано называют *fault* (см [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault VS Failure|Fault VS Failure]]), а ПО, которое справляется с fault'ами есть *fault-tolerant (resilient)*. При этом не стоит упарываться, и предотвращать все fault'ы
+Что-то идущее не так, как запланировано называют *fault* (см [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault vs Failure|Fault VS Failure]]), а ПО, которое справляется с fault'ами есть *fault-tolerant (resilient)*. При этом не стоит упарываться, и предотвращать все fault'ы
 ### Hardware faults
 Железо падает постоянно, иногда просто подошел срок эксплуатация, а иногда кто-то случайно выдернул не тот ethernet кабель.
 Раньше было достаточно просто закупаться железом в избытке, чтобы всегда были новые компоненты для замены. Сейчас данных больше, они сложнее и чем больше данных тем больще *hardware faults* случается. Лучшим решением будет и держать железо в избытке и писать софт, который терпит поломки железа.

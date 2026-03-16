@@ -18,6 +18,6 @@
 Тут стоит сказать, что построить такую систему сильно сложнее, ведь она намного сложнее.
 ###### Способы распределения данных
 Основных способа 2:
-1) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/0MOC. Replication|Replication (MOC)]] - сохранение копии данных на разных нодах
-2) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/6 - Partitioning/0MOC. Partitioning|Partitioning]] (aka sharding) - деление данных на куски (шарды), которые лежат на разных нодах.
+1) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/_MOC - Replication|Replication (MOC)]] - сохранение копии данных на разных нодах
+2) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/6 - Partitioning/_MOC - Partitioning|Partitioning]] (aka sharding) - деление данных на куски (шарды), которые лежат на разных нодах.
 ![[99 - Meta/02 - Медиа/Pasted image 20251107232628.png]]

@@ -24,4 +24,4 @@
 **Формат данных**: нет отдельного схемы под собщения, как правило это просто последовательность байт, поэтому producer и concumer должны писать в согласованной схеме.
 
 ### Что еще?
-На основе всего этого можно построить [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Distributed actor framework|Distributed actor framework]]
+На основе всего этого можно построить [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/2 - Dataflow/Distributed Actor Framework|Distributed actor framework]]

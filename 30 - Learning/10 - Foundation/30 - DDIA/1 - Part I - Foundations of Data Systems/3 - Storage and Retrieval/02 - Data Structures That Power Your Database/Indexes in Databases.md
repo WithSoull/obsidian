@@ -8,9 +8,9 @@
 
 ## **Примеры** индексов
 Так называемые *key-value* индексы, похожие на *primary key index* в реляционных базах данных.
-1) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Hash/Hash индексы|Hash индексы]] - key-value индекс, очень **простой** и полезный
-2) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/LSM-tree|LSM-tree]] - это структура, оптимизированная под **запись**
-3) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree/B-tree|B-tree]] - это структура, оптимизированная под **чтение**, **самая популярная** на сей день
+1) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Hash/Hash Indexes|Hash индексы]] - key-value индекс, очень **простой** и полезный
+2) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/LSM-Tree|LSM-tree]] - это структура, оптимизированная под **запись**
+3) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree/B-Tree|B-tree]] - это структура, оптимизированная под **чтение**, **самая популярная** на сей день
 
 При этом иногда полезно добавить *secondary* индексы, они играют важную роль в *JOIN* запросах. Здесь есть небольшая проблема, заключающаяся в том, что *ключи могут быть* *неунекальными*, без решения этой проблемы мы не сможем использовать индексы. **Тут у нас 2 решения**:
 1) Сделать ключ уникальным, добавляя идетификатор к самому ключу
@@ -38,7 +38,7 @@
 ---
 
 >[!danger] Может возникнуть путаница между **Multi-Column** и **Covered** индексами
->Поэтому вот отдельная [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Multi-Column VS Covered индексы|заметка]] по их различию. Они на самом деле супер разные. 
+>Поэтому вот отдельная [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Multi-Column vs Covered Indexes|заметка]] по их различию. Они на самом деле супер разные. 
  
 ###### Про **Multi-Column** индексы (на примере **Concatenated** индекса)
 Для задачи нахождения строк сразу по нескольким полям, нам не особо подойдут привычные индексы (B-tree, LSM-tree). Для конкретики, рассмотрим задачу: нам нужно найти все рестораны, которые находятся по заданным координатам (ширина и долгота).

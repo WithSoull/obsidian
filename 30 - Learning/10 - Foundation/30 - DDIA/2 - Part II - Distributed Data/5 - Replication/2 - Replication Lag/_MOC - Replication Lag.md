@@ -4,9 +4,9 @@
 ## Последовательность чтения и согласованность
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Consistent Prefix Reads|Consistent Prefix Reads]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Monotonic Reads|Monotonic Reads]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Reading your own writes|Reading your own writes]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Reading Your Own Writes|Reading your own writes]]
 ## Методы и решения
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Solutions for replication lag|Solutions for replication lag]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/2 - Replication Lag/Solutions for Replication Lag|Solutions for replication lag]]
 ## Вопросы для проработки
 - Что такое replication lag и какие основные причины его возникновения?
 - Как задержка репликации влияет на консистентность данных?

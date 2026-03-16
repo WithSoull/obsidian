@@ -10,7 +10,7 @@
 - Количество одновременно активных пользователей
 - Hit rate on a cache
 
-Иногда нужно смотреть на средний случай или возможно на узки место в экстримальных кейсах. (Пример [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scaling of Twitter|Scaling of Twitter]])
+Иногда нужно смотреть на средний случай или возможно на узки место в экстримальных кейсах. (Пример [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling|Scaling of Twitter]])
 ### Описание производительности
 - Если я буду повышать нагрузку оставляя неизменными системные ресурсы, как это повлияет на производительность системы?
 - Если я увеличу нагрузку, насколько надо увеличить системные ресурсы, чтобы производительность осталось неизменной?
@@ -24,7 +24,7 @@
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/SLA - Service Level Agreement|SLA]] - внешняя цель производительности сервиса перед клиентом
 ### Подводные камни
 Проблемы, который могут нам помешать:
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Head-of-line-blocking|HOL]] - head of line blocking
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Head-of-Line Blocking|HOL]] - head of line blocking
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Tail latency amplification|Tail latency amplification]]
 ## Подходы чтобы справиться с нагрузкой
 При каждом увеличении нагрузки напорядок придется менять архитектуру, а иногда и чаще.

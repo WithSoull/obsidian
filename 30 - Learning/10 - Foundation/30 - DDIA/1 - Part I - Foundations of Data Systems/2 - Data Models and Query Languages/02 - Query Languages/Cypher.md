@@ -1,4 +1,4 @@
->[!info] Это *декларативный* язык для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property-graph model|property-graph модели]]
+>[!info] Это *декларативный* язык для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property Graph Model|property-graph модели]]
 >Был создан для Neo4j graph db
 >
 

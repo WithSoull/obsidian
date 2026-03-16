@@ -22,12 +22,12 @@
 >Датацентр B (тоже лидер)
 > ```
 ### Что стоит почитать про **Multi-Leader** репликацию?
-1) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Single VS Multi leader replication|Single VS Multi leader replication]]
+1) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Single-Leader vs Multi-Leader Replication|Single VS Multi leader replication]]
 2) Use Cases for Multi-Leader Replication:
-	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Use Cases for Multi-Leader Replication. Clients with offline operations|Clients with offline operations]]
-	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Use Cases for Multi-Leader Replication. Collaborative editing|Collaborative editing]]
+	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Use Cases for Multi-Leader Replication: Offline Clients|Clients with offline operations]]
+	- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Use Cases for Multi-Leader Replication: Collaborative Editing|Collaborative editing]]
 3) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Handling Write Conflicts|Handling Write Conflicts]]
-4) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Multi-Leader Replications Topologies|Multi-Leader Replications Topologies]]
+4) [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Multi-Leader Replication Topologies|Multi-Leader Replications Topologies]]
 
 ## Стоит ли игра свеч?
 **Multi-leader** - это достаточно редкий кейс в рамках одного ДЦ, потому что бенифиты зачастаю не стоят этой излишней сложности в логике реплицирования. Но все же иногда игра стоит свеч.

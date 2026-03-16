@@ -6,7 +6,7 @@
 >Нет, транзакции (_transaction processing_) подразумевает лишь, что клиенты могу делать _low-latency_ чтение и запись, в противовес *batch processing* задачам которые запускаются переодически.
 
 ### OLTP
-Транзакция подразумевает что мы работает с малым количеством записей по определенному ключу используя [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Индексы в базах данных|индексы]]. При этом эти записи/чтения основаны на пользовательском вводе. Так приложения являются интерактивными(с ним можно взаимодействовать), это паттерн доступа (*access pattern*) называется **online transaction processing(OLTP)**.
+Транзакция подразумевает что мы работает с малым количеством записей по определенному ключу используя [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Indexes in Databases|индексы]]. При этом эти записи/чтения основаны на пользовательском вводе. Так приложения являются интерактивными(с ним можно взаимодействовать), это паттерн доступа (*access pattern*) называется **online transaction processing(OLTP)**.
 
 ### OLAP
 Сегодня базки хранят данные и для *аналитики*, и тут совсем другой паттерн доступа(*access pattern*). Одним запросом мы обрабатываем *огромное количество строк*, зачастую читая *малое количество колонок* и *агрегируем* эти данные. Такая *access pattern* называется **online analytic processing(OLAP)**.

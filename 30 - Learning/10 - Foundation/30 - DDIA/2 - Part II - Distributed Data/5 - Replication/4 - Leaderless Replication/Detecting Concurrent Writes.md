@@ -42,7 +42,7 @@
 	- LWW: выбирать последнюю по времени запись, **теряется** часть данных.
 	- Более сложный, но правильный способ — **сливать** данные (например, объединять содержимое корзин покупок).
 - Удаление требует использования **tombstones** — маркеров удаления, чтобы удалённые элементы не возвращались при слиянии.
-- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Custom conflict resolution logic#CRDT (Conflict-free Replicated Data Types)|CRDT]] — специальные структуры, позволяющие автоматически и корректно сливать siblings и разрешать конфликты, включая удаление.
+- [[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Custom Conflict Resolution Logic#CRDT (Conflict-free Replicated Data Types)|CRDT]] — специальные структуры, позволяющие автоматически и корректно сливать siblings и разрешать конфликты, включая удаление.
 
 ### Окей, на одной реплике понятно, а что делать если у нас их несколько?
 ###### Version vectors и Riak

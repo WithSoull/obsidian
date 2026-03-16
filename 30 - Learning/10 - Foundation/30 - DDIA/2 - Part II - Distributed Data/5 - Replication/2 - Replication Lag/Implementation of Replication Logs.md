@@ -10,7 +10,7 @@
 До MySQL 5.1 там использовался как раз такой лог, но в более новых версиях используется *row-based replication log* если в выражении есть какая-то недетерминированость. VoltDB использует *statement-base replication log*, из-за чего требуется от транзакций быть детереминироваными.
 
 ### Write-ahead log (WAL) shipping
-В заметках по движки баз (в частности про индексы) - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/LSM-tree|LSM-tree]]/[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree/B-tree|B-tree]] мы уже обсуждали WAL. Почему бы мастеру просто не отправлять такой лог репликам. 
+В заметках по движки баз (в частности про индексы) - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/LSM-Tree|LSM-tree]]/[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree/B-Tree|B-tree]] мы уже обсуждали WAL. Почему бы мастеру просто не отправлять такой лог репликам. 
 
 >[!info] А что вообще из себя представляет WAL?
 >Это append-only последовательность байт, которая содержит все записи. Но на очень низком уровне. Он содержит детали о том как изменились байты на диске: Какой байт нужно заменить на какой байт на дисковом блоке.
@@ -24,7 +24,7 @@
 - **UPDATE**: также нужно что-то чтобы идентифицировать строку и новую строку целиком либо только изменившиеся столбцы.
 Современный MySQL-ый бинлог (когда он сконфигурирован под row-based) как раз и использует такой подход.
 
-Такой подход лучше поддерживает обратную совместимость, потому что лог не привязан к движку. Это позволяет держать ноды в разных версиях. А еще такой лог можно отправлять внешним системам, DWH к примеру, такой подход называется [[30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/11 - Chapter 11/Change date capture|change date capture]].
+Такой подход лучше поддерживает обратную совместимость, потому что лог не привязан к движку. Это позволяет держать ноды в разных версиях. А еще такой лог можно отправлять внешним системам, DWH к примеру, такой подход называется [[30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/11 - Chapter 11/Change Data Capture|change date capture]].
 ### Trigger-base replication
 Описанные выше реализации логов не требует никакого кода в приложении. Иногда нужна большая гибкость:
 - Нужно реплицировать только какую-то определенную часть данных

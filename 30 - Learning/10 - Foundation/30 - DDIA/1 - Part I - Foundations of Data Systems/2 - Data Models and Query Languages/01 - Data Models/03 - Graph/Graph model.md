@@ -13,15 +13,15 @@ Graphs не ограниченны однородным типом данных:
 ![[99 - Meta/02 - Медиа/Pasted image 20251008192025.png]]
 
 Есть разные способы структурировать данные и строить запросы в графах, как минимум потомучто есть разные виды графов:
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property-graph model|Property model]] (реализованная Neo4j, Titan и InfiniteGraph)
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Triple-store model|Triple-store model]] (реализованная Datomic, AllegroGraph и другие)
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property Graph Model|Property model]] (реализованная Neo4j, Titan и InfiniteGraph)
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Triple-Store Model|Triple-store model]] (реализованная Datomic, AllegroGraph и другие)
 
 Есть разные языки запросов:
 - декларативные:
-	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Cypher|Cypher]] - язык для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property-graph model|property-graph model]], а конкретно Neo4j
-	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/SPARQL|SPARQL]] - язык запросов для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Triple-store model|triple-store model]], которые используют [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Semantic web & RDF#^840081|RDF]]. 
+	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Cypher|Cypher]] - язык для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Property Graph Model|property-graph model]], а конкретно Neo4j
+	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/SPARQL|SPARQL]] - язык запросов для [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Triple-Store Model|triple-store model]], которые используют [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Semantic Web & RDF#^840081|RDF]]. 
 	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Datalog|Datalog]] - язык запросов для Datomic
-	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Grahp queries in SQL|SQL]] - с болью, но можно
+	- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/02 - Query Languages/Graph Queries in SQL|SQL]] - с болью, но можно
 - имеративные:
 	- Gremlin
 - фреймворки:

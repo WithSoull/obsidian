@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8b5c3bcb91a42ab5",
+        "id": "2ff98e2a338691db",
         "type": "tabs",
         "children": [
           {
-            "id": "7b176c6208b62364",
+            "id": "5c3409979668e6b7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99 - Meta/03 - Codex/01 - Vault Formatting Backlog.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "01 - Vault Formatting Backlog"
-            }
-          },
-          {
-            "id": "df4922fd59ebc3c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99 - Meta/03 - Codex/Folder Rename Script.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Folder Rename Script"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -210,12 +192,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99 - Meta/03 - Codex/01 - Vault Formatting Backlog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из 01 - Vault Formatting Backlog"
+              "title": "Исходящие ссылки"
             }
           }
         ],
@@ -244,15 +225,36 @@
       "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "7b176c6208b62364",
+  "active": "5c3409979668e6b7",
   "lastOpenFiles": [
+    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01 - Simple DB Implementation/Why Append-Only Writes Are Efficient.md",
+    "99 - Meta/03 - Codex/Folder Rename Script.md",
+    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/00. Overview/Index.md",
+    "99 - Meta/03 - Codex/01 - Vault Formatting Backlog.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/_MOC - DDIA.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Hanging Goroutines.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Data Race vs Race Condition.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/Distributed Systems.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/_MOC - Concurrency.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Semaphore.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/9 - Chapter 9/Consensus.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/9 - Chapter 9/Linearizability and Quorums.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/3 - Part III - Derived Data/11 - Chapter 11/Change Data Capture.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/WhatsApp Service Architecture.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/6 - Partitioning/_MOC - Partitioning.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/_MOC - Replication.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/_MOC - Encoding and Evolution.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/_MOC - Storage and Retrieval.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/_MOC - Data-Intensive Applications.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Why Nil Channels Matter.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Synchronous Channels.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Simple Channel Patterns.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Select Statement.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Channel Internals.md",
+    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Asynchronous Buffered Channels.md",
+    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/What Is Quorum and How Does It Work?.md",
     "99 - Meta/03 - Codex/note_renames.learning.json",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Property Graph Model.md",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/00. Overview/Introduction.md",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/note_renames.clean_test.json",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Graph Model.md",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/00. Overview/Intro.md",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/00. Overview/Index.md",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/00. Overview",
@@ -260,28 +262,7 @@
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning",
     "99 - Meta/03 - Codex/testdata/note-rename-clean/vault",
     "99 - Meta/03 - Codex/testdata/note-rename-clean",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Property Graphs Overview.md",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/00. Overview/Overview Intro.md",
     "99 - Meta/03 - Codex/testdata/folder-rename-script/note_renames.third_pass.test.json",
-    "99 - Meta/03 - Codex/Folder Rename Script.md",
-    "99 - Meta/03 - Codex/__pycache__/rename_folders.cpython-314.pyc",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Graph Data Model.md",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/00. Overview/Intro Note.md",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Property Graph Model.md",
-    "99 - Meta/03 - Codex/testdata/folder-rename-script/vault/30 - Learning/DDIA/00. Overview/Introduction.md",
-    "AGENTS.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Mutex/Mutex.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Mutex/Mutex Implementation.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Why do we need nil channels?.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Synchronous channels.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Unidirectional Channel.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Simple patterns with channels.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Select statement.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Asynchronous buffered channels.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Channel internals.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/WaitGroup.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Semaphor.md",
-    "30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/RWMutex.md",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/00 - Overview/Data Model Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01_Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",

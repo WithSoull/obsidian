@@ -1,9 +1,9 @@
 ## Foundation
 - [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Goroutines|Goroutines]] — основа конкурентности в Go
 - [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Go Scheduler|Go Scheduler]] — как планируется выполнение горутин
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Data race & race condition|Data race & race condition]] — проблемы при неправильной синхронизации
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Data Race vs Race Condition|Data race & race condition]] — проблемы при неправильной синхронизации
 - [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Wait Queue|Wait Queue]] — внутренний механизм ожидания
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Hanging goroutines|Hanging goroutines]] - подвисшие горутины
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Hanging Goroutines|Hanging goroutines]] - подвисшие горутины
 ---
 ## Sync primitves
 Примитивы синхронизации из пакета `sync` для безопасной работы с конкурентностью в Go.
@@ -11,13 +11,13 @@
 
 **Для обмена данными между горутинами (CSP model)**
 
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Synchronous channels|Synchronous channels]] — основная концепция передачи данных между горутинами
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Asynchronous buffered channels|Asynchronous buffered channels]] — каналы с буфером для асинхронной коммуникации
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Synchronous Channels|Synchronous channels]] — основная концепция передачи данных между горутинами
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Asynchronous Buffered Channels|Asynchronous buffered channels]] — каналы с буфером для асинхронной коммуникации
 - [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Unidirectional Channel|Unidirectional Channel]] - однонаправленный канал, который работает только на запись или только на чтение.
 ---
-* [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Select statement|Select]] — мультиплексирование операций с каналами
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Simple patterns with channels|Simple patterns with channels]] - простые паттерны (как попытаться записать/прочитать из канала)
-- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Why do we need nil channels?|Why do we need nil channels?]] - почему разработчики Go разрешают делать nil-каналы
+* [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Select Statement|Select]] — мультиплексирование операций с каналами
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Simple Channel Patterns|Simple patterns with channels]] - простые паттерны (как попытаться записать/прочитать из канала)
+- [[30 - Learning/20 - Tech Stack/Golang/2 - Concurrency/Synchronization Primitives/Channels/Why Nil Channels Matter|Why do we need nil channels?]] - почему разработчики Go разрешают делать nil-каналы
 - [[Channel Patterns|Channel Patterns]] — распространенные паттерны (pipeline, fan-out/fan-in, worker pool)
 
 >[!quote] **Go Philosophy**: _"Don't communicate by sharing memory; share memory by communicating"_

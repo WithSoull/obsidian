@@ -1,5 +1,5 @@
 ---
-Chain-based: "[[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/1 - Types of Replication/Chain-based replication|Chain-based replication]]"
+Chain-based: "[[30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/1 - Types of Replication/Chain-Based Replication|Chain-based replication]]"
 ---
 
 ![[99 - Meta/02 - Медиа/SmartSelect_20251108_180248_Samsung Notes.jpg]]
