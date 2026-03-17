@@ -44,6 +44,19 @@ Additional retrieval rules:
 - Do not extract the whole book unless full-book search is actually needed.
 - For note generation from DDIA, keep the note in Russian, but preserve canonical English technical terms in titles when appropriate.
 
+## DDIA Note Philosophy
+
+- Treat the `30 - DDIA` branch as a personal knowledge base about data-intensive applications, not as a verbatim or section-by-section rewrite of the book.
+- Do not assume every subsection of the book must exist as a separate note. Missing notes may simply mean the topic has not yet been internalized or is intentionally deferred.
+- Preserve and respect the author's own examples, hypotheses, comparisons, and conclusions even when they go beyond the book, as long as they are clearly useful and not factually wrong.
+- Prefer helping the author think, compare, and sharpen ideas over maximizing coverage of the source text.
+- When auditing DDIA notes against the book, distinguish clearly between:
+  - factual mistakes or misleading statements,
+  - genuinely missing concepts that would improve the note set,
+  - and deliberate omissions or author-added material that is outside the book but still valuable.
+- Avoid framing gaps as problems just because a topic from the book is absent. Coverage is not the goal by itself; understanding and retrieval are.
+- When extending DDIA notes, prefer adding material only where it improves the author's mental model, cross-links, or practical recall.
+
 ## Note Quality
 
 - Good notes should be concrete, technically correct, and reusable.
