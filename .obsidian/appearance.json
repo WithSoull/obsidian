@@ -1,17 +1,1 @@
-{
-  "accentColor": "#5795e5",
-  "baseFontSize": 20,
-  "showViewHeader": true,
-  "nativeMenus": false,
-  "cssTheme": "Catppuccin",
-  "theme": "obsidian",
-  "interfaceFontFamily": "Arial,JetBrainsMono Nerd Font",
-  "textFontFamily": "PT Sans,JetBrains Mono",
-  "baseFontSizeAction": true,
-  "enabledCssSnippets": [
-    "hide-scrollbars",
-    "Iterative Rainbow Folder Backgrounds"
-  ],
-  "showRibbon": true,
-  "translucency": true
-}
+{}

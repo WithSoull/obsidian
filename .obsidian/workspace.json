@@ -4,21 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "2ff98e2a338691db",
+        "id": "345f621a9f0430b8",
         "type": "tabs",
         "children": [
           {
-            "id": "5c3409979668e6b7",
+            "id": "1c7811aafd4f8174",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
+            }
+          },
+          {
+            "id": "834c957b22e361ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AGENTS.md",
+                "file": "public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Operational Versus Analytical Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "Operational Versus Analytical Systems"
             }
           }
         ]
@@ -41,8 +51,8 @@
             "state": {
               "type": "notebook-navigator",
               "state": {},
-              "icon": "notebook",
-              "title": "Notebook Navigator"
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
             }
           },
           {
@@ -52,7 +62,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -86,8 +96,8 @@
                 "title": "sophisticated – Словарь и онлайн перевод на английский, русский, немецкий, французский, украинский и другие языки - Яндекс Переводчик.",
                 "mode": "webview"
               },
-              "icon": "globe-2",
-              "title": "sophisticated – Словарь и онлайн перевод на английский, русский, немецкий, французский, украинский и другие языки - Яндекс Переводчик."
+              "icon": "lucide-ghost",
+              "title": "webviewer"
             }
           }
         ]
@@ -196,12 +206,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AGENTS.md",
+                "file": "00 - Inbox/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из AGENTS"
+              "title": "Исходящие ссылки из Без названия"
             }
           }
         ],
@@ -220,73 +230,66 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "workspaces:Пространства": false,
-      "publish:Публикация изменений": false,
-      "bases:Создать новую базу": false,
-      "omnisearch:Omnisearch": false,
-      "quickadd:QuickAdd": false,
-      "templater-obsidian:Templater": false,
-      "smart-random-note:Open Random Note from Search": false,
-      "notebook-navigator:Notebook Navigator": false
+      "bases:Создать новую базу": false
     }
   },
-  "active": "5c3409979668e6b7",
+  "active": "1c7811aafd4f8174",
   "lastOpenFiles": [
-    "20 - Mentorship/1 - Clients/Андрей.md",
-    "20 - Mentorship/1 - Clients/Пустой ученик.md",
-    "20 - Mentorship/1 - Clients/Дима С++.md",
-    "20 - Mentorship/1 - Clients/Алеся.md",
-    "20 - Mentorship/Дима C++/20251128 РЕШЕНИЕ Домашнее задание на 28.11.2025.md",
-    "20 - Mentorship/Alesya/20251116 Домашнее задание на 16.11.2025.md",
-    "20 - Mentorship/Alesya/20251031 Домашнее задание на 31.10.2025.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/Replication Notes vs DDIA Chapter 6.md",
-    "AGENTS.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/_MOC - Data-Intensive Applications.md",
-    "30 - Learning/10 - Foundation/40 - Algo/113 - Data Structures/Graph Data Structure.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/Why Distribute Data Across Machines.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/3 - Multi-Leader Replication/Overview of Multi-Leader Replication.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/02 - Document/Document Data Model.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/01 - Data Models/03 - Graph/Graph Data Model.md",
-    "99 - Meta/03 - Codex/note_renames.learning.round3.json",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01 - Simple DB Implementation/Building a Simple Database.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Service Level Agreement.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Service Level Objective.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/How Quorum Works.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/5 - Replication/4 - Leaderless Replication/Multi-Datacenter Operations in Leaderless Replication.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Field Tags and Schema Evolution.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Formats of Encoded Data.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Keeping Everything in Memory.md",
-    "99 - Meta/03 - Codex/note_renames.learning.round2.json",
-    "30 - Learning/10 - Foundation/30 - DDIA/_MOC - DDIA.md",
-    "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01 - Simple DB Implementation/Why Append-Only Writes Are Efficient.md",
-    "99 - Meta/03 - Codex/Folder Rename Script.md",
-    "99 - Meta/03 - Codex/note_renames.learning.json",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/note_renames.clean_test.json",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/00. Overview",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning",
-    "99 - Meta/03 - Codex/testdata/note-rename-clean/vault",
+    "public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Operational Versus Analytical Systems.md",
+    "public/30 - Learning/10 - Foundation/30 - DDIA/2 - Part II - Distributed Data/Why Distribute Data Across Machines.md",
+    "private/20 - Mentorship/Alesya/20251119 Домашнее задание на 19.11.2025.md",
+    "private/20 - Mentorship/Mark/250914 Домашнее задание на 14.09.2025.md",
+    "private/20 - Mentorship/Danya/250927 Домашнее задание на 27.09.md",
+    "private/20 - Mentorship/Mark/20251005 Домашнее задание на 05.10.2025.md",
+    "private/20 - Mentorship/Mark/20250928 Домашнее задание на 28.09.2025.md",
+    "private/20 - Mentorship/Mark/20250921 Домашнее задание на 21.09.2025.md",
+    "private/20 - Mentorship/Lida/ДЗ.md",
+    "private/20 - Mentorship/Danya/251001 Домашнее задание на 01.10.md",
+    "private/20 - Mentorship/Alesya/20251031 Домашнее задание на 31.10.2025.md",
+    "private/20 - Mentorship/Danya/250920 Домашнее задание на 20.09.2025.md",
+    "private/20 - Mentorship/Danya/20251011 Домашнее задание на 11.10.2025.md",
+    "private/20 - Mentorship/Dima/20251013 Первое домашнее задание.md",
+    "private/20 - Mentorship/Andrey/Разбор ДЗ.md",
+    "private/20 - Mentorship/Andrey/Разбор ДЗ 2.md",
+    "private/20 - Mentorship/Andrey/20251225 Домашнее задание на 25.12.2025.md",
+    "private/20 - Mentorship/Andrey/20251223 Занятие 23.12.2025.md",
+    "private/20 - Mentorship/Andrey/20251127 Домашнее задание на 27.09.2025.md",
+    "private/20 - Mentorship/Andrey/20251120 Занятие 20.11.2025.md",
+    "private/20 - Mentorship/Alesya/Задачи 1.1 c ответами.md",
+    "private/20 - Mentorship/Alesya/Домашние задание 01.md",
+    "private/20 - Mentorship/Alesya/20251224 Занятие 24.12.2025.md",
+    "private/20 - Mentorship/Alesya/20251116 Домашнее задание на 16.11.2025.md",
+    "private/20 - Mentorship/Alesya/20251105 Домашнее задание на 05.11.2025.md",
+    "private/20 - Mentorship/Alesya/20251029 Домашнее задание на 29.10.2025.md",
+    "private/20 - Mentorship/Mark",
+    "private/20 - Mentorship/Lida",
+    "private/20 - Mentorship/Dima",
+    "private/20 - Mentorship/Danya",
+    "private/20 - Mentorship/Andrey",
+    "private/20 - Mentorship/Alesya",
+    "private/20 - Mentorship/1 - Clients",
+    "private/20 - Mentorship",
+    "private/10 - Work/2024 - MDB Internship/telegraf",
+    "private/10 - Work/2024 - MDB Internship/Useful Links",
+    "public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",
+    "public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01_Scheme.canvas",
+    "public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/00 - Overview/Data Model Scheme.canvas",
+    "public/99 - Meta/02 - Медиа/Pasted image 20231120114318.png",
+    "public/99 - Meta/02 - Медиа/Pasted image 20231121001825.png",
+    "public/99 - Meta/02 - Медиа/Pasted image 20251109092608.png",
+    "public/99 - Meta/02 - Медиа/Pasted image 20251107204236.png",
+    "public/99 - Meta/02 - Медиа/Pasted image 20240616121414.png",
+    "public/99 - Meta/02 - Медиа/Снимок экрана 2025-09-17 в 23.55.56.png",
+    "public/99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5330306254498369361-y.jpg",
+    "public/99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5357343043561918810-y.jpg",
+    "public/99 - Meta/02 - Медиа/Снимок экрана 2025-09-13 в 19.35.33.png",
+    "public/99 - Meta/02 - Медиа/Pasted image 20240425234440.png",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/00 - Overview/Data Model Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01_Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/00. Overview/Data Model Scheme.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/1. Reliable, Scalable, and Maintainable Applications/Basic schema.canvas",
     "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/2. Data Models and Query Languages/Data Model Scheme.canvas",
-    "99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5330306254498370295-y.jpg",
-    "99 - Meta/02 - Медиа/Pasted image 20251225100958.png",
-    "99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5330306254498369361-y.jpg",
-    "99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5330306254498369364-y.jpg",
-    "99 - Meta/02 - Медиа/Pasted image 20251224212210.png",
-    "99 - Meta/02 - Медиа/Pasted image 20251224212127.png",
-    "99 - Meta/02 - Медиа/Pasted image 20251224202412.png",
-    "99 - Meta/02 - Медиа/Pasted image 20251224200622.png",
-    "99 - Meta/02 - Медиа/Pasted image 20251224200609.png",
-    "99 - Meta/02 - Медиа/telegram-cloud-photo-size-2-5359355484848198748-y.jpg",
-    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/01_Scheme.canvas",
-    "30 - Resourses/31 - Programming/311 - Области/Архитектура приложений/2. Distributed Data/5. Replication/Untitled.canvas",
-    "30 - Resourses/31 - Programming/311 - Области/Сети/Dataflow/SOAP/Untitled.canvas",
-    "30 - Resourses/31 - Programming/311 - Области/Архитектура приложений/3. Storage and Retrieval/MOC.canvas"
+    "30 - Learning/10 - Foundation/30 - DDIA/1. Part I - Foundations of Data Systems/3. Storage and Retrieval/01_Scheme.canvas"
   ]
 }
