@@ -14,6 +14,7 @@
 - `20 - Mentorship`: mentee-specific materials; search by person or mentorship topic.
 - `99 - Meta`: vault maintenance, scripts, templates, and Codex workflow files.
 - `.obsidian`: configuration only; avoid editing plugin files under `.obsidian/plugins/`.
+- `../private`: out of scope for this repository workflow; do not open files there, run search there, or use it as fallback context even if the environment technically allows access.
 
 ## How To Search
 
