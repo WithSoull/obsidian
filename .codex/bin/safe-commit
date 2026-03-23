@@ -3,3 +3,4 @@ set -euo pipefail
 msg="${1:?commit message required}"
 git add -A
 git commit -m "$msg"
+git push origin main
