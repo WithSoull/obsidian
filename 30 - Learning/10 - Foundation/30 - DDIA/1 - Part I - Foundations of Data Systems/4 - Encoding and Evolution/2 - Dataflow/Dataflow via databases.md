@@ -1,5 +1,7 @@
 В бд хранятся записи, сделанные *совершенно в разное время*. БД предоставляет нам данные, так *как будто* данные были написаны в *одной схеме*, на самом деле: в БД лежат данные, записанные в разных схемах, движок *на лету преобразует эту схему*.
 
+Если смотреть на архитектуру шире, такая БД часто оказывается либо [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Systems of Record and Derived Data|system of record]], либо одной из derived systems, которые получают данные из другого источника.
+
 ### Совместисость
 Требуется как *backward compability*, так и *forward compability*. Потому что в работающей системе всегда есть разные версии кода:
 - Rolling upgrade

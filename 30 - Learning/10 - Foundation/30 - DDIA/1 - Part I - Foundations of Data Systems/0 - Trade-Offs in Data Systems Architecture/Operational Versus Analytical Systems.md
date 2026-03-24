@@ -39,6 +39,20 @@
 ## 4) HTAP и почему оно не отменяет DWH
 **HTAP (Hybrid Transactional/Analytical Processing)** пытается совместить OLTP+аналитику в одной системе, но часто внутри все равно есть два слоя (транзакционный и аналитический). Кроме того, в компании обычно **сотни OLTP-баз**, но **один DWH**, чтобы легко объединять данные. Поэтому HTAP полезен для отдельных сценариев (например, fraud detection), но не заменяет корпоративную аналитику.
 
+## 4.5) [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Systems of Record and Derived Data|Systems of Record and Derived Data]]
+Помимо деления на OLTP и OLAP, полезно различать:
+- **system of record** — место, где хранится каноническая версия факта;
+- **derived data system** — система, которая получает данные из другого источника и перестраивает их под чтение, поиск или аналитику.
+
+Например:
+- primary OLTP database обычно является `source of truth`;
+- DWH, search indexes, materialized views, caches и ML features чаще являются **derived data**.
+
+Это различие важно, потому что оно помогает понять:
+- где данные должны обновляться **сначала**;
+- какие системы можно **пересчитать заново**;
+- где допустим лаг и eventual consistency, а где нет.
+
 ## 5) От DWH к Data Lake и дальше
 DWH хорош для SQL-аналитики, но data scientists часто нужны:
 - **feature engineering** (превращение таблиц в вектора/матрицы),
