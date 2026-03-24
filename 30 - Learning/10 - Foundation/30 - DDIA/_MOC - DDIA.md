@@ -1,5 +1,8 @@
 >[!info] Большая часть данных заметок конспектируют DDIA от Мартина Клепмана (кабанчик)
 
+## 0. (page 1) Trade-Offs in Data Systems Architecture
+[[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/_MOC - Trade-Offs in Data Systems Architecture|Trade-Offs in Data Systems Architecture]]
+
 ## 1. (page 3) Reliable, Scalable, and Maintainable Applications
 [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/_MOC - Data-Intensive Applications|Data-Intensive приложения. Проблемы. Структура. Свойства.]]
 

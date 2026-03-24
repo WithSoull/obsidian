@@ -10,9 +10,6 @@
 - Отправлять сообщения другим процессам (*stream processing*)
 - Перерабатывать большие объемы данных (*batch processing*)
 
-Отдельный архитектурный trade-off из вводной части главы:
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/Cloud Versus Self-Hosting|Cloud Versus Self-Hosting]]
-
 Пример системы которая комбинирует несколько компонентов
 ![[99 - Meta/02 - Медиа/Pasted image 20250411134021.png]]
 
