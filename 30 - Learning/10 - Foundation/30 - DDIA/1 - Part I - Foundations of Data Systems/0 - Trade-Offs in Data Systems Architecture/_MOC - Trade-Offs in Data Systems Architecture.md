@@ -17,7 +17,7 @@
 - `Systems of Record and Derived Data` вводит рамку про `source of truth`, производные представления и распространение обновлений между системами.
 
 ## Самопроверка
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Trade-Offs in Data Systems Architecture - Self-Check|Trade-Offs in Data Systems Architecture - Self-Check]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Self-Check|Self-Check]]
 
 ## Зачем это нужно дальше
 - Эта глава заранее показывает, что архитектуру нельзя выбирать только по технической красоте: operations, vendor lock-in и regulatory constraints так же важны, как throughput и latency.

@@ -21,3 +21,6 @@
 До этих качеств полезно договориться о базовой архитектурной рамке:
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Distributed Versus Single-Node Systems|Distributed Versus Single-Node Systems]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Systems of Record and Derived Data|Systems of Record and Derived Data]]
+
+Дополнительные материалы:
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/Defining Nonfunctional Requirements Audit|Defining Nonfunctional Requirements Audit]]
