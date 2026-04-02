@@ -60,6 +60,7 @@
 
 Внутри ветки:
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Twitter Scaling|Twitter Scaling]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Shared-Memory, Shared-Disk, and Shared-Nothing|Shared-Memory, Shared-Disk, and Shared-Nothing]]
 
 ### [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Maintainability|Maintainability]]
 Система должна быть не только рабочей сегодня, но и понятной, операбельной и изменяемой завтра.
