@@ -3,9 +3,9 @@
 Это карта главы 2 DDIA `Defining Nonfunctional Requirements`.
 
 ## Зачем нужна эта глава
-Функциональные требования отвечают на вопрос "что система умеет".
+**Функциональные** требования отвечают на вопрос "что система умеет".
 
-Нефункциональные требования отвечают на вопрос "насколько хорошо система должна это делать":
+**Нефункциональные** требования отвечают на вопрос "насколько хорошо система должна это делать":
 - насколько быстро;
 - насколько надежно;
 - какую нагрузку должна выдерживать;
@@ -44,14 +44,6 @@
 - `latency`;
 - percentiles;
 - SLO/SLA.
-
-Полезные дочерние заметки:
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Overload, Retry Storm, and Backpressure]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Tail Latency Amplification]]
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA]]
 
 ### [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability|Reliability]]
 Надежность  это способность системы продолжать работать корректно, когда что-то идет не так.

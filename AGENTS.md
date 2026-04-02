@@ -64,6 +64,10 @@ Additional retrieval rules:
 - Prefer operational insight over generic theory.
 - Add Obsidian links only when they improve retrieval or show a real dependency between concepts.
 - Put new notes in the most specific relevant folder unless the user asks otherwise.
+- Prefer regular Markdown emphasis over inline code for prose formatting.
+- Highlight terms as `**term**`.
+- Highlight key ideas or takeaways as `*key idea*`.
+- Use inline code only for code, commands, paths, identifiers, metric names, or literal syntax where monospace adds real meaning.
 
 ## Naming
 

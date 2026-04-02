@@ -6,7 +6,7 @@ DDIA сначала предлагает договориться не о мас
 ## Базовые метрики
 Ключевые метрики:
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]].
-- `throughput`  это сколько запросов, событий или байт система обрабатывает за единицу времени.
+- **Throughput**  это сколько запросов, событий или байт система обрабатывает за единицу времени.
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile|Percentile]] нужны, потому что среднее плохо отражает опыт медленных пользователей.
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Objective|SLO]] и [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Agreement|SLA]] фиксируют ожидаемый уровень сервиса.
 
