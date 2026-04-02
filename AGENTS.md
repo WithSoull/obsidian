@@ -63,6 +63,8 @@ Additional retrieval rules:
 - Good notes should be concrete, technically correct, and reusable.
 - Prefer operational insight over generic theory.
 - Add Obsidian links only when they improve retrieval or show a real dependency between concepts.
+- Do not leave bare Obsidian links without link text when writing prose or lists.
+- Prefer descriptive links like `[[path/to/note|Readable Note Name]]` instead of raw `[[path/to/note]]`.
 - Put new notes in the most specific relevant folder unless the user asks otherwise.
 - Prefer regular Markdown emphasis over inline code for prose formatting.
 - Highlight terms as `**term**`.
