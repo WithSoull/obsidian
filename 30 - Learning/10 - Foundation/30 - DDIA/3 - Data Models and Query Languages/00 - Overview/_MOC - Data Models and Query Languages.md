@@ -27,7 +27,7 @@
 
 
 ![[99 - Meta/02 - Медиа/Pasted image 20251009184250.png]]
-[[public/30 - Learning/10 - Foundation/30 - DDIA/3 - Data Models and Query Languages/00 - Overview/Data Model Scheme|Data Model Scheme]]
+[[public/30 - Learning/10 - Foundation/30 - DDIA/3 - Data Models and Query Languages/00 - Overview/Data Model Scheme.canvas|Data Model Scheme]]
 ## Relational - SQL
 Самой популярной из них является реляционная [[public/30 - Learning/10 - Foundation/30 - DDIA/3 - Data Models and Query Languages/01 - Data Models/01 - Relational/SQL|(SQL)]] модель, появившаяся в 1970х годах. Другие альтернативы в то время (SQL все равно доминировал над ними):
 - network model
