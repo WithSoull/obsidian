@@ -1,3 +1,13 @@
+## Функциональные и нефункциональные требования
+- **функциональные** - какие фичи у нас есть в проекте
+- **нефункциональные**:
+	- Насколько надежным должно быть наше приложение?
+	- Насколько быстрым? Сколько запросов в секунду должно выдерживать?
+	- Сколько может хранить данных? 5 ТБ или может сотни ПБ.
+	- и все в таком духе.
+---
+## Что означает **data-intensive** ?
+
 Сегодня большая часть приложений *data-intensive*, а не *cpu-intensive*. Основные проблемы это: 
 - Количество данных
 - Сложность данных
@@ -14,8 +24,9 @@
 ![[99 - Meta/02 - Медиа/Pasted image 20250411134021.png]]
 
 Чтобы построить хорошее *data-intensive* приложение нам необходимо:
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Measuring Performance|Measuring Performance]]
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability|Reliability(надежность)]] - Работает всегда корректно, даже если что-то идет не так. Faults могут быть связаны с железом, софтом и человеческим фактором.
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability|Scalability(масштабируемость)]] - Во время роста системы, у нас должны быть конкретные(достижимые) способы справиться с этим ростом. В первую очередь мы должны описать нагрузку и производительности.
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability|Scalability(масштабируемость)]] - Во время роста системы, у нас должны быть конкретные способы справиться с этим ростом. Для этого сначала описываем нагрузку и целевые метрики.
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Maintainability|Maintainability(удобство сопровождения)]] - Все, кто работают над данным приложением, должны быть способны работать над ним продуктивно. Хорошие абстракции и мониторинг помогут с этим.
 
 До этих качеств полезно договориться о базовой архитектурной рамке:
