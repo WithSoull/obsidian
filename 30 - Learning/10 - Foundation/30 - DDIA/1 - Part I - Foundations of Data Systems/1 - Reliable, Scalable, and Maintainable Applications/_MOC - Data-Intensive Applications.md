@@ -45,6 +45,8 @@
 - percentiles;
 - SLO/SLA.
 
+Эта ветка отвечает за словарь и поведение системы под нагрузкой. Подробности не повторяем в **Scalability**, а только используем как базу.
+
 ### [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability|Reliability]]
 Надежность  это способность системы продолжать работать корректно, когда что-то идет не так.
 
@@ -53,6 +55,8 @@
 
 ### [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability|Scalability]]
 Масштабируемость  это не "система большая", а способность удерживать приемлемую производительность при росте нагрузки.
+
+Эта ветка отвечает за load dimensions и выбор подходов к росту, а не за повторное объяснение performance-метрик.
 
 Внутри ветки:
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling|Twitter Scaling]]

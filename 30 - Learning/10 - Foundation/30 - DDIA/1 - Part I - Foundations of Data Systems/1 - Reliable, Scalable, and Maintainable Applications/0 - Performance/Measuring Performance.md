@@ -8,7 +8,7 @@ DDIA сначала предлагает договориться не о мас
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]].
 - **Throughput**  это сколько запросов, событий или байт система обрабатывает за единицу времени.
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile|Percentile]] нужны, потому что среднее плохо отражает опыт медленных пользователей.
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Objective|SLO]] и [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Agreement|SLA]] фиксируют ожидаемый уровень сервиса.
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA|SLO и SLA]] фиксируют ожидаемый уровень сервиса.
 
 ## Как метрики связаны
 Связь между метриками:
@@ -26,4 +26,4 @@ DDIA сначала предлагает договориться не о мас
 Практический вывод:
 - **response time** лучше мерить на стороне клиента;
 - **throughput** нужен для capacity planning;
-- **scalability** обсуждается только после того, как нагрузка и ожидаемая производительность описаны явно.
+- **scalability** опирается на эту заметку, но не должна дублировать ее содержание.
