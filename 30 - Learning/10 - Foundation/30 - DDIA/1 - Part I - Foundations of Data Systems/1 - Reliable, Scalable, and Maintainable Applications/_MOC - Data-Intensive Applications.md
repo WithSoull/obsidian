@@ -1,6 +1,6 @@
 # Reliable, Scalable, and Maintainable Applications
 
-Это карта главы 2 DDIA **Defining Nonfunctional Requirements**.
+Это карта ветки про нефункциональные требования в data-intensive системах.
 
 ## Зачем нужна эта глава
 **Функциональные** требования отвечают на вопрос "что система умеет".

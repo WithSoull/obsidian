@@ -48,9 +48,12 @@ Additional retrieval rules:
 ## DDIA Note Philosophy
 
 - Treat the `30 - DDIA` branch as a personal knowledge base about data-intensive applications, not as a verbatim or section-by-section rewrite of the book.
+- Treat DDIA notes as notes about distributed systems, storage, reliability, scalability, and data systems in practice, not as commentary on what the book "emphasizes."
 - Do not assume every subsection of the book must exist as a separate note. Missing notes may simply mean the topic has not yet been internalized or is intentionally deferred.
 - Preserve and respect the author's own examples, hypotheses, comparisons, and conclusions even when they go beyond the book, as long as they are clearly useful and not factually wrong.
 - Prefer helping the author think, compare, and sharpen ideas over maximizing coverage of the source text.
+- Use the book as a source for verification and terminology, but write notes as standalone engineering artifacts.
+- Prefer direct formulations such as "важно различать..." or "на практике это ломается так..." over phrases like "DDIA делает акцент..." or "в книге говорится...".
 - When auditing DDIA notes against the book, distinguish clearly between:
   - factual mistakes or misleading statements,
   - genuinely missing concepts that would improve the note set,

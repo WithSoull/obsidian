@@ -37,7 +37,7 @@
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA|SLO vs SLA]].
 
 ## Подходы чтобы справиться с нагрузкой
-**Scalability** в DDIA не означает "система уже большая". Это вопрос:
+**Scalability** не означает "система уже большая". Это вопрос:
 - как изменится производительность при росте нагрузки;
 - сколько ресурсов надо добавить, чтобы удержать приемлемый уровень сервиса.
 
