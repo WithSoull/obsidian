@@ -5,10 +5,10 @@
 
 ## Базовые метрики
 Ключевые метрики:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]].
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]].
 - **Throughput**  это сколько запросов, событий или байт система обрабатывает за единицу времени.
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile|Percentile]] нужны, потому что среднее плохо отражает опыт медленных пользователей.
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA|SLO и SLA]] фиксируют ожидаемый уровень сервиса.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Percentile|Percentile]] нужны, потому что среднее плохо отражает опыт медленных пользователей.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/SLO vs SLA|SLO и SLA]] фиксируют ожидаемый уровень сервиса.
 
 ## Как метрики связаны
 Связь между метриками:
@@ -18,9 +18,9 @@
 
 ## Где ломается интуиция
 Что важно держать рядом с метриками:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking|Head-of-Line Blocking]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Tail Latency Amplification|Tail Latency Amplification]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Overload, Retry Storm, and Backpressure|Overload, Retry Storm, and Backpressure]].
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Head-of-Line Blocking|Head-of-Line Blocking]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Tail Latency Amplification|Tail Latency Amplification]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Overload, Retry Storm, and Backpressure|Overload, Retry Storm, and Backpressure]].
 
 ## Практический вывод
 Практический вывод:

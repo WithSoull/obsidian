@@ -45,7 +45,7 @@ Microservices почти всегда делают систему распред
 - заранее фиксировать, какие новые failure modes приносит сеть и как их наблюдать.
 
 ## Связанные заметки
-- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Cloud Versus Self-Hosting|Cloud Versus Self-Hosting]]
+- [[30 - Learning/10 - Foundation/30 - DDIA/1 - Trade-Offs in Data Systems Architecture/Cloud Versus Self-Hosting|Cloud Versus Self-Hosting]]
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Reliability|Reliability]]
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Scalability|Scalability]]
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Operability|Operability]]

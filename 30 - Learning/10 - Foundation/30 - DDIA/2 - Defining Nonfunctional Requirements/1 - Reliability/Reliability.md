@@ -8,7 +8,7 @@
 ## Что такое reliability
 Эти определения не просто значат "работает корректно", они означают что *приложение работает корректно даже, если что-то пошло не так*.
 
-Что-то идущее не так, как запланировано называют *fault* (см [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault vs Failure|Fault vs Failure]]), а ПО, которое справляется с fault'ами есть *fault-tolerant (resilient)*. При этом не стоит упарываться, и предотвращать все fault'ы
+Что-то идущее не так, как запланировано называют *fault* (см [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Fault vs Failure|Fault vs Failure]]), а ПО, которое справляется с fault'ами есть *fault-tolerant (resilient)*. При этом не стоит упарываться, и предотвращать все fault'ы
 
 ## Источники проблем
 ### Hardware faults

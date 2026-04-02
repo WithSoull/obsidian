@@ -3,19 +3,19 @@
 Аудит сделан по главе 2 `Defining Nonfunctional Requirements` из [[30 - Learning/10 - Foundation/30 - DDIA/0 - Book PDFs/2.0 DDIA-original.pdf]].
 
 Сравнивались заметки в папке:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/_MOC - Data-Intensive Applications]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault vs Failure]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Tail Latency Amplification]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Maintainability]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Operability]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Simplicity]]
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Evolvability]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/_MOC - Defining Nonfunctional Requirements]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Reliability]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Fault vs Failure]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Scalability]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Twitter Scaling]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Percentile]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/SLO vs SLA]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Head-of-Line Blocking]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Tail Latency Amplification]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Maintainability]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Operability]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Simplicity]]
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Evolvability]]
 
 ## Общая оценка
 
@@ -36,7 +36,7 @@
 
 ### 1. Перепутана логика кейса про Twitter timeline
 
-В [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling]] перепутан основной вывод кейса.
+В [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Twitter Scaling]] перепутан основной вывод кейса.
 
 Как у тебя:
 > Если пользоваться вторым подходом, один пост знаменитости будет стоить слишком дорого. Поэтому сейчас твиттер комбинирует оба этих подхода. Посты знаменитостей отдельно вписываются в ленты их подписчиков. А для обычных пользователей работает первый подход.
@@ -50,7 +50,7 @@
 
 ### 2. Неверно определена `latency`
 
-В [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability]] `latency` описана как время чистой обработки запроса без сети и очередей.
+В [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Scalability]] `latency` описана как время чистой обработки запроса без сети и очередей.
 
 Как у тебя:
 > Latency (это время на чистую обработку запроса, без всяких сетевых задержек или очередей)
@@ -73,7 +73,7 @@
 
 ### 3. `fault` и `failure` разведены слишком грубо
 
-В [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault vs Failure]] написано:
+В [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Fault vs Failure]] написано:
 
 Как у тебя:
 > *Fault* - когда из строя выходит один компонент, а *failure* - когда система целиком
@@ -92,7 +92,7 @@
 
 ### 4. `P999` подан как почти универсальная норма
 
-В [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile]] практический блок местами звучит слишком категорично:
+В [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Percentile]] практический блок местами звучит слишком категорично:
 - `P999` как основной полезный индикатор;
 - `P9999` как бессмысленная или вредная метрика.
 
@@ -116,7 +116,7 @@
 
 ### 5. SLO/SLA сведены только к performance
 
-В [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability]], [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Objective]] и [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Agreement]] SLO/SLA описаны в основном как цели производительности.
+В [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Scalability]] и [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/SLO vs SLA|SLO vs SLA]] SLO/SLA описаны в основном как цели производительности.
 
 Как у тебя:
 > SLO - внутренняя цель производительности сервиса
@@ -157,7 +157,7 @@
 
 ### 2. `Head-of-Line Blocking` объяснен нормально, но не доведен до общей модели
 
-[[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking]] передает интуицию, но слабо связан с:
+[[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Head-of-Line Blocking]] передает интуицию, но слабо связан с:
 - ограниченным параллелизмом;
 - очередями;
 - различием между `service time` и полной `response time`.
@@ -174,7 +174,7 @@
 
 ### 3. Раздел про людей в reliability местами теряет мысль книги
 
-[[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability]] полезно перечисляет rollback, тесты, monitoring и sandbox, но книга делает более точный акцент:
+[[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Reliability]] полезно перечисляет rollback, тесты, monitoring и sandbox, но книга делает более точный акцент:
 - не на персональной вине;
 - а на `sociotechnical system`;
 - на системных причинах ошибок;
@@ -191,7 +191,7 @@
 
 ### 4. `Maintainability` покрыт верно, но слишком коротко
 
-Ветки [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Operability]], [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Simplicity]] и [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Evolvability]] держат правильную тройку, но не хватает нюанса:
+Ветки [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Operability]], [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Simplicity]] и [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Evolvability]] держат правильную тройку, но не хватает нюанса:
 - автоматизация не всегда улучшает operability;
 - maintenance это не только код, но и организация;
 - legacy возникает почти у любой успешной системы.
@@ -208,7 +208,7 @@
 
 ### 5. `WhatsApp Service Architecture` не помогает восстановить именно главу 2
 
-[[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/WhatsApp Service Architecture]] полезна как отдельная system design заметка, но как материал по главе 2 она скорее боковая и не закрывает пробелы по основным терминам.
+[[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/WhatsApp Service Architecture]] полезна как отдельная system design заметка, но как материал по главе 2 она скорее боковая и не закрывает пробелы по основным терминам.
 
 Как у тебя:
 > Нефункциональные требования:
@@ -227,9 +227,9 @@
 
 ## Что покрыто хорошо
 
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Reliability]] держит правильный каркас: hardware faults, software faults, human mistakes.
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Maintainability]] и дочерние заметки правильно отражают тройку `operability / simplicity / evolvability`.
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile]] полезна practically, если ослабить слишком общие выводы и явно отделить их от текста книги.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Reliability]] держит правильный каркас: hardware faults, software faults, human mistakes.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Maintainability]] и дочерние заметки правильно отражают тройку `operability / simplicity / evolvability`.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Percentile]] полезна practically, если ослабить слишком общие выводы и явно отделить их от текста книги.
 
 ## Что перечитать в книге
 
@@ -298,8 +298,8 @@
 
 Если править не все сразу, а в порядке отдачи, то приоритет такой:
 
-1. Исправить [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling]].
-2. Исправить определения в [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Scalability]].
-3. Исправить [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/1 - Reliability/Fault vs Failure]].
+1. Исправить [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Twitter Scaling]].
+2. Исправить определения в [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Scalability]].
+3. Исправить [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/1 - Reliability/Fault vs Failure]].
 4. Дособрать отдельную заметку или раздел про `Describing Performance`.
 5. Потом уже шлифовать `Maintainability` и practical notes.

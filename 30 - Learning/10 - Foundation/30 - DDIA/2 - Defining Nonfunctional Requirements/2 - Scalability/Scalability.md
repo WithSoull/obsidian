@@ -7,7 +7,7 @@
 ## На что опирается scalability
 Сначала нужно договориться о языке измерения системы, иначе разговор про масштабирование будет расплывчатым.
 
-Все определения и эффекты под нагрузкой лежат в [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Measuring Performance|Measuring Performance]].
+Все определения и эффекты под нагрузкой лежат в [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Measuring Performance|Measuring Performance]].
 
 В этой заметке нас интересует не словарь метрик, а *что именно в системе растет* и *какими рычагами с этим работать*.
 
@@ -18,7 +18,7 @@
 - Количество одновременно активных пользователей
 - Hit rate on a cache
 
-Иногда достаточно среднего случая, а иногда нужно явно моделировать экстремальные кейсы. Хороший пример  [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/2 - Scalability/Twitter Scaling|Twitter Scaling]].
+Иногда достаточно среднего случая, а иногда нужно явно моделировать экстремальные кейсы. Хороший пример  [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/2 - Scalability/Twitter Scaling|Twitter Scaling]].
 
 ## Какие вопросы задает scalability
 - Если я буду повышать нагрузку оставляя неизменными системные ресурсы, как это повлияет на производительность системы?
@@ -30,11 +30,11 @@
 - допустимый уровень деградации.
 
 Если нужно понять, *почему* под ростом система замедляется, смотри:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking|Head-of-Line Blocking]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Tail Latency Amplification|Tail Latency Amplification]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Overload, Retry Storm, and Backpressure|Overload, Retry Storm, and Backpressure]];
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA|SLO vs SLA]].
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Head-of-Line Blocking|Head-of-Line Blocking]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Tail Latency Amplification|Tail Latency Amplification]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/Overload, Retry Storm, and Backpressure|Overload, Retry Storm, and Backpressure]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/0 - Performance/SLO vs SLA|SLO vs SLA]].
 
 ## Подходы чтобы справиться с нагрузкой
 **Scalability** не означает "система уже большая". Это вопрос:

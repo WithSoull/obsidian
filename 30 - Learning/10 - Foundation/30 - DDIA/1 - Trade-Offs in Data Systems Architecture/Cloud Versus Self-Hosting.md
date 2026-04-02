@@ -124,7 +124,7 @@ Cloud не убирает ops, а сдвигает фокус.
 Нормальная эвристика:
 - брать cloud service для commodity-задач, где нет уникальных требований;
 - self-host там, где у workload есть специальные требования по latency, стоимости, observability или compliance;
-- помнить, что cloud почти всегда усиливает роль сети и часто подталкивает к [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/0 - Trade-Offs in Data Systems Architecture/Distributed Versus Single-Node Systems|distributed system]] trade-offs;
+- помнить, что cloud почти всегда усиливает роль сети и часто подталкивает к [[30 - Learning/10 - Foundation/30 - DDIA/1 - Trade-Offs in Data Systems Architecture/Distributed Versus Single-Node Systems|distributed system]] trade-offs;
 - не путать "работает в облаке" и "cloud-native архитектура".
 
 Хорошая промежуточная позиция: hybrid approach. Например, primary OLTP database держать под более жёстким контролем, а аналитический pipeline, object storage и очереди брать как managed services.

@@ -14,6 +14,6 @@
 
 ## Три опоры
 Три главные грани:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Operability|Operability]]  делает повседневную эксплуатацию предсказуемой;
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Simplicity|Simplicity]]  снижает ненужную сложность;
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/3 - Maintainability/Evolvability|Evolvability]]  упрощает изменение системы под новые требования.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Operability|Operability]]  делает повседневную эксплуатацию предсказуемой;
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Simplicity|Simplicity]]  снижает ненужную сложность;
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/3 - Maintainability/Evolvability|Evolvability]]  упрощает изменение системы под новые требования.

@@ -15,20 +15,21 @@
 - `30 - Learning/10 - Foundation/40 - Algo/111 - Sorting`
 - `30 - Learning/10 - Foundation/40 - Algo/112 - Graphs & Trees/Balanced Trees`
 - `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Data Models and Query Languages/03_Concepts and Performance`
+- `30 - Learning/10 - Foundation/30 - DDIA` duplicate `(2)` cleanup and broken-link fix after chapter reorganization
 
 ## Next
 
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/01 - Simple DB Implementation`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/01 - Simple DB Implementation`
 
 ## Queue
 
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/Hash`
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database`
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree`
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/Compaction`
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/3 - Storage and Retrieval/03 - OLAP/Column-Oriented Storage`
-- `30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/4 - Encoding and Evolution/1 - Formats/Avro`
-- `30 - Learning/10 - Foundation/30 - DDIA/3. Part III/9. Chapter 9`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/02 - Data Structures That Power Your Database/Hash`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/02 - Data Structures That Power Your Database`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/02 - Data Structures That Power Your Database/B-Tree`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/02 - Data Structures That Power Your Database/LSM-Tree/Compaction`
+- `30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/03 - OLAP/Column-Oriented Storage`
+- `30 - Learning/10 - Foundation/30 - DDIA/5 - Encoding and Evolution/1 - Formats/Avro`
+- `30 - Learning/10 - Foundation/30 - DDIA/10 - Consistency and Consensus`
 - `30 - Learning/10 - Foundation/40 - Algo/00 - LeetCode`
 
 ## Notes
