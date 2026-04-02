@@ -35,6 +35,10 @@ Additional retrieval rules:
 ## DDIA PDF Workflow
 
 - The canonical DDIA source is `30 - Learning/10 - Foundation/30 - DDIA/0 - Book PDFs/2.0 DDIA-original.pdf`.
+- The DDIA branch is currently organized by top-level numbered chapter folders directly under `30 - Learning/10 - Foundation/30 - DDIA`:
+  `1 - Trade-Offs in Data Systems Architecture`, `2 - Defining Nonfunctional Requirements`, `3 - Data Models and Query Languages`, and so on.
+- Do not assume the older `Part I / Part II / Part III` folder layout exists. Treat any stale links that still reference it as outdated structure, not as the canonical location.
+- When the user refers to a DDIA chapter by number, resolve it against the current top-level chapter folders first.
 - When the user asks about DDIA and the answer may benefit from the source text, prefer checking the PDF before relying on memory.
 - Use `pdfinfo` to inspect the file and `pdftotext` to search or extract text from the PDF.
 - For focused DDIA tasks, prefer this order:
@@ -44,6 +48,7 @@ Additional retrieval rules:
   4. then write or revise the note.
 - Do not extract the whole book unless full-book search is actually needed.
 - For note generation from DDIA, keep the note in Russian, but preserve canonical English technical terms in titles when appropriate.
+- If duplicate notes with suffixes like `(2)` exist, treat them as likely conflict or copy artifacts. Prefer the unsuffixed note unless the user explicitly asks to reconcile duplicates.
 
 ## DDIA Note Philosophy
 

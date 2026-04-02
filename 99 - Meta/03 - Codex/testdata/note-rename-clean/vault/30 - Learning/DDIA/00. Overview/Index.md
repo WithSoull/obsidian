@@ -10,4 +10,4 @@ Path-based graph note:
 [[99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Property Graph Model]]
 
 Short graph note:
-[[Property Graph Model]]
+[[public/99 - Meta/03 - Codex/testdata/note-rename-clean/vault/30 - Learning/DDIA/01. Query Stuff/01. Graph/Property Graph Model]]

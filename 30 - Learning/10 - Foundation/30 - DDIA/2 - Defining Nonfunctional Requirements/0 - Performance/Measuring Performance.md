@@ -1,0 +1,29 @@
+Сначала полезно договориться не о масштабировании, а о языке измерения системы.
+
+## Зачем это нужно
+Пока мы не описали нагрузку и измерения, разговоры про "быстро" и "медленно" остаются слишком расплывчатыми.
+
+## Базовые метрики
+Ключевые метрики:
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|Response Time, Service Time, and Latency]].
+- **Throughput**  это сколько запросов, событий или байт система обрабатывает за единицу времени.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile|Percentile]] нужны, потому что среднее плохо отражает опыт медленных пользователей.
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/SLO vs SLA|SLO и SLA]] фиксируют ожидаемый уровень сервиса.
+
+## Как метрики связаны
+Связь между метриками:
+- при фиксированных ресурсах рост **throughput** повышает **response time**, потому что появляются очереди;
+- ближе к пределу системы очередь растет нелинейно;
+- из-за этого пользователь чаще страдает не от "медленного кода", а от ожидания.
+
+## Где ломается интуиция
+Что важно держать рядом с метриками:
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Head-of-Line Blocking|Head-of-Line Blocking]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Tail Latency Amplification|Tail Latency Amplification]];
+- [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/2 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Overload, Retry Storm, and Backpressure|Overload, Retry Storm, and Backpressure]].
+
+## Практический вывод
+Практический вывод:
+- **response time** лучше мерить на стороне клиента;
+- **throughput** нужен для capacity planning;
+- **scalability** опирается на эту заметку, но не должна дублировать ее содержание.

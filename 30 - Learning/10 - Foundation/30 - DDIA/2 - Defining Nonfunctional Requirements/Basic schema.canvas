@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"40530d11b3f2abd7","type":"text","text":"Main propeties","x":234,"y":-870,"width":197,"height":70,"color":"1"},
+		{"id":"0a5645c691bc2577","type":"text","text":"Describing Load","x":366,"y":-563,"width":155,"height":90,"color":"3"},
+		{"id":"6b2edf44e24e0822","type":"text","text":"Approaches for Coping with Load","x":145,"y":-443,"width":376,"height":50,"color":"5"},
+		{"id":"7f8fb3fd5ed25b4c","type":"text","text":"Describing Perfomance","x":145,"y":-563,"width":155,"height":90,"color":"3"},
+		{"id":"2de5a7310e205037","type":"text","text":"Scalability","x":261,"y":-680,"width":146,"height":55,"color":"5"},
+		{"id":"e441ba8ee17c4079","type":"text","text":"Hardware Faults","x":-220,"y":-668,"width":145,"height":90,"color":"4"},
+		{"id":"772fbeb60f71f4d4","type":"text","text":"Software Errors","x":-135,"y":-563,"width":200,"height":60,"color":"4"},
+		{"id":"2d798c3a1d5ca89d","type":"text","text":"Reliability","x":-105,"y":-803,"width":140,"height":60,"color":"4"},
+		{"id":"1083704efc248735","type":"text","text":"Human Errors","x":6,"y":-668,"width":118,"height":90,"color":"4"},
+		{"id":"8d66f022ebd86e55","type":"text","text":"Maintainability","x":641,"y":-800,"width":185,"height":60,"color":"6"},
+		{"id":"ecbae4d0763ec19c","type":"text","text":"Simplicity","x":664,"y":-560,"width":140,"height":60,"color":"6"},
+		{"id":"0ca5117d342b08c3","type":"text","text":"Evolvability","x":760,"y":-665,"width":160,"height":60,"color":"6"},
+		{"id":"af9df4ea49b10647","type":"text","text":"Operability","x":540,"y":-665,"width":160,"height":60,"color":"6"}
+	],
+	"edges":[
+		{"id":"02802f624fb3709d","fromNode":"2d798c3a1d5ca89d","fromSide":"bottom","toNode":"e441ba8ee17c4079","toSide":"top","color":"4"},
+		{"id":"0a74967c0e2afe10","fromNode":"2d798c3a1d5ca89d","fromSide":"bottom","toNode":"1083704efc248735","toSide":"top","color":"4"},
+		{"id":"b7a8bc89963b2d8b","fromNode":"2d798c3a1d5ca89d","fromSide":"bottom","toNode":"772fbeb60f71f4d4","toSide":"top","color":"4"},
+		{"id":"a3b1152ac243af0a","fromNode":"2de5a7310e205037","fromSide":"bottom","toNode":"7f8fb3fd5ed25b4c","toSide":"top","color":"3"},
+		{"id":"00bf5c9a3722c832","fromNode":"2de5a7310e205037","fromSide":"bottom","toNode":"0a5645c691bc2577","toSide":"top","color":"3"},
+		{"id":"39dbaf04138dab5e","fromNode":"2de5a7310e205037","fromSide":"bottom","toNode":"6b2edf44e24e0822","toSide":"top","color":"5"},
+		{"id":"afe7f82e7604871c","fromNode":"8d66f022ebd86e55","fromSide":"bottom","toNode":"0ca5117d342b08c3","toSide":"top","color":"6"},
+		{"id":"277b4e980255de75","fromNode":"8d66f022ebd86e55","fromSide":"bottom","toNode":"ecbae4d0763ec19c","toSide":"top","color":"6"},
+		{"id":"9d6c6ea4ff756bfb","fromNode":"8d66f022ebd86e55","fromSide":"bottom","toNode":"af9df4ea49b10647","toSide":"top","color":"6"},
+		{"id":"1a86fd033386d02a","fromNode":"40530d11b3f2abd7","fromSide":"bottom","toNode":"2de5a7310e205037","toSide":"top","color":"5"},
+		{"id":"3d9e0aaa07855b23","fromNode":"40530d11b3f2abd7","fromSide":"left","toNode":"2d798c3a1d5ca89d","toSide":"right","color":"4"},
+		{"id":"cfd4664fde4eeef1","fromNode":"40530d11b3f2abd7","fromSide":"right","toNode":"8d66f022ebd86e55","toSide":"left","color":"6"}
+	]
+}
