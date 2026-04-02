@@ -20,7 +20,7 @@
 - Если я увеличу нагрузку, насколько надо увеличить системные ресурсы, чтобы производительность осталось неизменной?
 
 Чтобы это обсуждать предметно, нужно зафиксировать:
-- `throughput`;
+- **throughput**;
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Response Time, Service Time, and Latency|response time / service time / latency]];
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Percentile|percentiles]];
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Objective|SLO]] и [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Service Level Agreement|SLA]].
@@ -33,7 +33,7 @@
 - [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Overload, Retry Storm, and Backpressure|retry storm и backpressure]].
 
 ## Подходы чтобы справиться с нагрузкой
-`Scalability` в DDIA не означает "система уже большая". Это вопрос:
+**Scalability** в DDIA не означает "система уже большая". Это вопрос:
 - как изменится производительность при росте нагрузки;
 - сколько ресурсов надо добавить, чтобы удержать приемлемый уровень сервиса.
 

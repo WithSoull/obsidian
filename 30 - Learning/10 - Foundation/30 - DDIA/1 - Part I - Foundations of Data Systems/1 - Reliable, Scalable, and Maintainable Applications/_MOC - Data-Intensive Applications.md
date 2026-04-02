@@ -1,6 +1,6 @@
 # Reliable, Scalable, and Maintainable Applications
 
-Это карта главы 2 DDIA `Defining Nonfunctional Requirements`.
+Это карта главы 2 DDIA **Defining Nonfunctional Requirements**.
 
 ## Зачем нужна эта глава
 **Функциональные** требования отвечают на вопрос "что система умеет".
@@ -19,11 +19,11 @@
 - как быстро их нужно читать, пересчитывать и доставлять.
 
 Поэтому система обычно собирается из нескольких типовых компонентов:
-- `database`;
-- `cache`;
-- `search index`;
-- `stream processing`;
-- `batch processing`.
+- **database**;
+- **cache**;
+- **search index**;
+- **stream processing**;
+- **batch processing**.
 
 Пример системы, где эти части комбинируются:
 ![[99 - Meta/02 - Медиа/Pasted image 20250411134021.png]]
@@ -38,10 +38,10 @@
 ## Каркас главы
 ### [[30 - Learning/10 - Foundation/30 - DDIA/1 - Part I - Foundations of Data Systems/1 - Reliable, Scalable, and Maintainable Applications/0 - Performance/Measuring Performance|Performance]]
 Сначала нужно договориться о языке измерения системы:
-- `throughput`;
-- `response time`;
-- `service time`;
-- `latency`;
+- **throughput**;
+- **response time**;
+- **service time**;
+- **latency**;
 - percentiles;
 - SLO/SLA.
 
