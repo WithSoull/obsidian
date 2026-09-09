@@ -56,3 +56,20 @@ WHERE latitude  > 51.4946 AND latitude  < 51.5079
 ---
 ## Радикальное решение проблемы
 Индексы мы используем чтобы ускоритить чтение с диска, и интересным варинтом решения этой проблемы является: [[public/30 - Learning/10 - Foundation/30 - DDIA/4 - Storage and Retrieval/02 - Data Structures That Power Your Database/Keeping Everything in Memory|... барабанная дробь... выкинуть диск... и взять дешевую RAM]].
+
+---
+### Secondary index в YDB
+В YDB таблица шардируется по диапазонам primary key. Пусть primary key — `(folder_id, name)`, а частый запрос ищет записи по `cloud_id`:
+``` sql
+SELECT COUNT(*) FROM configuration_sets WHERE cloud_id = $cloud_id;
+```
+Без индекса такой запрос может затронуть много шардов. При создании secondary index YDB поддерживает отдельную индексную таблицу: значение индексируемой колонки связано с primary key основной таблицы.
+```
+  cloud_id | folder_id | name   ← PK основной таблицы подтягивается автоматически
+  ---------+-----------+-------
+  folder1  | folder1   | cs-a
+  folder1  | folder1   | cs-b
+  folder2  | folder2   | cs-c
+```
+
+При `WHERE cloud_id = $cloud_id` запрос сначала находит primary key в индексной таблице, а затем читает нужные строки из основной. Это lookup join: индекс ускоряет чтение, но требует дополнительного места и обновлений при записи.
