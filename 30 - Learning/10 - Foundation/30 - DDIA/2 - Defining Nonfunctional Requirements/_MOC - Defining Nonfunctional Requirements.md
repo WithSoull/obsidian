@@ -76,5 +76,4 @@
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/1 - Trade-Offs in Data Systems Architecture/Systems of Record and Derived Data|Systems of Record and Derived Data]]
 
 Дополнительно:
-- [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/Defining Nonfunctional Requirements Audit|Defining Nonfunctional Requirements Audit]]
 - [[public/30 - Learning/10 - Foundation/30 - DDIA/2 - Defining Nonfunctional Requirements/WhatsApp Service Architecture|WhatsApp Service Architecture]]

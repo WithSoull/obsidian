@@ -22,8 +22,9 @@
 - Каскадные *failures* из-за небольшого *fault*.
 
 Частенько подобные баги спят долгое время и проявляются при редких обстоятельствах
-Например латентная ошибка *Priority inversion in VxWorks* в 1997, которая появлялась только при одновременном выполнении задач, как результат повлекла за собой 3 дня без связи.
-Еще одним кейсом является ошибка в билинге AWS S3, которая роняла продакшен при превышении лимитов сервисных запросов вызвала 4-часовой простой
+Например, **priority inversion** в VxWorks на Mars Pathfinder в 1997 году при редком сочетании конкурентных задач вызывал перезапуски системы и потерю части научных данных. Проблему исправили, включив **priority inheritance**; она не была причиной отдельного трехдневного перерыва связи с аппаратом.
+
+Другой пример  инцидент AWS S3 в 2017 году. Инженер отлаживал медленную работу billing subsystem и хотел вывести из кластера небольшое число серверов, но ошибочный параметр команды удалил значительно больше серверов и вызвал масштабный сбой. Причиной было не превышение лимита сервисных запросов, а опасная команда без достаточных ограничений на blast radius.
 
 ## Люди и надежность
 ### Человеческий фактор
@@ -64,3 +65,12 @@
 
 Хороший практический вопрос:
 - что будет стоить дороже: лишняя неделя на rollback, observability и safe rollout или один вечер полного простоя?
+
+## Источники для примеров
+[NASA — Software Construction and Analysis Tools for Future Space Missions](https://ntrs.nasa.gov/api/citations/20020063476/downloads/20020063476.pdf):
+
+> “The problem was ultimately determined to be a priority inversion bug in simultaneously executing processes.”
+
+[AWS — Summary of the Amazon S3 Service Disruption](https://aws.amazon.com/message/41926/):
+
+> “One of the inputs to the command was entered incorrectly and a larger set of servers was removed than intended.”

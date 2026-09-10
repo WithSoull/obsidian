@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
 msg="${1:?commit message required}"
+
+# Update the local branch before staging anything. Autostash preserves tracked
+# working-tree changes while the rebase is in progress; untracked files remain
+# untouched and make pull fail rather than being overwritten on a collision.
+git pull --rebase --autostash origin main
+
+if [[ -n "$(git ls-files -u)" ]]; then
+  echo "safe-commit: unresolved merge conflicts after pull" >&2
+  exit 1
+fi
+
 git add -A
 git commit -m "$msg"
 git push origin main

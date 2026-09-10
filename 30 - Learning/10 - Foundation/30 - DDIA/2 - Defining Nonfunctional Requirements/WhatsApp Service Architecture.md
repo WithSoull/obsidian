@@ -19,10 +19,14 @@
 Это 10TB в день, 300 TB в месяц
 
 ### Bandwidth
-10 TB / day => 10 TB / 86400 sec = 925 MB/ sec
+`10 TB/day`  это примерно `116 MB/s`, или `0.93 Gbit/s`, без учета протокольных накладных расходов и медиаконтента.
 
 ### Number of Servers
-Кол-во серверов = Общее кол-во подключений в день/Кол-во подключений на сервер = 2 billion/10 million = 200 servers
+Серверы для WebSocket-соединений нужно оценивать по **пиковому числу одновременных соединений**, а не по числу подключений или пользователей за день.
+
+Например, `2 billion / 10 million = 200 servers` верно только при двух явно подтвержденных предположениях:
+- одновременно подключены `2` миллиарда клиентов;
+- один сервер действительно выдерживает `10` миллионов соединений с требуемыми TLS, heartbeat, памятью и bandwidth.
 
 # High level design (HLD)
 ![[99 - Meta/02 - Медиа/Pasted image 20250922143822.png]]
@@ -46,7 +50,7 @@
 ![[99 - Meta/02 - Медиа/Pasted image 20250922150403.png]]
 
 #### 1. WebSocket
-**WebSocket Server** — облегчённый сервер, способный обрабатывать до 10 миллионов одновременных соединений на одном сервере (решение проблемы C10M) . Использует event-driven архитектуру с неблокирующим I/O для избежания накладных расходов “один поток на соединение” .
+**WebSocket Server** — event-driven сервер с неблокирующим I/O, который избегает модели "один поток на соединение". Число соединений на сервер нельзя считать фиксированным: его определяют память на соединение, TLS, heartbeat-трафик, файловые дескрипторы и профиль сообщений. `10` миллионов  это цель для отдельного capacity-теста, а не универсальная гарантия.
 **WebSocket Manager** — центральный компонент, который управляет маппингом между пользователями и их портами/соединениями, используя Redis как распределённый кеш для хранения состояния соединений .
 
 ###### **APIs**:
@@ -58,7 +62,7 @@
 #### 2. Message Service
 
 ###### Основные компоненты
-- **Message Queue (FIFO)**: Kafka с единственной партицией на чат для strict ordering
+- **Message Queue**: Kafka с ключом `chat_id`, чтобы сообщения одного чата попадали в одну партицию и сохраняли порядок внутри нее
 - **Mnesia Database**: distributed Erlang DBMS для persistent storage
 - **Delivery Status**: three-tier система (sent→delivered→read)
 
@@ -69,9 +73,10 @@
 - `setRetentionPolicy(chatId, days)` — конфигурация retention
 
 ###### Kafka FIFO Implementation
-- Single partition per chat: `partitionKey = hash(chat_id)` 
-- Producer idempotence для exactly-once delivery
-- Consumer ordering гарантии только внутри партиции 
+- `chat_id` используется как record key; одна Kafka-партиция обычно обслуживает множество чатов
+- Kafka сохраняет порядок записей только внутри партиции, а не глобально и не до конечного устройства
+- producer idempotence подавляет дубли, возникающие из-за producer retries при записи в Kafka, но не дает end-to-end exactly-once delivery
+- для effectively-once обработки нужны `message_id`, дедупликация или идемпотентный consumer и согласованная фиксация результата вместе с offset
 - Batch processing для повышения throughput
 
 ###### Mnesia Features
@@ -79,3 +84,10 @@
 - Dynamic schema reconfiguration в runtime
 - Multi-node replication для fault tolerance 
 - Query List Comprehension (QLC) для complex queries
+
+## Источник по Kafka
+[Apache Kafka — Producer Configs](https://kafka.apache.org/41/configuration/producer-configs/):
+
+> “When set to 'true', the producer will ensure that exactly one copy of each message is written in the stream.”
+
+Здесь **stream** означает запись в Kafka, а не end-to-end доставку сообщения на устройство пользователя.
