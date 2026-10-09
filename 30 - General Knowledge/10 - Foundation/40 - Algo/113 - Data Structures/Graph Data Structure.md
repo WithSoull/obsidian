@@ -1,0 +1,18 @@
+# Определение
+Граф - это набор связей, есть узлы и ребра.
+# Алгоритмы с графами
+
+- [[public/30 - General Knowledge/10 - Foundation/40 - Algo/112 - Graphs & Trees/Breadth-First Search (BFS)]]
+  Работает с *невзвешенными ациклическими графами*
+
+- [[public/30 - General Knowledge/10 - Foundation/40 - Algo/112 - Graphs & Trees/Dijkstra's Algorithm]]
+  Работает с направленными взвешенными ациклическими графами (DAG - Direct Acyclic Graph)
+  
+# Реализация
+- Python (с помощью мапы)
+  ![[99 - Meta/02 - Медиа/Pasted image 20231018225931.png]]
+  ``` python 
+  graph = {}
+  graph["you"] = ["alice", "bob", "claire"]
+  graph["alice"] = ["emma", "rayan gosling"]
+```
