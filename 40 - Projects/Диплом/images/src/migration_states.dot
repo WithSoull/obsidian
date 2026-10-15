@@ -1,0 +1,41 @@
+digraph migration_states {
+  graph [rankdir=TB, fontname="Arial", nodesep=0.35, ranksep=0.3, pad=0.2];
+  node  [shape=box, style=rounded, fontname="Arial", fontsize=15, margin="0.1,0.05"];
+  edge  [fontname="Arial", fontsize=14, arrowsize=0.6];
+
+  init [label="", shape=circle, style=filled, fillcolor=black, width=0.2];
+  approved  [label="Подтверждено"];
+  validated [label="Проверено\n(версия, место, запреты)"];
+  reserved  [label="Место\nзарезервировано"];
+  copying   [label="Копирование"];
+  verifying [label="Проверка копии\n(размер, MD5)"];
+  switching [label="Переключение\nрасположения (CAS)"];
+  cleanup   [label="Ожидание\nочистки источника"];
+  done      [label="Завершено"];
+  rejected  [label="Отклонено\n(устарело, запрет,\nнет ресурсов)"];
+  failed    [label="Ошибка\nдо переключения"];
+  dropcopy  [label="Удаление\nцелевой копии"];
+  orphan    [label="Требуется\nочистка"];
+  fin  [label="", shape=doublecircle, style=filled, fillcolor=black, width=0.15];
+
+  init -> approved;
+  approved -> validated [label="проверка пройдена"];
+  approved -> rejected  [label="условие нарушено"];
+  validated -> reserved -> copying -> verifying;
+  verifying -> switching [label="копия совпадает"];
+  copying -> failed [label="ошибка чтения\nили записи"];
+  verifying -> failed [label="несовпадение"];
+  switching -> cleanup [label="CAS успешен"];
+  switching -> failed [label="конфликт CAS"];
+  failed -> dropcopy;
+  dropcopy -> fin;
+  dropcopy -> orphan [label="удаление\nне удалось"];
+  cleanup -> done [label="источник удалён\nпосле паузы"];
+  cleanup -> orphan [label="удаление\nне удалось"];
+  orphan -> done [label="повторная\nочистка"];
+  rejected -> fin;
+  done -> fin;
+  {rank=same; validated; rejected;}
+  {rank=same; verifying; failed;}
+  {rank=same; switching; dropcopy;}
+}

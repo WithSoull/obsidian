@@ -1,0 +1,41 @@
+digraph bpmn_asis {
+  graph [rankdir=TB, fontname="Arial", fontsize=18, nodesep=0.3, ranksep=0.25, pad=0.2, newrank=true];
+  node  [shape=box, style="rounded", fontname="Arial", fontsize=15, margin="0.1,0.05", width=1.5];
+  edge  [fontname="Arial", fontsize=14, arrowsize=0.6];
+
+  subgraph cluster_admin {
+    label="Администратор"; labeljust=l; style=solid;
+    a_start [label="", shape=circle, width=0.3, style=solid];
+    a_wait  [label="Ожидать\nпредупреждения\nили проверки", style="rounded,filled", fillcolor="#f4c7c3"];
+    a_logs  [label="Выгрузить журналы\nи метрики"];
+    a_eval  [label="Оценить спрос\nпо давности\nи возрасту", style="rounded,filled", fillcolor="#f4c7c3"];
+    a_pick  [label="Выбрать объекты\nи порядок\nпереносов"];
+    a_gw    [label="×", shape=diamond, width=0.45, height=0.45, fixedsize=true, fontsize=21];
+    a_run   [label="Запустить\nкопирование"];
+    a_check [label="Проверить\nрезультат\nвручную", style="rounded,filled", fillcolor="#f4c7c3"];
+    a_end   [label="", shape=circle, width=0.3, penwidth=3];
+  }
+  subgraph cluster_store {
+    label="Хранилище и служебные скрипты"; labeljust=l; style=solid;
+    s_timer [label="◷", shape=doublecircle, width=0.42, fixedsize=true, fontsize=18];
+    s_rule  [label="Применить правило\nпо возрасту"];
+    s_move  [label="Перенести\nобъекты в COLD"];
+    s_end1  [label="", shape=circle, width=0.3, penwidth=3];
+    s_copy  [label="Скопировать\nданные"];
+    s_loc   [label="Изменить\nрасположение"];
+  }
+
+  a_start -> a_wait -> a_logs -> a_eval -> a_pick -> a_gw;
+  a_gw -> a_pick [label="нет места\nили ресурсов"];
+  a_gw -> a_run  [label="план\nдопустим"];
+  a_run -> s_copy [style=dashed, arrowhead=empty];
+  s_copy -> s_loc;
+  s_loc -> a_check [style=dashed, arrowhead=empty];
+  a_check -> a_end;
+  s_timer -> s_rule -> s_move -> s_end1;
+  {rank=same; a_start; s_timer;}
+  {rank=same; a_logs; s_rule;}
+  {rank=same; a_eval; s_move;}
+  {rank=same; a_run; s_copy;}
+  {rank=same; a_check; s_loc;}
+}

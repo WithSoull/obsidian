@@ -1,0 +1,32 @@
+digraph deployment {
+  graph [rankdir=TB, newrank=true, fontname="Arial", fontsize=16, nodesep=0.2, ranksep=0.35, pad=0.2];
+  node  [shape=box, fontname="Arial", fontsize=15, margin="0.1,0.05"];
+  edge  [fontname="Arial", fontsize=13, arrowsize=0.6, dir=none];
+
+  subgraph cluster_load { label="Узел генератора нагрузки"; labeljust=l;
+    loadgen [label="Воспроизведение\nнагрузки (S3-клиент)"]; }
+  subgraph cluster_admin { label="Рабочее место администратора"; labeljust=l;
+    browser [label="Браузер"]; }
+  subgraph cluster_host {
+    label="Узел OpenS3: Linux, 8 vCPU, 16 ГиБ"; labeljust=l; style=bold;
+    subgraph cluster_core { label="Контейнеры OpenS3"; labeljust=l; style=dashed;
+      gw [label="gateway"]; md [label="metadata"]; kf [label="kafka"]; au [label="auth, authz"];
+      pgm [label="postgres-\nmetadata", shape=cylinder]; }
+    subgraph cluster_hot { label="Быстрый том"; labeljust=l; style=dashed; sh [label="storage-hot"]; }
+    subgraph cluster_cold { label="Медленный том"; labeljust=l; style=dashed; sc [label="storage-cold"]; }
+    ex [label="migration-executor\n(Go, один экземпляр)"];
+    subgraph cluster_dss { label="Контейнер СППР: 2 vCPU, 2 ГиБ"; labeljust=l;
+      dss [label="dss-service (Go)"]; tr [label="trainer (Python,\nпо расписанию)"]; }
+    pgd [label="postgres-dss", shape=cylinder];
+  }
+  loadgen -> gw [label="HTTP"];
+  browser -> dss [label="HTTPS"];
+  gw -> md; gw -> sh; gw -> sc; gw -> kf; md -> pgm;
+  kf -> dss; dss -> pgd; dss -> md; dss -> au;
+  ex -> pgd; ex -> md; ex -> sh; ex -> sc;
+  {rank=same; loadgen; browser;}
+  {rank=same; gw; kf;}
+  {rank=same; md; au;}
+  {rank=same; sh; sc; ex;}
+  {rank=same; dss; tr; pgd;}
+}

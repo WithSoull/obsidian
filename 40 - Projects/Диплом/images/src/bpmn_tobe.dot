@@ -1,0 +1,64 @@
+digraph bpmn_tobe {
+  graph [rankdir=TB, fontname="Arial", fontsize=18, nodesep=0.15, ranksep=0.13, pad=0.2, newrank=true];
+  node  [shape=box, style="rounded", fontname="Arial", fontsize=15, margin="0.08,0.04", width=1.35];
+  edge  [fontname="Arial", fontsize=14, arrowsize=0.6];
+
+  subgraph cluster_admin {
+    label="Администратор (ЛПР)"; labeljust=l;
+    a_review [label="Рассмотреть план\nи объяснения"];
+    a_gw     [label="×", shape=diamond, width=0.45, height=0.45, fixedsize=true, fontsize=21];
+    a_reject [label="Отклонить\nплан"];
+    a_end0   [label="", shape=circle, width=0.3, penwidth=3];
+    a_approve[label="Подтвердить\nплан или часть"];
+    a_result [label="Просмотреть\nрезультат"];
+    a_end    [label="", shape=circle, width=0.3, penwidth=3];
+  }
+  subgraph cluster_dss {
+    label="СППР"; labeljust=l;
+    d_timer  [label="◷", shape=doublecircle, width=0.42, fixedsize=true, fontsize=18];
+    d_ingest [label="Обновить\nагрегаты\nобращений"];
+    d_fresh  [label="Проверить\nактуальность\nданных и модели"];
+    d_pred   [label="Спрогнозировать\nвостребованность"];
+    d_plan   [label="Сформировать\nплан с учётом\nресурсов"];
+    d_expl   [label="Подготовить\nобъяснения,\nопубликовать"];
+    d_deps   [label="Проверить\nзависимости\nвыбора"];
+    d_gw     [label="×", shape=diamond, width=0.45, height=0.45, fixedsize=true, fontsize=21];
+    d_why    [label="Отклонить\nс указанием\nпричины"];
+  }
+  subgraph cluster_exec {
+    label="Исполнитель миграций"; labeljust=l;
+    e_check  [label="Повторно\nпроверить версию,\nместо и запреты"];
+    e_copy   [label="Скопировать\nи проверить\nкопию"];
+    e_switch [label="Переключить\nрасположение"];
+    e_clean  [label="Отложенно\nудалить\nисточник"];
+  }
+  subgraph cluster_s3 {
+    label="OpenS3: Gateway, Metadata, Storage"; labeljust=l;
+    o_start  [label="", shape=circle, width=0.3];
+    o_read   [label="Обслужить\nклиентское\nчтение"];
+    o_event  [label="Опубликовать\nсобытие\nобращения"];
+  }
+
+  o_start -> o_read -> o_event;
+  o_event -> d_ingest [style=dashed, arrowhead=empty];
+  d_timer -> d_ingest -> d_fresh -> d_pred -> d_plan -> d_expl;
+  d_expl -> a_review [style=dashed, arrowhead=empty];
+  a_review -> a_gw;
+  a_gw -> a_reject [label="отказ"];
+  a_reject -> a_end0;
+  a_gw -> a_approve [label="выбор"];
+  a_approve -> d_deps [style=dashed, arrowhead=empty];
+  d_deps -> d_gw;
+  d_gw -> d_why [label="недопустим"];
+  d_why -> a_review [style=dashed, arrowhead=empty];
+  d_gw -> e_check [label="допустим"];
+  e_check -> e_copy -> e_switch -> e_clean;
+  e_clean -> a_result [style=dashed, arrowhead=empty];
+  a_result -> a_end;
+
+  {rank=same; d_timer; o_start;}
+  {rank=same; d_ingest; o_read;}
+  {rank=same; a_review; d_expl;}
+  {rank=same; a_approve; d_deps;}
+  {rank=same; e_check; d_gw;}
+}

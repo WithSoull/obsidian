@@ -1,0 +1,26 @@
+digraph forecast_model {
+  graph [rankdir=TB, fontname="Arial", nodesep=0.35, ranksep=0.45, pad=0.2];
+  node  [shape=box, style="rounded", fontname="Arial", fontsize=16, margin="0.15,0.08"];
+  edge  [fontname="Arial", fontsize=15, arrowsize=0.7];
+
+  hist  [label="История обращений\nи метаданные\nдо момента t"];
+  feat  [label=<Признаки <I>x<SUB>i</SUB></I>(<I>t</I>)>];
+  clf   [label=<Классификатор GBDT<BR/><I>p<SUB>i</SUB></I> = P(<I>N<SUB>i</SUB></I> &gt; 0 | <I>x<SUB>i</SUB></I>)>];
+  reg   [label=<Регрессор GBDT (Пуассон)<BR/><I>q<SUB>i</SUB></I> = E[<I>N<SUB>i</SUB></I> | <I>N<SUB>i</SUB></I> &gt; 0, <I>x<SUB>i</SUB></I>]>];
+  mu    [label=<<I>μ<SUB>i</SUB></I> = <I>p<SUB>i</SUB></I> · <I>q<SUB>i</SUB></I><BR/>ожидаемое число чтений>];
+  bytes [label=<<I>b<SUB>i</SUB></I> = <I>μ<SUB>i</SUB></I> · <I>r<SUB>i</SUB></I> · <I>s<SUB>i</SUB></I><BR/>ожидаемый объём чтения>];
+  plan  [label="Планировщик\nразмещения", style="rounded,bold"];
+  base  [label="Базовые оценки\n(EWMA, давность,\nчастота, возраст)", style="rounded,dashed"];
+
+  hist -> feat;
+  feat -> clf;
+  feat -> reg;
+  clf -> mu;
+  reg -> mu;
+  mu -> bytes;
+  mu -> plan;
+  bytes -> plan;
+  hist -> base [style=dashed];
+  base -> plan [style=dashed, label="режим F-12"];
+  {rank=same; clf; reg; base;}
+}
