@@ -8,7 +8,7 @@ digraph deployment {
   subgraph cluster_admin { label="Рабочее место администратора"; labeljust=l;
     browser [label="Браузер"]; }
   subgraph cluster_host {
-    label="Узел OpenS3: Linux, 8 vCPU, 16 ГиБ"; labeljust=l; style=bold;
+    label="Узел OpenS3 (Linux)"; labeljust=l; style=bold;
     subgraph cluster_core { label="Контейнеры OpenS3"; labeljust=l; style=dashed;
       gw [label="gateway"]; md [label="metadata"]; kf [label="kafka"]; au [label="auth, authz"];
       pgm [label="postgres-\nmetadata", shape=cylinder]; }

@@ -1,0 +1,17 @@
+{
+  "rows": 19543,
+  "unique_keys": 9853,
+  "start_ms": 1678863509425,
+  "end_ms": 1678863905874,
+  "duration_seconds": 396.449,
+  "unknown_size_rows": 55,
+  "range_rows": 3759,
+  "keys_with_size_changes": 10,
+  "cutoff_ms": 1678863689425,
+  "history_seconds": 120,
+  "label_horizon_seconds": 60,
+  "feature_rows": 3029,
+  "positive_labels": 110,
+  "sample_sha256": "4bc9c3db73f00962d44a42a9f0a01b4936e8edcc3a96fca79a5325e22ff553a5",
+  "features_sha256": "2c69f70ed0f5d1f07ca708e93797bc47dcb2c9f4c198931cf3ac40c91b47220a"
+}

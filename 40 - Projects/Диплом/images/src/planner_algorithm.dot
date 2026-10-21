@@ -1,19 +1,21 @@
 digraph planner_algorithm {
   graph [rankdir=TB, fontname="Arial", nodesep=0.21, ranksep=0.13, pad=0.2];
-  node  [shape=box, fontname="Arial", fontsize=16, margin="0.12,0.05"];
-  edge  [fontname="Arial", fontsize=15, arrowsize=0.7];
+  node  [shape=box, fontname="Arial", fontsize=19, margin="0.12,0.05"];
+  edge  [fontname="Arial", fontsize=17, arrowsize=0.7];
 
   start  [label="Начало цикла планирования", shape=ellipse];
   fresh  [label="Данные\nактуальны?", shape=diamond];
   stop   [label="Приостановить прогнозные\nдействия, указать причину"];
   model  [label="Модель\nпригодна?", shape=diamond];
-  base   [label="Оценить спрос базовой\nполитикой (F-12)"];
-  pred   [label="Оценить μi и выигрыш Δi\nдля текущих версий"];
-  sort   [label="Исключить закреплённые, мигрирующие и недавно\nперенесённые версии; упорядочить кандидатов COLD\nпо убыванию Δi/si, версии HOT — по возрастанию"];
+  base   [label=<Оценить <I>N&#770;<SUB>i</SUB></I> базовой политикой<BR/>(F-12) и выигрыш Δ<SUB><I>i</I></SUB>>];
+  pred   [label=<Оценить <I>N&#770;<SUB>i</SUB></I> и выигрыш Δ<SUB><I>i</I></SUB><BR/>для объектов>];
+  sort   [label=<Исключить закреплённые объекты;<BR/>упорядочить кандидатов COLD<BR/>по убыванию Δ<SUB><I>i</I></SUB>/<I>s<SUB>i</SUB></I>, объекты HOT — по возрастанию>];
+  over   [label="HOT\nпереполнен?", shape=diamond];
+  down   [label="Сформировать опускания\nс наименьшей удельной\nценностью"];
   next   [label="Взять следующего кандидата\nна вход в HOT"];
   space  [label="Хватает\nместа?", shape=diamond];
-  evict  [label="Подобрать вытесняемые\nверсии HOT с наименьшей\nудельной ценностью"];
-  gain   [label="Выигрыш больше потерь\nи порога, бюджет\nдостаточен?", shape=diamond];
+  evict  [label="Подобрать вытесняемые\nобъекты HOT с наименьшей\nудельной ценностью"];
+  gain   [label=<Выигрыш больше потерь,<BR/>штрафа и Δ<SUB>min</SUB>, хватает<BR/>бюджета и места<BR/>в COLD?>, shape=diamond];
   add    [label="Добавить действия и зависимости\nв план, уменьшить бюджет"];
   more   [label="Остались\nкандидаты\nи бюджет?", shape=diamond];
   expl   [label="Сформировать объяснения\nи опубликовать план"];
@@ -27,7 +29,11 @@ digraph planner_algorithm {
   model -> pred  [label="да"];
   base  -> sort;
   pred  -> sort;
-  sort -> next -> space;
+  sort -> over;
+  over -> down [label="да"];
+  over -> next [label="нет"];
+  down -> next;
+  next -> space;
   space -> gain  [label="да"];
   space -> evict [label="нет"];
   evict -> gain;
@@ -39,6 +45,7 @@ digraph planner_algorithm {
   expl  -> end;
   {rank=same; fresh; stop;}
   {rank=same; model; base;}
+  {rank=same; over; down;}
   {rank=same; space; evict;}
   {rank=same; gain; add;}
 }

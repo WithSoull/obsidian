@@ -1,10 +1,10 @@
 digraph er {
   graph [rankdir=LR, fontname="Arial", fontsize=16, nodesep=0.18, ranksep=0.36, pad=0.2];
-  node  [shape=plain, fontname="Arial", fontsize=14];
-  edge  [fontname="Arial", fontsize=12, arrowsize=0.6, arrowhead=crow, arrowtail=tee, dir=both];
+  node  [shape=plain, fontname="Arial", fontsize=19];
+  edge  [fontname="Arial", fontsize=17, arrowsize=0.6, arrowhead=crow, arrowtail=tee, dir=both];
   subgraph cluster_meta { label="БД Metadata"; labeljust=l; style=dashed;
   versions [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>versions [сущ.]</B></TD></TR><TR><TD ALIGN="LEFT">id PK</TD></TR><TR><TD ALIGN="LEFT">object_id FK</TD></TR><TR><TD ALIGN="LEFT">blob_id</TD></TR><TR><TD ALIGN="LEFT">size_bytes</TD></TR><TR><TD ALIGN="LEFT">etag</TD></TR><TR><TD ALIGN="LEFT">state</TD></TR></TABLE>>];
-  storage_classes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>storage_classes [нов.]</B></TD></TR><TR><TD ALIGN="LEFT">name PK</TD></TR><TR><TD ALIGN="LEFT">capacity_bytes</TD></TR><TR><TD ALIGN="LEFT">max_utilization</TD></TR><TR><TD ALIGN="LEFT">reserve_bytes</TD></TR><TR><TD ALIGN="LEFT">endpoint</TD></TR></TABLE>>];
+  storage_classes [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>storage_classes [нов.]</B></TD></TR><TR><TD ALIGN="LEFT">name PK</TD></TR><TR><TD ALIGN="LEFT">capacity_bytes</TD></TR><TR><TD ALIGN="LEFT">max_utilization</TD></TR><TR><TD ALIGN="LEFT">endpoint</TD></TR></TABLE>>];
   version_placements [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>version_placements [нов.]</B></TD></TR><TR><TD ALIGN="LEFT">version_id PK, FK</TD></TR><TR><TD ALIGN="LEFT">storage_class FK</TD></TR><TR><TD ALIGN="LEFT">blob_id</TD></TR><TR><TD ALIGN="LEFT">generation</TD></TR><TR><TD ALIGN="LEFT">updated_at</TD></TR></TABLE>>];
   placement_copies [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>placement_copies [нов.]</B></TD></TR><TR><TD ALIGN="LEFT">copy_id PK</TD></TR><TR><TD ALIGN="LEFT">version_id FK</TD></TR><TR><TD ALIGN="LEFT">storage_class FK</TD></TR><TR><TD ALIGN="LEFT">blob_id</TD></TR><TR><TD ALIGN="LEFT">state</TD></TR><TR><TD ALIGN="LEFT">migration_id</TD></TR></TABLE>>];
   }
@@ -13,12 +13,19 @@ digraph er {
   activity_buckets [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>activity_buckets</B></TD></TR><TR><TD ALIGN="LEFT">object_id PK</TD></TR><TR><TD ALIGN="LEFT">bucket_start PK</TD></TR><TR><TD ALIGN="LEFT">reads, read_bytes</TD></TR><TR><TD ALIGN="LEFT">errors, writes</TD></TR></TABLE>>];
   ingest_state [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>ingest_state</B></TD></TR><TR><TD ALIGN="LEFT">gateway_id PK</TD></TR><TR><TD ALIGN="LEFT">last_seq</TD></TR><TR><TD ALIGN="LEFT">watermark</TD></TR><TR><TD ALIGN="LEFT">gaps</TD></TR></TABLE>>];
   models [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>models</B></TD></TR><TR><TD ALIGN="LEFT">model_id PK</TD></TR><TR><TD ALIGN="LEFT">feature_spec</TD></TR><TR><TD ALIGN="LEFT">train_from, train_to</TD></TR><TR><TD ALIGN="LEFT">status, metrics</TD></TR><TR><TD ALIGN="LEFT">artifact_uri</TD></TR></TABLE>>];
-  plans [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>plans</B></TD></TR><TR><TD ALIGN="LEFT">plan_id PK</TD></TR><TR><TD ALIGN="LEFT">model_id FK</TD></TR><TR><TD ALIGN="LEFT">revision</TD></TR><TR><TD ALIGN="LEFT">data_watermark</TD></TR><TR><TD ALIGN="LEFT">status</TD></TR></TABLE>>];
-  recommendations [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>recommendations</B></TD></TR><TR><TD ALIGN="LEFT">rec_id PK</TD></TR><TR><TD ALIGN="LEFT">plan_id FK</TD></TR><TR><TD ALIGN="LEFT">version_id, generation</TD></TR><TR><TD ALIGN="LEFT">source, target</TD></TR><TR><TD ALIGN="LEFT">mu, gain</TD></TR><TR><TD ALIGN="LEFT">explanation</TD></TR></TABLE>>];
+  plans [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>plans</B></TD></TR><TR><TD ALIGN="LEFT">plan_id PK</TD></TR><TR><TD ALIGN="LEFT">model_id FK</TD></TR><TR><TD ALIGN="LEFT">revision</TD></TR><TR><TD ALIGN="LEFT">computed_at, horizon</TD></TR><TR><TD ALIGN="LEFT">data_watermark</TD></TR><TR><TD ALIGN="LEFT">status</TD></TR></TABLE>>];
+  recommendations [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>recommendations</B></TD></TR><TR><TD ALIGN="LEFT">rec_id PK</TD></TR><TR><TD ALIGN="LEFT">plan_id FK</TD></TR><TR><TD ALIGN="LEFT">version_id, generation</TD></TR><TR><TD ALIGN="LEFT">source, target</TD></TR><TR><TD ALIGN="LEFT">p, m, n_hat, gain</TD></TR><TR><TD ALIGN="LEFT">explanation</TD></TR></TABLE>>];
   rec_deps [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>recommendation_deps</B></TD></TR><TR><TD ALIGN="LEFT">rec_id PK, FK</TD></TR><TR><TD ALIGN="LEFT">depends_on PK, FK</TD></TR></TABLE>>];
   admin_commands [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>admin_commands</B></TD></TR><TR><TD ALIGN="LEFT">command_id PK</TD></TR><TR><TD ALIGN="LEFT">plan_id FK</TD></TR><TR><TD ALIGN="LEFT">plan_revision</TD></TR><TR><TD ALIGN="LEFT">admin_id, action</TD></TR><TR><TD ALIGN="LEFT">selected, result</TD></TR></TABLE>>];
   migrations [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>migrations</B></TD></TR><TR><TD ALIGN="LEFT">migration_id PK</TD></TR><TR><TD ALIGN="LEFT">rec_id FK</TD></TR><TR><TD ALIGN="LEFT">command_id FK</TD></TR><TR><TD ALIGN="LEFT">state, attempt</TD></TR><TR><TD ALIGN="LEFT">target_blob_id</TD></TR><TR><TD ALIGN="LEFT">bytes_copied, error</TD></TR></TABLE>>];
+  slices [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>training_slices</B></TD></TR><TR><TD ALIGN="LEFT">slice_time PK</TD></TR><TR><TD ALIGN="LEFT">object_id PK</TD></TR><TR><TD ALIGN="LEFT">feature_version</TD></TR><TR><TD ALIGN="LEFT">features</TD></TR><TR><TD ALIGN="LEFT">label_n</TD></TR></TABLE>>];
+  settings [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>placement_settings</B></TD></TR><TR><TD ALIGN="LEFT">name PK</TD></TR><TR><TD ALIGN="LEFT">value</TD></TR><TR><TD ALIGN="LEFT">command_id FK</TD></TR></TABLE>>];
+  locks [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="3"><TR><TD PORT="h" BGCOLOR="#e6e6e6"><B>transfer_locks</B></TD></TR><TR><TD ALIGN="LEFT">object_id PK</TD></TR><TR><TD ALIGN="LEFT">reason</TD></TR><TR><TD ALIGN="LEFT">command_id FK</TD></TR></TABLE>>];
   }
+  activity_buckets:h -> slices:h [style=dashed, dir=forward, arrowhead=normal, label="построение\nсрезов", constraint=false];
+  slices:h -> models:h [style=dashed, dir=forward, arrowhead=normal, label="обучение", constraint=false];
+  admin_commands:h -> settings:h;
+  admin_commands:h -> locks:h;
   versions:h -> version_placements:h [arrowhead=tee];
   versions:h -> placement_copies:h;
   storage_classes:h -> version_placements:h;
@@ -29,7 +36,7 @@ digraph er {
   plans:h -> admin_commands:h;
   recommendations:h -> migrations:h;
   admin_commands:h -> migrations:h;
-  access_events:h -> activity_buckets:h [style=dashed, dir=forward, arrowhead=normal, label="агрегирование"];
-  ingest_state:h -> access_events:h [style=dotted, dir=forward, arrowhead=normal, label="контроль\nпоследовательности"];
+  access_events:h -> activity_buckets:h [style=dashed, dir=forward, arrowhead=normal, label="агрегирование", constraint=false];
+  ingest_state:h -> access_events:h [style=dotted, dir=forward, arrowhead=normal, label="контроль\nпоследовательности", constraint=false];
   recommendations:h -> version_placements:h [style=dashed, dir=forward, arrowhead=normal, label="логическая ссылка\nversion_id, generation", constraint=false];
 }

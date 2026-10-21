@@ -21,6 +21,7 @@ hours_estimate: 442-720
 - **Следующий этап:** [[40 - Projects/Distributed Systems Learning/01 - Distributed Systems Core/01 - RPC, MapReduce and Single-Node KV|01 — RPC, MapReduce and Single-Node KV]].
 - **Активный implementation track:** выбрать при старте этапа; одновременно только один.
 - **Ближайший gate:** Gate A после этапа 2.
+- **Приоритет на время поиска работы:** не больше 3 часов в день, этапы 1–5; см. [[40 - Projects/Job Search/00 - Strategy#Харды — что учить и что нет|Job Search Strategy]].
 
 ## Campaigns
 

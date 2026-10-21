@@ -7,9 +7,9 @@ digraph bpmn_asis {
     label="Администратор"; labeljust=l; style=solid;
     a_start [label="", shape=circle, width=0.3, style=solid];
     a_wait  [label="Ожидать\nпредупреждения\nили проверки", style="rounded,filled", fillcolor="#f4c7c3"];
-    a_logs  [label="Выгрузить журналы\nи метрики"];
+    a_logs  [label="Выгрузить журналы\nи метрики", style="rounded,filled", fillcolor="#f4c7c3"];
     a_eval  [label="Оценить спрос\nпо давности\nи возрасту", style="rounded,filled", fillcolor="#f4c7c3"];
-    a_pick  [label="Выбрать объекты\nи порядок\nпереносов"];
+    a_pick  [label="Выбрать объекты\nи порядок\nпереносов", style="rounded,filled", fillcolor="#f4c7c3"];
     a_gw    [label="×", shape=diamond, width=0.45, height=0.45, fixedsize=true, fontsize=21];
     a_run   [label="Запустить\nкопирование"];
     a_check [label="Проверить\nрезультат\nвручную", style="rounded,filled", fillcolor="#f4c7c3"];

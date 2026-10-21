@@ -1,7 +1,7 @@
 digraph components {
   graph [rankdir=TB, fontname="Arial", fontsize=16, nodesep=0.21, ranksep=0.30, pad=0.2, newrank=true];
-  node  [shape=component, fontname="Arial", fontsize=15, margin="0.12,0.05"];
-  edge  [fontname="Arial", fontsize=14, arrowsize=0.6];
+  node  [shape=component, fontname="Arial", fontsize=19, margin="0.12,0.05"];
+  edge  [fontname="Arial", fontsize=17, arrowsize=0.6];
 
   client  [label="S3-клиент", shape=box, style=rounded];
   browser [label="Браузер администратора", shape=box, style=rounded];
@@ -38,7 +38,12 @@ digraph components {
   metadata -> pgmeta;
   kafka -> ingest [style=dashed];
   ingest -> features -> predictor -> planner -> api;
-  modelmgr -> trainer -> registry -> predictor;
+  modelmgr -> trainer [label="запуск"];
+  modelmgr -> registry [label="проверенная\nмодель"];
+  registry -> predictor;
+  features -> pgdss [label="агрегаты,\nпризнаки"];
+  features -> metadata [label="размер,\nверсия"];
+  trainer -> pgdss [label="обучающие\nпримеры"];
   planner -> metadata [label="каталог, классы,\nзанятость"];
   browser -> api [label="HTTPS"];
   api -> auth [label="токен и права"];
