@@ -1,4 +1,5 @@
 import argparse
+import asyncio
 from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
@@ -13,6 +14,12 @@ import export_channels as exporter
 
 
 AT = datetime(2026, 10, 23, tzinfo=timezone.utc)
+TEST_ENV = {"TG_API_ID": "12345", "TG_API_HASH": "abcdef0123456789abcdef0123456789"}
+
+
+def export_args(temp):
+    return argparse.Namespace(output_dir=Path(temp) / "out", folder="🌐", folder_id=None,
+                              expect_channels=1, limit=35)
 
 
 def channel(channel_id=101, **kwargs):
@@ -46,12 +53,26 @@ class FakeClient:
         self.selected_folder = selected_folder
         self.calls = []
         self.disconnected = False
+        self.connected = False
+        self.session = SimpleNamespace(auth_key=None)
 
     async def connect(self):
         self.calls.append("connect")
+        self.connected = True
+        self.session.auth_key = b"fake-auth-key"
 
     async def disconnect(self):
         self.disconnected = True
+        self.connected = False
+
+    def is_connected(self):
+        return self.connected
+
+    async def log_out(self):
+        self.calls.append("log_out")
+        await self.disconnect()
+        self.session = None
+        return True
 
     async def is_user_authorized(self):
         return True
@@ -169,18 +190,117 @@ class AsyncTests(unittest.IsolatedAsyncioTestCase):
         selected = folder(include_peers=[types.InputPeerChannel(101, 42)])
         fake = FakeClient([message(10, message="Канал, статья и механизм")], selected)
         with TemporaryDirectory() as temp:
-            args = argparse.Namespace(state_dir=Path(temp) / "state", output_dir=Path(temp) / "out",
-                                      folder="🌐", folder_id=None, expect_channels=1, limit=35)
-            with patch.object(exporter, "TelegramClient", return_value=fake), patch.dict("os.environ", {"TG_API_ID": "12345", "TG_API_HASH": "abcdef0123456789abcdef0123456789"}):
+            args = export_args(temp)
+            with patch.object(exporter, "TelegramClient", return_value=fake) as factory, patch.dict("os.environ", TEST_ENV):
                 await exporter.run(args)
+            self.assertIsInstance(factory.call_args.args[0], exporter.MemorySession)
+            self.assertEqual(list(Path(temp).rglob("*.session*")), [])
             result = json.loads(next(args.output_dir.glob("*.json")).read_text())
             self.assertEqual(result["status"], "complete")
+            self.assertEqual(result["session_cleanup"], {"storage": "memory", "status": "revoked"})
             self.assertEqual(result["channels"][0]["publication_count"], 1)
             serialized = json.dumps(result)
             for secret in ("abcdef0123456789abcdef0123456789", "987654321", "access_hash", "api_hash", "account.session"):
                 self.assertNotIn(secret, serialized)
             self.assertTrue(fake.disconnected)
-            self.assertEqual(fake.calls, ["connect", "GetDialogFiltersRequest", "get_entity", "iter_messages"])
+            self.assertEqual(fake.calls, ["connect", "GetDialogFiltersRequest", "get_entity", "iter_messages", "log_out"])
+
+    async def test_logout_runs_on_error_before_export_and_preserves_original_error(self):
+        fake = FakeClient([])
+        with TemporaryDirectory() as temp, patch.object(exporter, "TelegramClient", return_value=fake), patch.dict("os.environ", TEST_ENV), patch.object(exporter, "authorize", side_effect=ValueError("login failed")):
+            with self.assertRaisesRegex(ValueError, "login failed"):
+                await exporter.run(export_args(temp))
+        self.assertIn("log_out", fake.calls)
+        self.assertTrue(fake.disconnected)
+
+    async def test_cancelled_export_still_revokes_and_keeps_partial_json(self):
+        entered = asyncio.Event()
+
+        class BlockingClient(FakeClient):
+            async def iter_messages(self, *args, **kwargs):
+                entered.set()
+                await asyncio.Event().wait()
+                yield message(10)
+
+        selected = folder(include_peers=[types.InputPeerChannel(101, 42)])
+        fake = BlockingClient([], selected)
+        with TemporaryDirectory() as temp, patch.object(exporter, "TelegramClient", return_value=fake), patch.dict("os.environ", TEST_ENV):
+            args = export_args(temp)
+            task = asyncio.create_task(exporter.run(args))
+            await entered.wait()
+            task.cancel()
+            with self.assertRaises(asyncio.CancelledError):
+                await task
+            result = json.loads(next(args.output_dir.glob("*.json")).read_text())
+            self.assertEqual(result["status"], "in_progress")
+            self.assertEqual(result["session_cleanup"]["status"], "revoked")
+        self.assertTrue(fake.disconnected)
+
+    async def test_cancel_during_logout_does_not_cancel_revocation(self):
+        entered = asyncio.Event()
+        release = asyncio.Event()
+
+        class SlowLogoutClient(FakeClient):
+            async def log_out(self):
+                entered.set()
+                await release.wait()
+                return await super().log_out()
+
+        selected = folder(include_peers=[types.InputPeerChannel(101, 42)])
+        fake = SlowLogoutClient([message(10)], selected)
+        with TemporaryDirectory() as temp, patch.object(exporter, "TelegramClient", return_value=fake), patch.dict("os.environ", TEST_ENV):
+            args = export_args(temp)
+            task = asyncio.create_task(exporter.run(args))
+            await entered.wait()
+            task.cancel()
+            release.set()
+            with self.assertRaises(asyncio.CancelledError):
+                await task
+            result = json.loads(next(args.output_dir.glob("*.json")).read_text())
+            self.assertEqual(result["session_cleanup"]["status"], "revoked")
+        self.assertTrue(fake.disconnected)
+
+    async def test_rejected_logout_is_an_error_even_when_export_is_complete(self):
+        class RejectedLogoutClient(FakeClient):
+            async def log_out(self):
+                return False
+
+        selected = folder(include_peers=[types.InputPeerChannel(101, 42)])
+        fake = RejectedLogoutClient([message(10)], selected)
+        with TemporaryDirectory() as temp, patch.object(exporter, "TelegramClient", return_value=fake), patch.dict("os.environ", TEST_ENV):
+            args = export_args(temp)
+            with self.assertRaises(exporter.SessionCleanupError):
+                await exporter.run(args)
+            result = json.loads(next(args.output_dir.glob("*.json")).read_text())
+            self.assertEqual(result["status"], "complete")
+            self.assertEqual(result["session_cleanup"]["status"], "unconfirmed")
+        self.assertTrue(fake.disconnected)
+
+    async def test_logout_timeout_is_not_reported_as_success(self):
+        class HungLogoutClient(FakeClient):
+            async def log_out(self):
+                await asyncio.Event().wait()
+
+        fake = HungLogoutClient([])
+        await fake.connect()
+        result = await exporter.close_temporary_session(fake, timeout=0.01)
+        self.assertEqual(result["status"], "unconfirmed")
+        self.assertEqual(result["error_type"], "TimeoutError")
+        self.assertTrue(fake.disconnected)
+
+    async def test_logout_reconnects_if_export_lost_the_connection(self):
+        fake = FakeClient([])
+        await fake.connect()
+        await fake.disconnect()
+        result = await exporter.close_temporary_session(fake)
+        self.assertEqual(result["status"], "revoked")
+        self.assertEqual(fake.calls, ["connect", "connect", "log_out"])
+
+    async def test_no_logout_request_when_connection_created_no_key(self):
+        fake = FakeClient([])
+        result = await exporter.close_temporary_session(fake)
+        self.assertEqual(result["status"], "not_created")
+        self.assertEqual(fake.calls, [])
 
 
 if __name__ == "__main__":

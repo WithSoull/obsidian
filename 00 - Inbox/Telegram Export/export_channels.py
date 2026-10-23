@@ -8,15 +8,22 @@ import json
 import os
 from pathlib import Path
 import re
+import signal
 import sys
 from datetime import datetime, timezone
 from uuid import uuid4
 
 from telethon import TelegramClient, errors, functions, types, utils
+from telethon.sessions import MemorySession
 
 
 ROOT = Path(__file__).resolve().parent
 UTC = timezone.utc
+LEGACY_SESSION = Path.home() / ".local/state/telegram-reading-export/account.session"
+
+
+class SessionCleanupError(RuntimeError):
+    pass
 
 
 def now():
@@ -267,15 +274,44 @@ async def authorize(client):
     raise ValueError("Не удалось подтвердить код входа. Запустите снова.")
 
 
+async def close_temporary_session(client, timeout=15):
+    """Revoke the server-side key, not merely the network connection."""
+    result = {"storage": "memory", "status": "not_created"}
+
+    async def revoke():
+        if not client.is_connected():
+            await client.connect()
+        if await client.log_out() is not True:
+            raise SessionCleanupError("Telegram не подтвердил выход.")
+
+    try:
+        if client.session is not None and client.session.auth_key is not None:
+            result["status"] = "unconfirmed"
+            await asyncio.wait_for(revoke(), timeout)
+            result["status"] = "revoked"
+    except Exception as error:
+        # Some Telethon RPC failures return False; others raise. Neither is success.
+        result["error_type"] = type(error).__name__
+    finally:
+        if client.is_connected():
+            try:
+                await asyncio.wait_for(client.disconnect(), 5)
+            except Exception as error:
+                result["disconnect_error_type"] = type(error).__name__
+
+    if result["status"] == "revoked":
+        print("Telegram подтвердил выход из временной сессии. Сессия на диск не записывалась.", flush=True)
+    elif result["status"] == "unconfirmed":
+        print("ВНИМАНИЕ: выход из Telegram не подтверждён. Завершите сеанс Telegram Reading Export в Telegram → Настройки → Устройства.", file=sys.stderr, flush=True)
+    return result
+
+
 async def run(args):
     api_id_text = os.environ.get("TG_API_ID") or input("api_id: ").strip()
     api_hash = os.environ.get("TG_API_HASH") or getpass.getpass("api_hash (ввод скрыт): ").strip()
     if not api_id_text.isdigit() or not re.fullmatch(r"[0-9a-fA-F]{32}", api_hash):
         raise ValueError("Проверьте api_id (число) и api_hash (32 шестнадцатеричных символа).")
-    state = args.state_dir.expanduser().resolve()
-    state.mkdir(mode=0o700, parents=True, exist_ok=True)
-    state.chmod(0o700)
-    client = TelegramClient(str(state / "account"), int(api_id_text), api_hash,
+    client = TelegramClient(MemorySession(), int(api_id_text), api_hash,
                             receive_updates=False, flood_sleep_threshold=30,
                             device_model="Telegram Reading Export")
     data = None
@@ -300,6 +336,7 @@ async def run(args):
             "exported_at": iso(now()),
             "finished_at": None,
             "status": "in_progress",
+            "session_cleanup": {"storage": "memory", "status": "pending"},
             "folder": {"id": folder.id, "title": folder_title(folder),
                        "dynamic_channels_rule": dynamic,
                        "membership_snapshot_at": iso(now()),
@@ -332,12 +369,39 @@ async def run(args):
         data["status"] = "complete" if not issues and all(c["status"] == "ok" for c in data["channels"]) else "partial"
         data["finished_at"] = iso(now())
         write_export(output, data)
-        print(f"\nРезультат ({data['status']}): {output.resolve()}", flush=True)
-        print("Передайте только этот JSON или его путь. Файл сессии остаётся локально.", flush=True)
     finally:
-        await client.disconnect()
+        had_error = sys.exc_info()[0] is not None
+        cleanup_task = asyncio.create_task(close_temporary_session(client))
+        cancelled_during_cleanup = False
+        try:
+            cleanup = await asyncio.shield(cleanup_task)
+        except asyncio.CancelledError:
+            # A first Ctrl+C during logout must not cancel the revocation request.
+            cancelled_during_cleanup = True
+            cleanup = await cleanup_task
+        if output and data:
+            data["session_cleanup"] = cleanup
+            write_export(output, data)
         if output and data and data["status"] == "in_progress":
             print(f"Незавершённая выгрузка сохранена: {output.resolve()}", file=sys.stderr)
+        if cancelled_during_cleanup:
+            raise asyncio.CancelledError()
+        if cleanup["status"] == "unconfirmed" and not had_error:
+            if output:
+                print(f"JSON сохранён: {output.resolve()}", file=sys.stderr)
+            raise SessionCleanupError("Не удалось подтвердить отзыв временной сессии.")
+    print(f"\nРезультат ({data['status']}): {output.resolve()}", flush=True)
+    print("Передайте только этот JSON или его путь.", flush=True)
+
+
+async def run_with_signal_handler(args):
+    loop = asyncio.get_running_loop()
+    task = asyncio.current_task()
+    loop.add_signal_handler(signal.SIGTERM, task.cancel)
+    try:
+        await run(args)
+    finally:
+        loop.remove_signal_handler(signal.SIGTERM)
 
 
 def main():
@@ -347,14 +411,15 @@ def main():
     parser.add_argument("--limit", type=int, default=35, help="Публикаций на канал; альбом считается одной (по умолчанию 35)")
     parser.add_argument("--expect-channels", type=int, help="Предупредить при другом количестве каналов")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "exports")
-    parser.add_argument("--state-dir", type=Path, default=Path.home() / ".local/state/telegram-reading-export")
     args = parser.parse_args()
     if not 1 <= args.limit <= 1000:
         parser.error("--limit должен быть от 1 до 1000")
     os.umask(0o077)
+    if LEGACY_SESSION.exists():
+        print("Найден файл прежней сессии. Он не используется. Если старый сеанс Telegram Reading Export ещё активен, завершите его в Telegram → Настройки → Устройства.", file=sys.stderr)
     try:
-        asyncio.run(run(args))
-    except KeyboardInterrupt:
+        asyncio.run(run_with_signal_handler(args))
+    except (KeyboardInterrupt, asyncio.CancelledError):
         print("\nОстановлено. Уже записанные результаты сохранены.", file=sys.stderr)
         return 130
     except errors.FloodWaitError as error:
